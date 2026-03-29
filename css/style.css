@@ -195,6 +195,13 @@ main {
   margin: 0 auto;
 }
 
+.nav-logo {
+  height: 32px;
+  width: auto;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
 .hero h1 {
   font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 16px;
