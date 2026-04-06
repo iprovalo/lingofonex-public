@@ -88,12 +88,18 @@ img { max-width: 100%; height: auto; }
   position: relative;
 }
 
+.nav-links > li > a svg,
+.nav-links > li > button svg {
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
 .nav-links > li > a,
 .nav-links > li > button {
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 8px 14px;
+  padding: 8px 12px;
   font-family: 'DM Sans', sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
