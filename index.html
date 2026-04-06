@@ -1,4 +1,27 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="refresh" content="0; url=home/en.html"><title>Redirecting...</title></head>
-<body><script>window.location.href='home/en.html';</script>
-<p>Redirecting to <a href="home/en.html">Home</a>...</p></body></html>
+<html><head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0; url=home/en.html">
+<title>Redirecting...</title>
+<script>
+(function() {
+  var langs = ['en','es','fr','de','it','pt','nl','pl','cs','ro','ru','uk','tr','ar','fa','hi','bn','th','vi','id','ja','ko','zh'];
+  var stored = localStorage.getItem('lingofonex-lang');
+  if (stored && langs.indexOf(stored) !== -1) {
+    window.location.replace('home/' + stored + '.html');
+  } else {
+    var browserLangs = navigator.languages || [navigator.language || 'en'];
+    for (var i = 0; i < browserLangs.length; i++) {
+      var code = browserLangs[i].split('-')[0].toLowerCase();
+      if (langs.indexOf(code) !== -1) {
+        window.location.replace('home/' + code + '.html');
+        return;
+      }
+    }
+    window.location.replace('home/en.html');
+  }
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=home/en.html"></noscript>
+</head>
+<body><p>Redirecting to <a href="home/en.html">Home</a>...</p></body></html>

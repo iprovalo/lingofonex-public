@@ -159,6 +159,51 @@ li.open > .dropdown {
   color: var(--text-primary);
 }
 
+/* Language switcher */
+.lang-switcher button svg {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.lang-current {
+  font-size: 0.85rem;
+}
+
+.lang-dropdown {
+  max-height: 400px;
+  overflow-y: auto;
+  min-width: 200px;
+  right: 0;
+  left: auto;
+  transform: none;
+}
+
+li.open > .lang-dropdown {
+  animation: fadeDownLang 0.2s ease;
+}
+
+@keyframes fadeDownLang {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.lang-dropdown a.lang-active {
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
+/* Scrollbar for language dropdown */
+.lang-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+.lang-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+.lang-dropdown::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 3px;
+}
+
 /* Mobile hamburger */
 .nav-toggle {
   display: none;
@@ -463,6 +508,48 @@ main {
   color: var(--text-secondary);
 }
 
+/* ===== RTL Support (Arabic, Farsi) ===== */
+[dir="rtl"] {
+  direction: rtl;
+}
+
+[dir="rtl"] .nav-inner {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-links {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-brand {
+  margin-right: 0;
+}
+
+[dir="rtl"] .nav-logo {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+[dir="rtl"] .faq-question {
+  text-align: right;
+}
+
+[dir="rtl"] .faq-question .icon {
+  margin-left: 0;
+  margin-right: 16px;
+}
+
+[dir="rtl"] .legal-content ul,
+[dir="rtl"] .legal-content ol {
+  padding-left: 0;
+  padding-right: 24px;
+}
+
+[dir="rtl"] .lang-dropdown {
+  right: auto;
+  left: 0;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .nav-toggle { display: flex; }
@@ -499,6 +586,10 @@ main {
     padding-left: 24px;
   }
 
+  .lang-dropdown {
+    max-height: 300px;
+  }
+
   li.open > .dropdown {
     animation: none;
   }
@@ -511,4 +602,13 @@ main {
   .legal-content { padding: 28px 20px; }
 
   .features { grid-template-columns: 1fr; }
+
+  [dir="rtl"] .nav-links {
+    flex-direction: column;
+  }
+
+  [dir="rtl"] .dropdown {
+    padding-left: 0;
+    padding-right: 24px;
+  }
 }
