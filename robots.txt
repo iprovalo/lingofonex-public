@@ -1,0 +1,24 @@
+# Lingofonex robots.txt — managed by lingofonex-docs/SEO/scripts/seo_stage1_patch.py
+# Do not hand-edit; re-run the patcher to regenerate.
+
+User-agent: *
+Allow: /
+
+# Explicit allows for AI / LLM crawlers — privacy-first brand benefits from
+# being citable in AI-assisted search experiences.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://www.lingofonex.com/sitemap.xml
