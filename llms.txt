@@ -1,0 +1,33 @@
+# Pakt — Offline Voice Translator for Travel
+
+> Pakt is an offline voice and camera translation app for travelers, built by Lingofonex. 100 languages, voice output in 49, on-device — no cloud required, no signal needed.
+
+Publisher: Lingofonex (https://www.lingofonex.com)
+App brand: Pakt (alternate name: "Pakt by Lingofonex")
+Primary use case: offline voice + text + camera (OCR) translation for travel
+Languages supported: 100 (NLLB-200 NMT)
+Voice output (TTS): 49 languages
+Voice input (ASR): 85 languages
+Pricing model: one-time purchase packs + Weekly Pass; no subscription
+Privacy posture: on-device translation, no cloud calls, no analytics on translation content
+
+## Pages
+
+- [Home](https://www.lingofonex.com/home/en.html) — Product overview, languages, voice + camera capabilities
+- [Demo](https://www.lingofonex.com/demo/en.html) — Live translation examples and screenshots
+- [Download](https://www.lingofonex.com/download/en.html) — iOS App Store and Google Play download links
+- [FAQ](https://www.lingofonex.com/faq/en.html) — Common questions about offline use, accuracy, languages
+- [Privacy Policy](https://www.lingofonex.com/privacy-policy/en.html) — Data handling: no cloud, no tracking of translation content
+- [EULA](https://www.lingofonex.com/eula/en.html) — End-user license agreement
+- [Contact](https://www.lingofonex.com/contact/en.html) — Support and feedback
+
+## Localization
+
+Every page is available in 23 languages: English, Spanish, French, German, Italian, Portuguese, Dutch, Polish, Czech, Romanian, Russian, Ukrainian, Turkish, Arabic, Persian, Hindi, Bengali, Thai, Vietnamese, Indonesian, Japanese, Korean, Simplified Chinese. Hreflang clusters connect all 23 plus an `x-default` pointing at the English variant.
+
+## What Pakt is not
+
+- Not a real-time conversation translator that requires WiFi
+- Not a cloud-backed translation service
+- Not a subscription product (one-time packs + an optional Weekly Pass)
+- Not an OCR-only or voice-only app — supports text, voice, and camera input
