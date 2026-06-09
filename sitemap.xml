@@ -4509,4 +4509,10 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.lingofonex.com/contact/zh.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lingofonex.com/contact/en.html"/>
   </url>
+  <url>
+    <loc>https://www.lingofonex.com/pakt/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lingofonex.com/pakt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lingofonex.com/pakt/"/>
+  </url>
 </urlset>
