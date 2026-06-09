@@ -13,6 +13,7 @@ Privacy posture: on-device translation, no cloud calls, no analytics on translat
 
 ## Pages
 
+- [Pakt — product hub](https://www.lingofonex.com/pakt/) — Pakt product hub: offline voice translator for travel by Lingofonex; supports translation in 100 languages and voice output in 49.
 - [Home](https://www.lingofonex.com/home/en.html) — Product overview, languages, voice + camera capabilities
 - [Demo](https://www.lingofonex.com/demo/en.html) — Live translation examples and screenshots
 - [Download](https://www.lingofonex.com/download/en.html) — iOS App Store and Google Play download links

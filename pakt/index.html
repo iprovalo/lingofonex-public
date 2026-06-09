@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pakt — Offline Voice Translator for Travel by Lingofonex</title>
+  <meta name="description" content="Pakt by Lingofonex translates in 100 languages and speaks results in 49, offline and private for travel when WiFi or roaming fails.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.lingofonex.com/pakt/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Merriweather:wght@400;700&display=swap"></noscript>
+  <link rel="icon" type="image/png" href="../images/Lingofonex_App_Icon-167px.png">
+
+  <link rel="alternate" hreflang="en" href="https://www.lingofonex.com/pakt/">
+  <link rel="alternate" hreflang="x-default" href="https://www.lingofonex.com/pakt/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pakt — Offline Voice Translator for Travel by Lingofonex">
+  <meta property="og:description" content="Pakt by Lingofonex translates in 100 languages and speaks results in 49, offline and private for travel when WiFi or roaming fails.">
+  <meta property="og:image" content="https://www.lingofonex.com/images/og-card.png">
+  <meta property="og:url" content="https://www.lingofonex.com/pakt/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Lingofonex">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pakt — Offline Voice Translator for Travel by Lingofonex">
+  <meta name="twitter:description" content="Pakt by Lingofonex translates in 100 languages and speaks results in 49, offline and private for travel when WiFi or roaming fails.">
+  <meta name="twitter:image" content="https://www.lingofonex.com/images/og-card.png">
+
+  <style>
+/* ===== Lingofonex Global Styles — synced with home/en.html ===== */
+:root {
+  --bg-primary: #1c1c1c;
+  --bg-secondary: #242424;
+  --bg-card: #2a2a2a;
+  --bg-nav: #161616;
+  --text-primary: #f9f9f9;
+  --text-secondary: #b0b0b0;
+  --accent-blue: rgba(12, 68, 102, 1);
+  --accent-blue-light: rgba(12, 68, 102, 0.6);
+  --accent-green: rgba(213, 242, 221, 1);
+  --accent-green-dim: rgba(213, 242, 221, 0.15);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --radius: 10px;
+  --max-width: 1100px;
+  --transition: 0.25s ease;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: 'Merriweather', serif; font-weight: 700; line-height: 1.3; }
+a { color: var(--accent-green); text-decoration: none; transition: color var(--transition); }
+a:hover { color: #fff; }
+img { max-width: 100%; height: auto; }
+
+/* Nav */
+.site-nav { position: sticky; top: 0; z-index: 1000; background: var(--bg-nav); border-bottom: 1px solid var(--border-color); backdrop-filter: blur(12px); }
+.nav-inner { max-width: var(--max-width); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; height: 64px; }
+.nav-brand { font-family: 'Merriweather', serif; font-size: 1.25rem; font-weight: 700; color: var(--text-primary); letter-spacing: 0.5px; }
+.nav-brand:hover { color: var(--accent-green); }
+.nav-logo { height: 32px; width: auto; margin-right: 8px; vertical-align: middle; }
+.nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+.nav-links > li { position: relative; }
+.nav-links > li > a, .nav-links > li > button {
+  display: flex; align-items: center; gap: 4px; padding: 8px 12px;
+  font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 500;
+  color: var(--text-secondary); background: none; border: none; border-radius: 6px;
+  cursor: pointer; transition: color var(--transition), background var(--transition); white-space: nowrap;
+}
+.nav-links > li > a:hover, .nav-links > li > a.active, .nav-links > li > button:hover, .nav-links > li > button.active {
+  color: var(--text-primary); background: rgba(255,255,255,0.06);
+}
+.dropdown-arrow { font-size: 0.6rem; transition: transform var(--transition); }
+li.open .dropdown-arrow { transform: rotate(180deg); }
+.dropdown { display: none; position: absolute; top: calc(100% + 6px); left: 50%; transform: translateX(-50%);
+  background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 8px; padding: 6px 0; min-width: 180px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+}
+li.open > .dropdown { display: block; animation: fadeDown 0.2s ease; }
+@keyframes fadeDown { from { opacity: 0; transform: translateX(-50%) translateY(-6px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }
+.dropdown a { display: block; padding: 8px 18px; font-size: 0.85rem; color: var(--text-secondary); transition: background var(--transition), color var(--transition); }
+.dropdown a:hover { background: rgba(255,255,255,0.06); color: var(--text-primary); }
+.lang-switcher button svg { vertical-align: middle; margin-right: 4px; }
+.lang-current { font-size: 0.85rem; }
+.lang-dropdown { max-height: 400px; overflow-y: auto; min-width: 200px; right: 0; left: auto; transform: none; }
+.nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
+.nav-toggle span { display: block; width: 24px; height: 2px; background: var(--text-primary); border-radius: 2px; transition: transform var(--transition), opacity var(--transition); }
+
+main { flex: 1; width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 48px 24px; }
+
+/* Hero */
+.hero { text-align: center; padding: 64px 24px 32px; max-width: var(--max-width); margin: 0 auto; }
+.hero .eyebrow { display: inline-block; font-size: 0.85rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent-green); margin-bottom: 16px; }
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--accent-green), #a8d8ea);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.hero p { font-size: 1.15rem; color: var(--text-secondary); max-width: 640px; margin: 0 auto 28px; }
+.cta-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.btn {
+  display: inline-block; padding: 12px 24px; border-radius: var(--radius); font-weight: 600; font-size: 1rem;
+  font-family: 'DM Sans', sans-serif; cursor: pointer; transition: transform var(--transition), background var(--transition), color var(--transition);
+}
+.btn-primary { background: var(--accent-green); color: var(--bg-primary); }
+.btn-primary:hover { background: #fff; color: var(--bg-primary); transform: translateY(-1px); }
+.btn-secondary { background: transparent; color: var(--accent-green); border: 1px solid var(--accent-green); }
+.btn-secondary:hover { background: var(--accent-green-dim); color: #fff; }
+
+/* Trust row */
+.trust-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 8px auto 48px; max-width: 900px; padding: 0 24px; }
+.chip {
+  display: inline-flex; align-items: center; padding: 6px 14px; border-radius: 999px;
+  background: var(--bg-card); border: 1px solid var(--border-color);
+  color: var(--text-secondary); font-size: 0.85rem; font-weight: 500;
+}
+
+/* Section title */
+.section-title { font-size: 1.75rem; margin-bottom: 16px; text-align: center; color: var(--accent-green); }
+.section-lead { color: var(--text-secondary); text-align: center; max-width: 720px; margin: 0 auto 32px; font-size: 1.05rem; }
+
+/* Feature cards */
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 56px; }
+.feature-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius); padding: 32px 28px; transition: transform var(--transition), box-shadow var(--transition); }
+.feature-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+.feature-card h3 { font-size: 1.15rem; margin-bottom: 12px; color: var(--accent-green); }
+.feature-card p { color: var(--text-secondary); font-size: 0.95rem; }
+
+/* Steps (how it works) */
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 56px; }
+.step-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius); padding: 24px; text-align: center; }
+.step-num { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--accent-green); color: var(--bg-primary); font-weight: 700; font-family: 'Merriweather', serif; margin-bottom: 12px; }
+.step-card h3 { font-size: 1rem; margin-bottom: 8px; color: var(--text-primary); }
+.step-card p { color: var(--text-secondary); font-size: 0.92rem; }
+
+/* Situations grid */
+.situations { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 56px; }
+.situation-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius); padding: 18px 16px; text-align: center; color: var(--text-secondary); font-weight: 500; font-size: 0.95rem; }
+
+/* Plain body text */
+.body-text { max-width: 780px; margin: 0 auto 48px; }
+.body-text p { color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 20px; }
+
+/* FAQ */
+.faq-list { max-width: 780px; margin: 0 auto; }
+.faq-item { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius); margin-bottom: 16px; padding: 20px 24px; }
+.faq-item h3 { font-family: 'Merriweather', serif; font-size: 1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; }
+.faq-item p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8; }
+
+/* Final CTA */
+.final-cta { text-align: center; padding: 56px 24px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius); margin: 24px auto 48px; max-width: 900px; }
+.final-cta h2 { font-size: 1.6rem; color: var(--accent-green); margin-bottom: 12px; }
+.final-cta p { color: var(--text-secondary); margin-bottom: 24px; max-width: 540px; margin-left: auto; margin-right: auto; }
+
+/* Footer */
+.site-footer { background: var(--bg-nav); border-top: 1px solid var(--border-color); text-align: center; padding: 32px 24px; margin-top: auto; }
+.site-footer .tagline { font-family: 'Merriweather', serif; font-size: 1rem; color: var(--accent-green); margin-bottom: 8px; }
+.site-footer .copyright { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 16px; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 20px; font-size: 0.85rem; }
+.footer-links a { color: var(--text-secondary); }
+.footer-links a:hover { color: var(--accent-green); }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-toggle { display: flex; }
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0;
+    background: var(--bg-nav); border-bottom: 1px solid var(--border-color); padding: 12px 0; box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+  .nav-links.open { display: flex; }
+  .nav-links > li > a, .nav-links > li > button { padding: 12px 24px; width: 100%; justify-content: space-between; }
+  .dropdown { position: static; transform: none; box-shadow: none; border: none; background: rgba(255,255,255,0.03); border-radius: 0; padding-left: 24px; }
+  .lang-dropdown { max-height: 300px; }
+  li.open > .dropdown { animation: none; }
+  .hero { padding: 40px 16px 24px; }
+  .hero h1 { font-size: 1.75rem; }
+  main { padding: 32px 16px; }
+  .features { grid-template-columns: 1fr; }
+}
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-40YHRYKQE3"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-40YHRYKQE3');</script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.lingofonex.com/#organization",
+      "name": "Lingofonex",
+      "url": "https://www.lingofonex.com/",
+      "logo": "https://www.lingofonex.com/images/Lingofonex_Logo-Medium.png"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.lingofonex.com/#website",
+      "url": "https://www.lingofonex.com/",
+      "name": "Lingofonex",
+      "publisher": { "@id": "https://www.lingofonex.com/#organization" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.lingofonex.com/pakt/#webpage",
+      "url": "https://www.lingofonex.com/pakt/",
+      "name": "Pakt — Offline Voice Translator for Travel",
+      "isPartOf": { "@id": "https://www.lingofonex.com/#website" },
+      "about": { "@id": "https://www.lingofonex.com/#app" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://www.lingofonex.com/#app",
+      "name": "Pakt",
+      "alternateName": "Pakt by Lingofonex",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "iOS, Android",
+      "publisher": { "@id": "https://www.lingofonex.com/#organization" },
+      "url": "https://www.lingofonex.com/pakt/",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.lingofonex.com/pakt/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.lingofonex.com/home/en.html" },
+        { "@type": "ListItem", "position": 2, "name": "Pakt", "item": "https://www.lingofonex.com/pakt/" }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="site-nav"><div class="nav-inner">
+  <a href="../home/en.html" class="nav-brand"><img src="../images/Lingofonex_Logo-Medium.png" alt="Pakt by Lingofonex" class="nav-logo" width="512" height="104" decoding="async"></a>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="../home/en.html">Home</a></li>
+    <li><a href="/pakt/" class="active">Pakt</a></li>
+    <li><a href="../download/en.html">Download</a></li>
+    <li><a href="../demo/en.html">Demo</a></li>
+    <li><a href="../faq/en.html">FAQ</a></li>
+    <li><a href="../privacy-policy/en.html">Privacy</a></li>
+    <li><a href="../eula/en.html">EULA</a></li>
+    <li><a href="../contact/en.html">Contact</a></li>
+  </ul>
+</div></nav>
+
+<section class="hero">
+  <span class="eyebrow">Pakt by Lingofonex</span>
+  <h1>Pakt — Offline Voice Translator for Travel</h1>
+  <p>Translate in 100 languages and hear voice output in 49 — private, offline, and built for travel when WiFi, roaming, or signal fails.</p>
+  <div class="cta-row">
+    <a href="../download/en.html" class="btn btn-primary">Download Pakt</a>
+    <a href="../demo/en.html" class="btn btn-secondary">See how it works</a>
+  </div>
+</section>
+
+<div class="trust-row">
+  <span class="chip">Works offline</span>
+  <span class="chip">100 languages</span>
+  <span class="chip">Voice output in 49</span>
+  <span class="chip">Private by design</span>
+  <span class="chip">No cloud required</span>
+  <span class="chip">Built for travel</span>
+</div>
+
+<main>
+
+  <section class="body-text">
+    <h2 class="section-title">Built for the moments translation usually fails</h2>
+    <p>Travel translation often fails at the exact moment you need it: after landing, inside a taxi, at a restaurant, in a hotel, or when roaming is off. Pakt is designed for those moments.</p>
+  </section>
+
+  <h2 class="section-title">What Pakt does</h2>
+  <div class="features">
+    <div class="feature-card">
+      <h3>Offline voice translation</h3>
+      <p>Speak, translate, and hear results back without relying on a live connection.</p>
+    </div>
+    <div class="feature-card">
+      <h3>100-language translation support</h3>
+      <p>Use Pakt across 100 languages for travel, work, and everyday communication.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Voice output in 49 languages</h3>
+      <p>Hear translated speech out loud when text on screen is not enough.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Private by design</h3>
+      <p>Translations run locally on your phone. No cloud required.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Built for travel</h3>
+      <p>Use it in taxis, hotels, restaurants, airports, pharmacies, and train stations.</p>
+    </div>
+    <div class="feature-card">
+      <h3>No account needed</h3>
+      <p>Open the app and translate without unnecessary setup.</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">How it works</h2>
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <h3>Download before your trip</h3>
+      <p>Install Pakt and pick up the language packs you will need.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <h3>Choose your languages</h3>
+      <p>Set a primary pair and any additional languages for your trip.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <h3>Translate offline</h3>
+      <p>Speak, type, or scan text — Pakt translates on-device when connection fails.</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Where Pakt helps on the road</h2>
+  <div class="situations">
+    <div class="situation-card">Taxis</div>
+    <div class="situation-card">Hotels</div>
+    <div class="situation-card">Restaurants</div>
+    <div class="situation-card">Airports</div>
+    <div class="situation-card">Pharmacies</div>
+    <div class="situation-card">Train stations</div>
+    <div class="situation-card">Markets</div>
+  </div>
+
+  <section class="body-text">
+    <h2 class="section-title">Private offline translation</h2>
+    <p>Pakt is built for private offline translation. Translations run locally on your phone, so you can communicate without sending conversations to a cloud translation service. Learn more in the <a href="../privacy-policy/en.html">Privacy Policy</a>.</p>
+  </section>
+
+  <h2 class="section-title">Frequently asked questions</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3>Does Pakt work without internet?</h3>
+      <p>Yes. Pakt is designed for offline translation when WiFi, roaming, or mobile signal is unavailable.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can Pakt translate voice offline?</h3>
+      <p>Pakt supports offline speech translation workflows, including translation and voice output, depending on the selected language.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How many languages does Pakt support?</h3>
+      <p>Pakt supports translation in 100 languages.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How many languages have voice output?</h3>
+      <p>Pakt supports voice output in 49 languages.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is Pakt useful while traveling?</h3>
+      <p>Yes. Pakt is designed for travel situations such as taxis, hotels, restaurants, airports, pharmacies, and train stations.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is Pakt private?</h3>
+      <p>Pakt is built around local/offline translation and does not require cloud translation for its core offline use case.</p>
+    </div>
+  </div>
+
+  <section class="final-cta">
+    <h2>Download Pakt before your next trip</h2>
+    <p>Translate offline when connection is not available.</p>
+    <a href="../download/en.html" class="btn btn-primary">Download Pakt</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="tagline">Travel with a translator that works offline.</p>
+  <p class="copyright">&copy; 2026 Lingofonex. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="../home/en.html">Home</a>
+    <a href="/pakt/">Pakt</a>
+    <a href="../download/en.html">Download</a>
+    <a href="../demo/en.html">Demo</a>
+    <a href="../faq/en.html">FAQ</a>
+    <a href="../privacy-policy/en.html">Privacy</a>
+    <a href="../eula/en.html">EULA</a>
+    <a href="../contact/en.html">Contact</a>
+  </div>
+</footer>
+
+<script src="../js/nav.js"></script>
+</body>
+</html>
