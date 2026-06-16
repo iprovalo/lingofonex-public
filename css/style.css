@@ -1,5 +1,8 @@
 /* ===== Lingofonex Global Styles ===== */
 
+/* Commercial Type — Caslon Ionic Regular (License 2606-JYMIXW). */
+@import url("fonts/caslon-ionic/fonts.css");
+
 :root {
   --bg-primary: #1c1c1c;
   --bg-secondary: #242424;
