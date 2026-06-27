@@ -4864,7 +4864,7 @@ body:not(.page-component-parity) #comparison .compare-table .pakt-col::after {
 body:not(.page-component-parity) .why-matters {
   width: 100%;
   max-width: none;
-  padding: 42px max(30px, calc((100vw - var(--pakt-content)) / 2)) 48px;
+  padding: 34px max(30px, calc((100vw - var(--pakt-content)) / 2)) 22px;
   text-align: left;
 }
 
@@ -4882,7 +4882,7 @@ body:not(.page-component-parity) .why-title-mobile-break {
 body:not(.page-component-parity) .why-matters-grid {
   display: grid;
   max-width: var(--pakt-content);
-  margin: 48px auto 0;
+  margin: 38px auto 0;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: 88px;
 }
@@ -5173,7 +5173,7 @@ body:not(.page-component-parity) .final-cta-visuals {
     max-width: 1854px;
     height: clamp(330px, 19.3vw, 374px);
     min-height: clamp(330px, 19.3vw, 374px);
-    margin: 76px auto;
+    margin: 48px auto 76px;
     padding: 0;
     border: 0;
     border-radius: 18px;
@@ -5803,7 +5803,7 @@ body:not(.page-component-parity) #explore-more > .scroll-pin {
 }
 
 body:not(.page-component-parity) .explore-more .explore-pin {
-  padding: 48px max(24px, calc((100vw - var(--pakt-content)) / 2)) 50px;
+  padding: 34px max(24px, calc((100vw - var(--pakt-content)) / 2)) 38px;
   overflow: visible;
 }
 
@@ -5824,7 +5824,7 @@ body:not(.page-component-parity) .explore-more .section-lede {
 body:not(.page-component-parity) .related-rail {
   width: max-content;
   max-width: 100%;
-  margin-top: 93px;
+  margin-top: 36px;
   margin-right: auto;
   margin-left: auto;
   overflow: visible;
@@ -5846,7 +5846,7 @@ body:not(.page-component-parity) .explore-more .related-card {
   display: flex;
   flex: 0 0 127px;
   width: 127px;
-  min-height: 237px;
+  min-height: 196px;
   flex-direction: column;
   align-items: flex-start;
   padding: 17px 14px 16px;
