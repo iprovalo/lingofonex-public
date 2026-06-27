@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T04:01:37.531Z",
+  "generatedAt": "2026-06-27T04:25:04.729Z",
   "errors": [],
   "warnings": [
     "pakt-explore-icon-airplane.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
@@ -22,7 +22,8 @@
     "pakt-scenario-icon-pharmacies.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
     "pakt-scenario-icon-restaurants.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
     "pakt-scenario-icon-stations.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-scenario-icon-taxis.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass"
+    "pakt-scenario-icon-taxis.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
+    "pakt-why-icon-shield.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass"
   ],
   "assets": [
     {
@@ -857,6 +858,19 @@
       "imageExists": true,
       "handoffExists": true,
       "sha256": "077f8346d7825a4b7acba661daa869fdcb46209ce44f49b297110ee79a54d377",
+      "handoffMatchesImage": true,
+      "figmaAssetUrl": null,
+      "figmaNodeId": null
+    },
+    {
+      "asset": "pakt-why-icon-shield.svg",
+      "status": "figma-handoff-svg",
+      "usedBy": [
+        "css/pakt-stage2.css"
+      ],
+      "imageExists": true,
+      "handoffExists": true,
+      "sha256": "f5485bcde03b7ff53b5f1dbebb8c0020be123d1e2d7528ff47f518fe57395cd3",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
       "figmaNodeId": null

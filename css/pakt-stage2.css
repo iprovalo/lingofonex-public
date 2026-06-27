@@ -4861,6 +4861,69 @@ body:not(.page-component-parity) #comparison .compare-table .pakt-col::after {
   background: url("/images/pakt-icon-check-orange.svg") center / contain no-repeat;
 }
 
+body:not(.page-component-parity) .why-matters {
+  width: 100%;
+  max-width: none;
+  padding: 42px max(30px, calc((100vw - var(--pakt-content)) / 2)) 48px;
+  text-align: left;
+}
+
+body:not(.page-component-parity) .why-matters .section-title {
+  max-width: var(--pakt-content);
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 1.02;
+}
+
+body:not(.page-component-parity) .why-title-mobile-break {
+  display: none;
+}
+
+body:not(.page-component-parity) .why-matters-grid {
+  display: grid;
+  max-width: var(--pakt-content);
+  margin: 48px auto 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 88px;
+}
+
+body:not(.page-component-parity) .why-matters-item {
+  --why-icon: url("/images/pakt-icon-proof-no-wifi.svg");
+  min-width: 0;
+}
+
+body:not(.page-component-parity) .why-matters-item[data-why-icon="lock"] {
+  --why-icon: url("/images/pakt-feature-icon-private.svg");
+}
+
+body:not(.page-component-parity) .why-matters-item[data-why-icon="shield"] {
+  --why-icon: url("/images/pakt-why-icon-shield.svg");
+}
+
+body:not(.page-component-parity) .why-matters-icon {
+  display: block;
+  width: 23px;
+  height: 23px;
+  margin-bottom: 19px;
+  background: var(--pakt-black);
+  -webkit-mask: var(--why-icon) center / contain no-repeat;
+  mask: var(--why-icon) center / contain no-repeat;
+}
+
+body:not(.page-component-parity) .why-matters-copy {
+  max-width: 280px;
+}
+
+body:not(.page-component-parity) .why-matters-copy p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.14;
+}
+
+body:not(.page-component-parity) .why-matters-copy p + p {
+  margin-top: 19px;
+}
+
 body:not(.page-component-parity) .situation-slider {
   --situation-deck-width: min(980px, calc(100vw - 60px));
   --situation-deck-height: 500px;
@@ -5840,6 +5903,57 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
 }
 
 @media (max-width: 760px) {
+  body:not(.page-component-parity) .why-matters {
+    min-height: 632px;
+    padding: 54px 34px 90px;
+    text-align: center;
+  }
+
+  body:not(.page-component-parity) .why-matters .section-title {
+    max-width: 240px;
+    font-size: 18px;
+    line-height: 0.98;
+  }
+
+  body:not(.page-component-parity) .why-title-mobile-break {
+    display: block;
+  }
+
+  body:not(.page-component-parity) .why-matters-grid {
+    display: flex;
+    max-width: 295px;
+    margin-top: 43px;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+  }
+
+  body:not(.page-component-parity) .why-matters-item {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body:not(.page-component-parity) .why-matters-icon {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 15px;
+  }
+
+  body:not(.page-component-parity) .why-matters-copy {
+    max-width: 246px;
+  }
+
+  body:not(.page-component-parity) .why-matters-copy p {
+    font-size: 8px;
+    line-height: 1.12;
+  }
+
+  body:not(.page-component-parity) .why-matters-copy p + p {
+    margin-top: 12px;
+  }
+
   body:not(.page-component-parity) .explore-more {
     padding: 36px 0 38px;
   }

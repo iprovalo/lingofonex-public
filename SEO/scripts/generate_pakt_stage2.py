@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SITE = "https://www.lingofonex.com"
 STAGE2_LASTMOD = "2026-06-22"
-ASSET_VERSION = "public-fixes-54"
+ASSET_VERSION = "public-fixes-55"
 
 PLAY_STORE_URL = (
     "https://play.google.com/store/apps/details?id=com.lingofonex.android"
@@ -670,6 +670,30 @@ EXPLORE_MORE_CARDS = [
         "href": "/pakt/offline-translator-app/#offline-proof",
         "title": "Airplane Mode Translator",
         "icon": "airplane",
+    },
+]
+
+
+WHY_MATTERS_ITEMS = [
+    {
+        "icon": "connection",
+        "paragraphs": [
+            "Most translation apps work well until your connection disappears.",
+            "That usually happens at the worst possible moment: after landing, inside a taxi, at a train station, or while trying to explain something important.",
+        ],
+    },
+    {
+        "icon": "lock",
+        "paragraphs": [
+            "Pakt keeps working without WiFi, roaming, or mobile data.",
+            "Download your languages before you go and carry them with you anywhere you travel.",
+        ],
+    },
+    {
+        "icon": "shield",
+        "paragraphs": [
+            "For travelers, reliability often matters more than having the most advanced translation model. The best translator is the one that still works when the internet doesn't.",
+        ],
     },
 ]
 
@@ -1505,6 +1529,26 @@ def render_related(page: dict) -> str:
 </section>"""
 
 
+def render_why_matters() -> str:
+    cards = "\n".join(
+        f"""
+    <article class="why-matters-item" data-why-icon="{e(item["icon"])}">
+      <span class="why-matters-icon" aria-hidden="true"></span>
+      <div class="why-matters-copy">
+        {"".join(f"<p>{e(paragraph)}</p>" for paragraph in item["paragraphs"])}
+      </div>
+    </article>"""
+        for item in WHY_MATTERS_ITEMS
+    )
+    return f"""
+<section class="section why-matters" data-block="LongFormSEOText" aria-labelledby="why-matters-title">
+  <h2 id="why-matters-title" class="section-title">Why offline <br class="why-title-mobile-break">translation matters</h2>
+  <div class="why-matters-grid">
+{cards}
+  </div>
+</section>"""
+
+
 def render_final_cta(page: dict) -> str:
     body = page.get("final_cta_body", page["meta"])
     return f"""
@@ -1576,6 +1620,7 @@ def render_page(page: dict) -> str:
 <main id="content">
 {sections}
 {render_faq(page)}
+{render_why_matters()}
 {render_related(page)}
 </main>
 {render_final_cta(page)}

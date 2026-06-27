@@ -1,14 +1,14 @@
 # Pakt Asset Provenance Audit
 
-Generated: 2026-06-27T04:01:37.528Z
+Generated: 2026-06-27T04:25:04.727Z
 
 ## Summary
 
-- Referenced Pakt assets: 63
+- Referenced Pakt assets: 64
 - Live Figma MCP SVG exports fetched in this pass: 7
-- Assets mirrored in handoff package: 63
+- Assets mirrored in handoff package: 64
 - Errors: 0
-- Warnings: 21
+- Warnings: 22
 
 ## Live Figma MCP Exports
 
@@ -86,6 +86,7 @@ Generated: 2026-06-27T04:01:37.528Z
 | `pakt-store-hero-desktop-google-parity.png` | figma-section-parity-export | `67b9a3c9acb77025ee79c7ce240456529bc564fd1892362756dbcd91c5eff18b` | `css/pakt-stage2.css` |
 | `pakt-store-hero-mobile-apple-parity.png` | figma-section-parity-export | `cf5dfe11c0280f27760643c0c743852109533ad3e56e976b78e4e33852cd2ed4` | `css/pakt-stage2.css` |
 | `pakt-store-hero-mobile-google-parity.png` | figma-section-parity-export | `077f8346d7825a4b7acba661daa869fdcb46209ce44f49b297110ee79a54d377` | `css/pakt-stage2.css` |
+| `pakt-why-icon-shield.svg` | figma-handoff-svg | `f5485bcde03b7ff53b5f1dbebb8c0020be123d1e2d7528ff47f518fe57395cd3` | `css/pakt-stage2.css` |
 | `pakt-wordmark-white.png` | figma-handoff-raster | `b0069685a16393dd89919c9b8d85614caf63183d42939cbfdeb416015e64b48d` | `css/pakt-stage2.css`<br>`pakt/best-offline-translator-app/index.html`<br>`pakt/component-parity/index.html`<br>`pakt/component-showcase/index.html`<br>`pakt/index.html`<br>`pakt/offline-translator-app/index.html`<br>`pakt/offline-translator-for-travel/index.html`<br>`pakt/voice-speech-translator/index.html` |
 
 ## Warnings
@@ -111,6 +112,7 @@ Generated: 2026-06-27T04:01:37.528Z
 - pakt-scenario-icon-restaurants.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
 - pakt-scenario-icon-stations.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
 - pakt-scenario-icon-taxis.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
+- pakt-why-icon-shield.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
 
 ## Errors
 
