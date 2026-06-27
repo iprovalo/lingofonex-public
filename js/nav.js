@@ -511,14 +511,19 @@
       var cards = Array.prototype.slice.call(slider.querySelectorAll('.related-card'));
       var resizeTimer = null;
       var overflow = 0;
+      var stepDistance = 0;
+      var stepCount = 0;
+      var stepInset = 0;
 
       if (!section || !rail || cards.length < 2) return;
 
       function updateHiddenCards() {
         var railRect = rail.getBoundingClientRect();
+        var railStyles = window.getComputedStyle(rail);
+        var visibleLeft = railRect.left + (parseFloat(railStyles.paddingLeft) || 0);
         cards.forEach(function (card) {
           var rect = card.getBoundingClientRect();
-          var hidden = rect.right < railRect.left || rect.left > railRect.right;
+          var hidden = rect.right <= visibleLeft || rect.left >= railRect.right;
           card.setAttribute('aria-hidden', hidden ? 'true' : 'false');
         });
       }
@@ -526,6 +531,10 @@
       function render() {
         var progress = animationProgressFor(section);
         var offset = overflow * progress;
+        if (stepCount > 0) {
+          var step = Math.round(progress * stepCount);
+          offset = step === 0 ? 0 : (step * stepDistance) + stepInset;
+        }
         slider.style.transform = 'translate3d(' + (-offset) + 'px, 0, 0)';
         updateHiddenCards();
       }
@@ -534,6 +543,17 @@
         var railStyles = window.getComputedStyle(rail);
         var railLeftPadding = parseFloat(railStyles.paddingLeft) || 0;
         overflow = Math.max(0, slider.scrollWidth - rail.clientWidth + railLeftPadding);
+        var firstCard = cards[0];
+        var secondCard = cards[1];
+        if (firstCard && secondCard) {
+          stepDistance = Math.max(1, secondCard.offsetLeft - firstCard.offsetLeft);
+          stepCount = Math.max(0, Math.round(overflow / stepDistance));
+          stepInset = Math.max(0, railLeftPadding - Math.max(0, stepDistance - firstCard.offsetWidth));
+        } else {
+          stepDistance = 0;
+          stepCount = 0;
+          stepInset = 0;
+        }
         render();
       }
 

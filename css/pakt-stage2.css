@@ -5975,7 +5975,7 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
   }
 
   body:not(.page-component-parity) .explore-more {
-    --pin-scroll: 105vh;
+    --pin-scroll: 96vh;
     padding: 0;
   }
 
@@ -5989,58 +5989,64 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
   }
 
   body:not(.page-component-parity) .explore-more .explore-pin {
-    padding: 36px 0 38px;
+    display: flex;
+    min-height: calc(100vh - var(--pin-top));
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 0 62px;
     overflow: hidden;
   }
 
   body:not(.page-component-parity) .explore-more .section-title {
     width: calc(100% - 40px);
     margin: 0 auto;
-    font-size: 22px;
+    font-size: 30px;
   }
 
   body:not(.page-component-parity) .explore-more .section-lede {
     width: calc(100% - 40px);
-    max-width: 172px;
-    margin-top: 7px;
-    font-size: 8px;
-    line-height: 1.14;
+    max-width: 230px;
+    margin-top: 9px;
+    font-size: 11px;
+    line-height: 1.12;
   }
 
   body:not(.page-component-parity) .related-rail {
-    width: min(100%, 402px);
+    box-sizing: border-box;
+    width: 100vw;
     max-width: none;
-    margin: 31px auto 0;
+    margin: 44px auto 0;
     overflow: hidden;
-    padding-left: 16px;
-    padding-right: 0;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   body:not(.page-component-parity) .explore-more .related-grid {
     justify-content: flex-start;
-    gap: 8px;
+    gap: 10px;
     margin: 0;
-    padding-right: 16px;
+    padding-right: 24px;
   }
 
   body:not(.page-component-parity) .explore-more .related-card {
-    flex-basis: 160px;
-    width: 160px;
-    min-height: 132px;
-    padding: 12px 10px 10px;
+    flex-basis: clamp(176px, 42vw, 224px);
+    width: clamp(176px, 42vw, 224px);
+    min-height: clamp(148px, 32vw, 172px);
+    padding: 15px 12px 12px;
     border-radius: 6px;
   }
 
   body:not(.page-component-parity) .explore-more .related-card-icon {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
   }
 
   body:not(.page-component-parity) .explore-more .related-card-title {
-    max-width: 96px;
-    margin-top: 26px;
-    font-size: 10px;
-    line-height: 1.05;
+    max-width: 122px;
+    margin-top: 34px;
+    font-size: 12px;
+    line-height: 1.08;
   }
 
   body:not(.page-component-parity) .explore-more .related-card-plus {
