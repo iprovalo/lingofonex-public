@@ -5720,3 +5720,188 @@ body[class^="page-"] {
     font-size: 16px;
   }
 }
+
+body:not(.page-component-parity) .explore-more {
+  width: 100%;
+  max-width: none;
+  padding: 48px max(24px, calc((100vw - var(--pakt-content)) / 2)) 50px;
+  overflow: hidden;
+  text-align: center;
+}
+
+body:not(.page-component-parity) .explore-more .section-title {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1;
+}
+
+body:not(.page-component-parity) .explore-more .section-lede {
+  max-width: 230px;
+  margin: 12px auto 0;
+  color: var(--pakt-black);
+  font-size: 12px;
+  line-height: 1.13;
+}
+
+body:not(.page-component-parity) .related-rail {
+  margin-top: 93px;
+  overflow: visible;
+}
+
+body:not(.page-component-parity) .explore-more .related-grid {
+  display: flex;
+  width: max-content;
+  max-width: none;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 auto;
+}
+
+body:not(.page-component-parity) .explore-more .related-card {
+  --explore-icon: url("/images/pakt-explore-icon-phone.svg");
+  position: relative;
+  display: flex;
+  flex: 0 0 127px;
+  width: 127px;
+  min-height: 237px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 17px 14px 16px;
+  border: 1px solid var(--pakt-black);
+  border-radius: 7px;
+  background: transparent;
+  color: var(--pakt-black);
+  text-align: left;
+  text-decoration: none;
+}
+
+body:not(.page-component-parity) .explore-more .related-card[data-explore-icon="voice"] {
+  --explore-icon: url("/images/pakt-explore-icon-voice.svg");
+}
+
+body:not(.page-component-parity) .explore-more .related-card[data-explore-icon="suitcase"] {
+  --explore-icon: url("/images/pakt-explore-icon-suitcase.svg");
+}
+
+body:not(.page-component-parity) .explore-more .related-card[data-explore-icon="flag"] {
+  --explore-icon: url("/images/pakt-explore-icon-flag.svg");
+}
+
+body:not(.page-component-parity) .explore-more .related-card[data-explore-icon="airplane"] {
+  --explore-icon: url("/images/pakt-explore-icon-airplane.svg");
+}
+
+body:not(.page-component-parity) .explore-more .related-card-icon {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: var(--pakt-black);
+  -webkit-mask: var(--explore-icon) center / contain no-repeat;
+  mask: var(--explore-icon) center / contain no-repeat;
+}
+
+body:not(.page-component-parity) .explore-more .related-card-title {
+  display: block;
+  max-width: 82px;
+  margin-top: 27px;
+  font-size: 12px;
+  line-height: 1.08;
+}
+
+body:not(.page-component-parity) .explore-more .related-card-plus {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 14px;
+  height: 14px;
+}
+
+body:not(.page-component-parity) .explore-more .related-card-plus::before,
+body:not(.page-component-parity) .explore-more .related-card-plus::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 1.5px;
+  background: var(--pakt-black);
+  transform: translate(-50%, -50%);
+}
+
+body:not(.page-component-parity) .explore-more .related-card-plus::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+body:not(.page-component-parity) .explore-more .related-card:hover,
+body:not(.page-component-parity) .explore-more .related-card:focus-visible {
+  border-color: var(--pakt-black);
+  outline: 0;
+  box-shadow: none;
+}
+
+@media (max-width: 760px) {
+  body:not(.page-component-parity) .explore-more {
+    padding: 36px 0 38px;
+  }
+
+  body:not(.page-component-parity) .explore-more .section-title {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    font-size: 22px;
+  }
+
+  body:not(.page-component-parity) .explore-more .section-lede {
+    width: calc(100% - 40px);
+    max-width: 172px;
+    margin-top: 7px;
+    font-size: 8px;
+    line-height: 1.14;
+  }
+
+  body:not(.page-component-parity) .related-rail {
+    width: min(100%, 402px);
+    margin: 31px auto 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 16px;
+    padding-right: 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  body:not(.page-component-parity) .related-rail::-webkit-scrollbar {
+    display: none;
+  }
+
+  body:not(.page-component-parity) .explore-more .related-grid {
+    justify-content: flex-start;
+    gap: 8px;
+    margin: 0;
+    padding-right: 16px;
+  }
+
+  body:not(.page-component-parity) .explore-more .related-card {
+    flex-basis: 160px;
+    width: 160px;
+    min-height: 132px;
+    padding: 12px 10px 10px;
+    border-radius: 6px;
+  }
+
+  body:not(.page-component-parity) .explore-more .related-card-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  body:not(.page-component-parity) .explore-more .related-card-title {
+    max-width: 96px;
+    margin-top: 26px;
+    font-size: 10px;
+    line-height: 1.05;
+  }
+
+  body:not(.page-component-parity) .explore-more .related-card-plus {
+    right: 7px;
+    bottom: 7px;
+  }
+}

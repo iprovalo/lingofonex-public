@@ -1,14 +1,14 @@
 # Pakt Asset Provenance Audit
 
-Generated: 2026-06-27T03:35:10.923Z
+Generated: 2026-06-27T04:01:37.528Z
 
 ## Summary
 
-- Referenced Pakt assets: 58
+- Referenced Pakt assets: 63
 - Live Figma MCP SVG exports fetched in this pass: 7
-- Assets mirrored in handoff package: 58
+- Assets mirrored in handoff package: 63
 - Errors: 0
-- Warnings: 16
+- Warnings: 21
 
 ## Live Figma MCP Exports
 
@@ -28,6 +28,11 @@ Generated: 2026-06-27T03:35:10.923Z
 | `pakt-conversation-card-mobile-parity.png` | figma-section-parity-export | `1ad390b83608ffe453d533312ce5604436103500e72fd7539a292380f3023c43` | `css/pakt-stage2.css` |
 | `pakt-destination-japan-mobile.png` | figma-destination-module-image | `4e1ed5ff0a378080aa4f91e2bbd93fe5cef67445b3abe53f56c85e46e7620fb5` | `css/pakt-stage2.css` |
 | `pakt-destination-japan.png` | figma-destination-module-image | `7f2faed076486b917a5ff3b443945890f2576a6120ec994719221653c493675d` | `pakt/component-parity/index.html`<br>`pakt/component-showcase/index.html`<br>`pakt/offline-translator-app/index.html` |
+| `pakt-explore-icon-airplane.svg` | figma-handoff-svg | `35c0e43dc8c7985e1cc96ba545902c0659d6ab0f9d56b4874036a8e985b1e824` | `css/pakt-stage2.css` |
+| `pakt-explore-icon-flag.svg` | figma-handoff-svg | `df253906639ed2b1f52db5963108df2a71d3970776af1dfbbc404e9fc614f35f` | `css/pakt-stage2.css` |
+| `pakt-explore-icon-phone.svg` | figma-handoff-svg | `e7db43aad1be17d1ef2994fe4b1f8d2c8f00e9b19a76ca47129334ac5e12069c` | `css/pakt-stage2.css` |
+| `pakt-explore-icon-suitcase.svg` | figma-handoff-svg | `0e4ba411fd2a481f93c390d8e909605a572e60bdf2af5a60e2b4a8dec7dea7b5` | `css/pakt-stage2.css` |
+| `pakt-explore-icon-voice.svg` | figma-handoff-svg | `7706cc64d22f2ae97344e1d8c486bdf95910dd4c8f753b0aeb146267089fcc04` | `css/pakt-stage2.css` |
 | `pakt-feature-icon-cloud.svg` | live-figma-mcp-export | `9dec13568386b547e622d133164b8dd83050a8c8464758224097b407e588bfd8` | `css/pakt-stage2.css` |
 | `pakt-feature-icon-language.svg` | live-figma-mcp-export | `b8bac6a5ed9b5a6c8fb793d927d0b15a1dc3846d62396071f2ab554bd7a48133` | `css/pakt-stage2.css` |
 | `pakt-feature-icon-offline.svg` | live-figma-mcp-export | `074a84f06b427425a106a215e768ab229d1142e205784af03c5f0a5a8638170f` | `css/pakt-stage2.css` |
@@ -85,6 +90,11 @@ Generated: 2026-06-27T03:35:10.923Z
 
 ## Warnings
 
+- pakt-explore-icon-airplane.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
+- pakt-explore-icon-flag.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
+- pakt-explore-icon-phone.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
+- pakt-explore-icon-suitcase.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
+- pakt-explore-icon-voice.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
 - pakt-icon-check-empty.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
 - pakt-icon-check-orange.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
 - pakt-icon-close.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass

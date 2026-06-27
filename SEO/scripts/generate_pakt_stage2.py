@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SITE = "https://www.lingofonex.com"
 STAGE2_LASTMOD = "2026-06-22"
-ASSET_VERSION = "public-fixes-53"
+ASSET_VERSION = "public-fixes-54"
 
 PLAY_STORE_URL = (
     "https://play.google.com/store/apps/details?id=com.lingofonex.android"
@@ -645,30 +645,33 @@ PAGES = [
 ]
 
 
-def related_pages(current_slug: str) -> list[dict[str, str]]:
-    related = [
-        {
-            "slug": "offline-translator-app",
-            "title": "Offline Translator App",
-            "text": "Understand the core offline translation category and how Pakt fits travel use.",
-        },
-        {
-            "slug": "offline-translator-for-travel",
-            "title": "Offline Translator for Travel",
-            "text": "Prepare Pakt before departure and use it abroad when connection fails.",
-        },
-        {
-            "slug": "voice-speech-translator",
-            "title": "Voice & Speech Translator",
-            "text": "Use voice output for taxis, hotels, restaurants, stations, and more.",
-        },
-        {
-            "slug": "best-offline-translator-app",
-            "title": "Best Offline Translator App",
-            "text": "Compare offline translator apps by travel readiness, privacy, and voice output.",
-        },
-    ]
-    return [item for item in related if item["slug"] != current_slug]
+EXPLORE_MORE_CARDS = [
+    {
+        "href": "/pakt/offline-translator-app/",
+        "title": "Offline Translator App",
+        "icon": "phone",
+    },
+    {
+        "href": "/pakt/voice-speech-translator/",
+        "title": "Voice Translator",
+        "icon": "voice",
+    },
+    {
+        "href": "/pakt/offline-translator-for-travel/",
+        "title": "Travel Translator",
+        "icon": "suitcase",
+    },
+    {
+        "href": "/pakt/offline-translator-app/#destination-mini-title",
+        "title": "Japan Travel Translator",
+        "icon": "flag",
+    },
+    {
+        "href": "/pakt/offline-translator-app/#offline-proof",
+        "title": "Airplane Mode Translator",
+        "icon": "airplane",
+    },
+]
 
 
 SHOWCASE_PAGE = {
@@ -1483,22 +1486,21 @@ def render_faq(page: dict) -> str:
 def render_related(page: dict) -> str:
     cards = "\n".join(
         f"""
-    <a class="related-card" href="/pakt/{e(item["slug"])}/">
-      <h3>{e(item["title"])}</h3>
-      <p>{e(item["text"])}</p>
+    <a class="related-card" href="{e(item["href"])}" data-explore-icon="{e(item["icon"])}">
+      <span class="related-card-icon" aria-hidden="true"></span>
+      <span class="related-card-title">{e(item["title"])}</span>
+      <span class="related-card-plus" aria-hidden="true"></span>
     </a>"""
-        for item in related_pages(page["slug"])
+        for item in EXPLORE_MORE_CARDS
     )
     return f"""
-<section class="section" data-block="RelatedPagesGrid">
-  <p class="section-kicker">Related pages</p>
-  <h2 class="section-title">Keep planning offline translation.</h2>
-  <div class="related-grid">
+<section class="section explore-more" data-block="RelatedPagesGrid" aria-labelledby="explore-more-title">
+  <h2 id="explore-more-title" class="section-title">Explore more</h2>
+  <p class="section-lede">More tools for smoother travel<br>and better conversations.</p>
+  <div class="related-rail" aria-label="Explore more Pakt tools">
+    <div class="related-grid">
 {cards}
-    <a class="related-card" href="/pakt/">
-      <h3>Pakt Product Hub</h3>
-      <p>Return to the main Pakt overview and download path.</p>
-    </a>
+    </div>
   </div>
 </section>"""
 

@@ -1,7 +1,12 @@
 {
-  "generatedAt": "2026-06-27T03:35:10.925Z",
+  "generatedAt": "2026-06-27T04:01:37.531Z",
   "errors": [],
   "warnings": [
+    "pakt-explore-icon-airplane.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
+    "pakt-explore-icon-flag.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
+    "pakt-explore-icon-phone.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
+    "pakt-explore-icon-suitcase.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
+    "pakt-explore-icon-voice.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
     "pakt-icon-check-empty.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
     "pakt-icon-check-orange.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
     "pakt-icon-close.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
@@ -70,6 +75,71 @@
       "imageExists": true,
       "handoffExists": true,
       "sha256": "7f2faed076486b917a5ff3b443945890f2576a6120ec994719221653c493675d",
+      "handoffMatchesImage": true,
+      "figmaAssetUrl": null,
+      "figmaNodeId": null
+    },
+    {
+      "asset": "pakt-explore-icon-airplane.svg",
+      "status": "figma-handoff-svg",
+      "usedBy": [
+        "css/pakt-stage2.css"
+      ],
+      "imageExists": true,
+      "handoffExists": true,
+      "sha256": "35c0e43dc8c7985e1cc96ba545902c0659d6ab0f9d56b4874036a8e985b1e824",
+      "handoffMatchesImage": true,
+      "figmaAssetUrl": null,
+      "figmaNodeId": null
+    },
+    {
+      "asset": "pakt-explore-icon-flag.svg",
+      "status": "figma-handoff-svg",
+      "usedBy": [
+        "css/pakt-stage2.css"
+      ],
+      "imageExists": true,
+      "handoffExists": true,
+      "sha256": "df253906639ed2b1f52db5963108df2a71d3970776af1dfbbc404e9fc614f35f",
+      "handoffMatchesImage": true,
+      "figmaAssetUrl": null,
+      "figmaNodeId": null
+    },
+    {
+      "asset": "pakt-explore-icon-phone.svg",
+      "status": "figma-handoff-svg",
+      "usedBy": [
+        "css/pakt-stage2.css"
+      ],
+      "imageExists": true,
+      "handoffExists": true,
+      "sha256": "e7db43aad1be17d1ef2994fe4b1f8d2c8f00e9b19a76ca47129334ac5e12069c",
+      "handoffMatchesImage": true,
+      "figmaAssetUrl": null,
+      "figmaNodeId": null
+    },
+    {
+      "asset": "pakt-explore-icon-suitcase.svg",
+      "status": "figma-handoff-svg",
+      "usedBy": [
+        "css/pakt-stage2.css"
+      ],
+      "imageExists": true,
+      "handoffExists": true,
+      "sha256": "0e4ba411fd2a481f93c390d8e909605a572e60bdf2af5a60e2b4a8dec7dea7b5",
+      "handoffMatchesImage": true,
+      "figmaAssetUrl": null,
+      "figmaNodeId": null
+    },
+    {
+      "asset": "pakt-explore-icon-voice.svg",
+      "status": "figma-handoff-svg",
+      "usedBy": [
+        "css/pakt-stage2.css"
+      ],
+      "imageExists": true,
+      "handoffExists": true,
+      "sha256": "7706cc64d22f2ae97344e1d8c486bdf95910dd4c8f753b0aeb146267089fcc04",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
       "figmaNodeId": null
