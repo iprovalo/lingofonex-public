@@ -5793,9 +5793,18 @@ body:not(.page-component-parity) .explore-more {
   text-align: center;
 }
 
+body:not(.page-component-parity) #explore-more.scroll-section {
+  min-height: auto;
+}
+
+body:not(.page-component-parity) #explore-more > .scroll-pin {
+  position: relative;
+  top: auto;
+}
+
 body:not(.page-component-parity) .explore-more .explore-pin {
   padding: 48px max(24px, calc((100vw - var(--pakt-content)) / 2)) 50px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 body:not(.page-component-parity) .explore-more .section-title {
@@ -5813,20 +5822,21 @@ body:not(.page-component-parity) .explore-more .section-lede {
 }
 
 body:not(.page-component-parity) .related-rail {
-  width: min(100%, 760px);
+  width: max-content;
+  max-width: 100%;
   margin-top: 93px;
   margin-right: auto;
   margin-left: auto;
-  overflow: hidden;
+  overflow: visible;
 }
 
 body:not(.page-component-parity) .explore-more .related-grid {
   display: flex;
   width: max-content;
   max-width: none;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 14px;
-  margin: 0;
+  margin: 0 auto;
   will-change: transform;
 }
 
@@ -5834,8 +5844,8 @@ body:not(.page-component-parity) .explore-more .related-card {
   --explore-icon: url("/images/pakt-explore-icon-phone.svg");
   position: relative;
   display: flex;
-  flex: 0 0 180px;
-  width: 180px;
+  flex: 0 0 127px;
+  width: 127px;
   min-height: 237px;
   flex-direction: column;
   align-items: flex-start;
@@ -5969,8 +5979,18 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
     padding: 0;
   }
 
+  body:not(.page-component-parity) #explore-more.scroll-section {
+    min-height: calc(100vh + var(--pin-scroll));
+  }
+
+  body:not(.page-component-parity) #explore-more > .scroll-pin {
+    position: sticky;
+    top: var(--pin-top);
+  }
+
   body:not(.page-component-parity) .explore-more .explore-pin {
     padding: 36px 0 38px;
+    overflow: hidden;
   }
 
   body:not(.page-component-parity) .explore-more .section-title {
@@ -5989,6 +6009,7 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
 
   body:not(.page-component-parity) .related-rail {
     width: min(100%, 402px);
+    max-width: none;
     margin: 31px auto 0;
     overflow: hidden;
     padding-left: 16px;

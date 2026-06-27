@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SITE = "https://www.lingofonex.com"
 STAGE2_LASTMOD = "2026-06-22"
-ASSET_VERSION = "public-fixes-56"
+ASSET_VERSION = "public-fixes-57"
 
 PLAY_STORE_URL = (
     "https://play.google.com/store/apps/details?id=com.lingofonex.android"
