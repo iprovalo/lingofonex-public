@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SITE = "https://www.lingofonex.com"
 STAGE2_LASTMOD = "2026-06-22"
-ASSET_VERSION = "public-fixes-52"
+ASSET_VERSION = "public-fixes-53"
 
 PLAY_STORE_URL = (
     "https://play.google.com/store/apps/details?id=com.lingofonex.android"
@@ -239,7 +239,7 @@ PAGES = [
             {
                 "type": "languages",
                 "kicker": "Language support",
-                "title": "Languages you can rely on.",
+                "title": "Languages you can rely on",
                 "lede": "Pakt supports translation in 100 languages and voice output in 49. Download what you need before the trip and test common phrases while connected.",
                 "stats": [
                     ("100", "translation languages"),
