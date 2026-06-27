@@ -1,0 +1,102 @@
+{
+  "updatedAt": "2026-06-19",
+  "source": {
+    "figmaFileKey": "04jJPedY2ouLBwKC3rTKjJ",
+    "nodeId": "667:9735",
+    "frameName": "MacBook Pro 14\" - 17",
+    "figmaUrl": "https://www.figma.com/design/04jJPedY2ouLBwKC3rTKjJ/Pakt?node-id=667-9735",
+    "providedFile": "/Users/dmit-mini/Downloads/MacBook Pro 14_ - 17.png",
+    "handoffScreenshot": "figma-screenshots/component-variants/privacy-conversation-destination-stack-desktop.png",
+    "liveBrowserViewport": "figma-screenshots/live-import/figma-live-macbook-pro-14-17-25pct-clean-viewport.jpg",
+    "liveBrowserCrop": "figma-screenshots/live-import/figma-live-macbook-pro-14-17-25pct-frame-crop.png",
+    "exportStatus": "live_browser_verified_direct_figma_export_blocked_by_mcp_rate_limit_and_in_app_download_limits",
+    "note": "Corrected block source. The prior TravelChecklist USP mapping was incorrect and has been removed. Direct connector export remains unavailable; live browser capture verifies the opened Figma frame."
+  },
+  "options": [
+    {
+      "component": "PrivacyBlock",
+      "option": "on_device_usp",
+      "aliases": [
+        "privacy_usp",
+        "no_cloud_proof",
+        "local_processing_proof"
+      ],
+      "references": {
+        "desktopScreenshot": "figma-screenshots/component-variants/privacy-block-on-device-usp-desktop.png",
+        "stackScreenshot": "figma-screenshots/component-variants/privacy-conversation-destination-stack-desktop.png",
+        "liveBrowserCrop": "figma-screenshots/live-import/figma-live-macbook-pro-14-17-25pct-frame-crop.png"
+      },
+      "purpose": "Use when the page needs a trust/USP block focused on local, on-device translation.",
+      "slots": {
+        "eyebrow": "string",
+        "heading": "string",
+        "body": "string",
+        "proof_label_optional": "string",
+        "visual_optional": "icon | image | structured visual",
+        "variant": "on_device_usp"
+      }
+    },
+    {
+      "component": "ConversationBlock",
+      "option": "two_language_cards",
+      "aliases": [
+        "conversation_cards",
+        "bilingual_input_cards",
+        "voice_chat_cards"
+      ],
+      "references": {
+        "desktopScreenshot": "figma-screenshots/component-variants/conversation-block-two-language-cards-desktop.png",
+        "stackScreenshot": "figma-screenshots/component-variants/privacy-conversation-destination-stack-desktop.png",
+        "liveBrowserCrop": "figma-screenshots/live-import/figma-live-macbook-pro-14-17-25pct-frame-crop.png"
+      },
+      "purpose": "Use when showing the speak-and-translate conversation interaction as two opposing language cards.",
+      "slots": {
+        "eyebrow": "string",
+        "heading": "string",
+        "body": "string",
+        "left_language": "string",
+        "right_language": "string",
+        "visual": "structured visual",
+        "variant": "two_language_cards"
+      }
+    },
+    {
+      "component": "DestinationModule",
+      "option": "image_cta_teaser",
+      "aliases": [
+        "destination_visual_cta",
+        "destination_travel_usp",
+        "destination_japan_teaser"
+      ],
+      "references": {
+        "desktopScreenshot": "figma-screenshots/component-variants/destination-module-image-cta-desktop.png",
+        "stackScreenshot": "figma-screenshots/component-variants/privacy-conversation-destination-stack-desktop.png",
+        "liveBrowserCrop": "figma-screenshots/live-import/figma-live-macbook-pro-14-17-25pct-frame-crop.png"
+      },
+      "purpose": "Use when a destination page or in-page teaser needs a destination-specific USP, CTA, and large travel image.",
+      "slots": {
+        "eyebrow": "string",
+        "heading": "string",
+        "destination": "string",
+        "language": "string",
+        "body": "string",
+        "cta": "object",
+        "visual_optional": "image",
+        "variant": "image_cta_teaser"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "PrivacyConversationDestinationStack",
+      "components": [
+        "PrivacyBlock",
+        "ConversationBlock",
+        "DestinationModule"
+      ],
+      "reference": "figma-screenshots/component-variants/privacy-conversation-destination-stack-desktop.png",
+      "liveBrowserReference": "figma-screenshots/live-import/figma-live-macbook-pro-14-17-25pct-frame-crop.png",
+      "usage": "Use as a section-order reference when these three blocks appear together under the fold."
+    }
+  ]
+}

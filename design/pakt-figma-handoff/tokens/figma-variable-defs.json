@@ -1,0 +1,78 @@
+{
+  "source": {
+    "fileKey": "04jJPedY2ouLBwKC3rTKjJ",
+    "nodeId": "325:7573",
+    "retrievedAt": "2026-06-18"
+  },
+  "colors": {
+    "Black": "#17171A",
+    "Orange": "#F1783C",
+    "White": "#FAF7EC",
+    "Blue": "#019FE8"
+  },
+  "typography": {
+    "38 H1 Mobile": {
+      "family": "Caslon Ionic",
+      "style": "Regular",
+      "size": 38,
+      "weight": 400,
+      "lineHeight": 1.05,
+      "letterSpacing": -1
+    },
+    "32 H2 Mobile": {
+      "family": "Caslon Ionic",
+      "style": "Regular",
+      "size": 32,
+      "weight": 400,
+      "lineHeight": 1.1,
+      "letterSpacing": 0
+    },
+    "20 Caslon": {
+      "family": "Caslon Ionic",
+      "style": "Regular",
+      "size": 20,
+      "weight": 400,
+      "lineHeight": 1.05,
+      "letterSpacing": 0
+    },
+    "20 Body": {
+      "family": "Geist",
+      "style": "Regular",
+      "size": 20,
+      "weight": 400,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    "14 Body Mobile": {
+      "family": "Geist",
+      "style": "Regular",
+      "size": 14,
+      "weight": 400,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    "14 Highlight Mobile (Medium)": {
+      "family": "Geist",
+      "style": "Medium",
+      "size": 14,
+      "weight": 500,
+      "lineHeight": 1.2,
+      "letterSpacing": 0
+    },
+    "10 Headline Mobile": {
+      "family": "Geist",
+      "style": "Medium",
+      "size": 10,
+      "weight": 500,
+      "lineHeight": 1.25,
+      "letterSpacing": 10
+    }
+  },
+  "other": {
+    "font family/Font 3": "Helvetica Neue",
+    "font weight/700": "700",
+    "font weight/400": "400",
+    "stroke weight/1": "1",
+    "opacity/100": "100"
+  }
+}

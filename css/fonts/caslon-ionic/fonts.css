@@ -17,6 +17,13 @@
 	font-style: normal;
 	}
 
+@font-face {
+	font-family: 'Caslon Ionic';
+	src: url('CaslonIonic-Regular-Web.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	}
+
 .CaslonIonic-Regular-Web {
 	font-family: 'Caslon Ionic Web';
 	font-weight: 400;

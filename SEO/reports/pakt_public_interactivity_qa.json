@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-06-27T02:00:50.299Z",
+  "base_url": "http://127.0.0.1:8765",
+  "passed": true,
+  "error_count": 0,
+  "warning_count": 0,
+  "results": [
+    {
+      "slug": "static-css",
+      "path": "css/pakt-stage2.css",
+      "viewport": "static",
+      "url": "/Users/dmit-mini/Documents/Codex/2026-06-17/mate-do-you-have-access-to/work/lingofonex-public/css/pakt-stage2.css",
+      "title": "Static CSS checks",
+      "screenshot": "",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "pakt-hub",
+      "path": "/pakt/",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8765/pakt/",
+      "title": "Pakt — Offline Voice Translator for Travel by Lingofonex",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/pakt-hub-desktop.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "pakt-hub",
+      "path": "/pakt/",
+      "viewport": "wide",
+      "url": "http://127.0.0.1:8765/pakt/",
+      "title": "Pakt — Offline Voice Translator for Travel by Lingofonex",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/pakt-hub-wide.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "pakt-hub",
+      "path": "/pakt/",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8765/pakt/",
+      "title": "Pakt — Offline Voice Translator for Travel by Lingofonex",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/pakt-hub-mobile.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "offline-translator-app",
+      "path": "/pakt/offline-translator-app/",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8765/pakt/offline-translator-app/",
+      "title": "Offline Translator App - Pakt by Lingofonex",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/offline-translator-app-desktop.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "offline-translator-app",
+      "path": "/pakt/offline-translator-app/",
+      "viewport": "wide",
+      "url": "http://127.0.0.1:8765/pakt/offline-translator-app/",
+      "title": "Offline Translator App - Pakt by Lingofonex",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/offline-translator-app-wide.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "offline-translator-app",
+      "path": "/pakt/offline-translator-app/",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8765/pakt/offline-translator-app/",
+      "title": "Offline Translator App - Pakt by Lingofonex",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/offline-translator-app-mobile.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "offline-translator-for-travel",
+      "path": "/pakt/offline-translator-for-travel/",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8765/pakt/offline-translator-for-travel/",
+      "title": "Offline Translator for Travel - Pakt by Lingofonex",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/offline-translator-for-travel-desktop.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "offline-translator-for-travel",
+      "path": "/pakt/offline-translator-for-travel/",
+      "viewport": "wide",
+      "url": "http://127.0.0.1:8765/pakt/offline-translator-for-travel/",
+      "title": "Offline Translator for Travel - Pakt by Lingofonex",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/offline-translator-for-travel-wide.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "offline-translator-for-travel",
+      "path": "/pakt/offline-translator-for-travel/",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8765/pakt/offline-translator-for-travel/",
+      "title": "Offline Translator for Travel - Pakt by Lingofonex",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/offline-translator-for-travel-mobile.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "voice-speech-translator",
+      "path": "/pakt/voice-speech-translator/",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8765/pakt/voice-speech-translator/",
+      "title": "Offline Voice & Speech Translator - Pakt",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/voice-speech-translator-desktop.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "voice-speech-translator",
+      "path": "/pakt/voice-speech-translator/",
+      "viewport": "wide",
+      "url": "http://127.0.0.1:8765/pakt/voice-speech-translator/",
+      "title": "Offline Voice & Speech Translator - Pakt",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/voice-speech-translator-wide.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "voice-speech-translator",
+      "path": "/pakt/voice-speech-translator/",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8765/pakt/voice-speech-translator/",
+      "title": "Offline Voice & Speech Translator - Pakt",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/voice-speech-translator-mobile.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "best-offline-translator-app",
+      "path": "/pakt/best-offline-translator-app/",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8765/pakt/best-offline-translator-app/",
+      "title": "Best Offline Translator App for Travel - Pakt Comparison",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/best-offline-translator-app-desktop.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "best-offline-translator-app",
+      "path": "/pakt/best-offline-translator-app/",
+      "viewport": "wide",
+      "url": "http://127.0.0.1:8765/pakt/best-offline-translator-app/",
+      "title": "Best Offline Translator App for Travel - Pakt Comparison",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/best-offline-translator-app-wide.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "best-offline-translator-app",
+      "path": "/pakt/best-offline-translator-app/",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8765/pakt/best-offline-translator-app/",
+      "title": "Best Offline Translator App for Travel - Pakt Comparison",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/best-offline-translator-app-mobile.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "component-showcase",
+      "path": "/pakt/component-showcase/",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8765/pakt/component-showcase/",
+      "title": "Pakt Component Showcase - Design Review",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/component-showcase-desktop.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "component-showcase",
+      "path": "/pakt/component-showcase/",
+      "viewport": "wide",
+      "url": "http://127.0.0.1:8765/pakt/component-showcase/",
+      "title": "Pakt Component Showcase - Design Review",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/component-showcase-wide.png",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "slug": "component-showcase",
+      "path": "/pakt/component-showcase/",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8765/pakt/component-showcase/",
+      "title": "Pakt Component Showcase - Design Review",
+      "screenshot": "SEO/reports/screenshots/public-interactivity/component-showcase-mobile.png",
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

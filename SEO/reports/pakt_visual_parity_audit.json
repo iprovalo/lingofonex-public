@@ -1,0 +1,538 @@
+{
+  "generated_at": "2026-06-21T15:04:48.910Z",
+  "base_url": "http://127.0.0.1:8765",
+  "page_path": "/pakt/offline-translator-app/",
+  "report_basename": "pakt_visual_parity_audit",
+  "screenshot_dir": "SEO/reports/screenshots/visual-parity",
+  "target_score": 0.98,
+  "average_score": 0.9510060778456131,
+  "mobile_average_score": 0.9319523949203474,
+  "desktop_average_score": 0.9717919137640846,
+  "pass_count": 2,
+  "comparable_count": 23,
+  "results": [
+    {
+      "id": "hero",
+      "label": "HeroProduct + HeaderNav + StoreCtaButtons + PhoneMockupShowcase",
+      "viewport": "desktop",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/desktop-sections/01-hero.png",
+      "actual": "SEO/reports/screenshots/visual-parity/desktop-hero.png",
+      "diff": "SEO/reports/screenshots/visual-parity/desktop-hero-diff.png",
+      "reference_size": {
+        "width": 1512,
+        "height": 980
+      },
+      "actual_size": {
+        "width": 1512,
+        "height": 980
+      },
+      "width_delta": 0,
+      "height_delta": 0,
+      "pixel_similarity": 0.9542442770759098,
+      "color_similarity": 0.9585095519689357,
+      "score": 0.9596729043469239
+    },
+    {
+      "id": "situation",
+      "label": "SituationBlock",
+      "viewport": "desktop",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/component-variants/situation-focus-desktop.png",
+      "actual": "SEO/reports/screenshots/visual-parity/desktop-situation.png",
+      "diff": "SEO/reports/screenshots/visual-parity/desktop-situation-diff.png",
+      "reference_size": {
+        "width": 1512,
+        "height": 720
+      },
+      "actual_size": {
+        "width": 1512,
+        "height": 720
+      },
+      "width_delta": 0,
+      "height_delta": 0,
+      "pixel_similarity": 0.9753068048206938,
+      "color_similarity": 0.9841904776313818,
+      "score": 0.9795528589007619
+    },
+    {
+      "id": "features",
+      "label": "FeatureGrid",
+      "viewport": "desktop",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/desktop-sections/03-features.png",
+      "actual": "SEO/reports/screenshots/visual-parity/desktop-features.png",
+      "diff": "SEO/reports/screenshots/visual-parity/desktop-features-diff.png",
+      "reference_size": {
+        "width": 1512,
+        "height": 644
+      },
+      "actual_size": {
+        "width": 1512,
+        "height": 644
+      },
+      "width_delta": 0,
+      "height_delta": 0,
+      "pixel_similarity": 0.969668120871537,
+      "color_similarity": 0.9697940340924346,
+      "score": 0.9727264914285628
+    },
+    {
+      "id": "how-it-works",
+      "label": "HowItWorksSteps",
+      "viewport": "desktop",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/desktop-sections/04-how-it-works.png",
+      "actual": "SEO/reports/screenshots/visual-parity/desktop-how-it-works.png",
+      "diff": "SEO/reports/screenshots/visual-parity/desktop-how-it-works-diff.png",
+      "reference_size": {
+        "width": 1512,
+        "height": 479
+      },
+      "actual_size": {
+        "width": 1512,
+        "height": 479
+      },
+      "width_delta": 0,
+      "height_delta": 0,
+      "pixel_similarity": 0.9727938496205719,
+      "color_similarity": 0.972843101518037,
+      "score": 0.9755243150380077
+    },
+    {
+      "id": "app-flow",
+      "label": "AppFlowSteps",
+      "viewport": "desktop",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/component-variants/app-flow-steps-desktop.png",
+      "actual": "SEO/reports/screenshots/visual-parity/desktop-app-flow.png",
+      "diff": "SEO/reports/screenshots/visual-parity/desktop-app-flow-diff.png",
+      "reference_size": {
+        "width": 1512,
+        "height": 920
+      },
+      "actual_size": {
+        "width": 1512,
+        "height": 920
+      },
+      "width_delta": 0,
+      "height_delta": 0,
+      "pixel_similarity": 0.9496757821486083,
+      "color_similarity": 0.9706436149338963,
+      "score": 0.958901770490805
+    },
+    {
+      "id": "scenarios",
+      "label": "ScenarioCards",
+      "viewport": "desktop",
+      "status": "pass",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/component-variants/scenario-cards-desktop.png",
+      "actual": "SEO/reports/screenshots/visual-parity/desktop-scenarios.png",
+      "diff": "SEO/reports/screenshots/visual-parity/desktop-scenarios-diff.png",
+      "reference_size": {
+        "width": 1512,
+        "height": 704
+      },
+      "actual_size": {
+        "width": 1512,
+        "height": 704
+      },
+      "width_delta": 0,
+      "height_delta": 0,
+      "pixel_similarity": 0.9799295033670034,
+      "color_similarity": 0.9795829528851383,
+      "score": 0.98186724293393
+    },
+    {
+      "id": "checklist",
+      "label": "TravelChecklist",
+      "viewport": "desktop",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/desktop-sections/07-checklist.png",
+      "actual": "SEO/reports/screenshots/visual-parity/desktop-checklist.png",
+      "diff": "SEO/reports/screenshots/visual-parity/desktop-checklist-diff.png",
+      "reference_size": {
+        "width": 1512,
+        "height": 800
+      },
+      "actual_size": {
+        "width": 1512,
+        "height": 800
+      },
+      "width_delta": 0,
+      "height_delta": 0,
+      "pixel_similarity": 0.9775272817460318,
+      "color_similarity": 0.9783935239219145,
+      "score": 0.979947802006605
+    },
+    {
+      "id": "offline-proof",
+      "label": "OfflineProofBand",
+      "viewport": "desktop",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/desktop-sections/08-offline-proof.png",
+      "actual": "SEO/reports/screenshots/visual-parity/desktop-offline-proof.png",
+      "diff": "SEO/reports/screenshots/visual-parity/desktop-offline-proof-diff.png",
+      "reference_size": {
+        "width": 1512,
+        "height": 500
+      },
+      "actual_size": {
+        "width": 1512,
+        "height": 500
+      },
+      "width_delta": 0,
+      "height_delta": 0,
+      "pixel_similarity": 0.9705899470899471,
+      "color_similarity": 0.9738956928450393,
+      "score": 0.9741921015319708
+    },
+    {
+      "id": "privacy-conversation-destination",
+      "label": "PrivacyBlock + ConversationBlock + DestinationModule",
+      "viewport": "desktop",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/component-variants/privacy-conversation-destination-stack-desktop.png",
+      "actual": "SEO/reports/screenshots/visual-parity/desktop-privacy-conversation-destination.png",
+      "diff": "SEO/reports/screenshots/visual-parity/desktop-privacy-conversation-destination-diff.png",
+      "reference_size": {
+        "width": 1512,
+        "height": 2675
+      },
+      "actual_size": {
+        "width": 1512,
+        "height": 2675
+      },
+      "width_delta": 0,
+      "height_delta": 0,
+      "pixel_similarity": 0.9723799634080008,
+      "color_similarity": 0.9779298918367393,
+      "score": 0.9762519527529484
+    },
+    {
+      "id": "comparison",
+      "label": "ComparisonTable",
+      "viewport": "desktop",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/desktop-sections/10-comparison-faq.png",
+      "actual": "SEO/reports/screenshots/visual-parity/desktop-comparison.png",
+      "diff": "SEO/reports/screenshots/visual-parity/desktop-comparison-diff.png",
+      "reference_size": {
+        "width": 1512,
+        "height": 680
+      },
+      "actual_size": {
+        "width": 1512,
+        "height": 701
+      },
+      "width_delta": 0,
+      "height_delta": 0.030882352941176472,
+      "pixel_similarity": 0.9612093448490507,
+      "color_similarity": 0.9702214947344224,
+      "score": 0.9638026050471024
+    },
+    {
+      "id": "faq",
+      "label": "FAQAccordion",
+      "viewport": "desktop",
+      "status": "missing-reference"
+    },
+    {
+      "id": "final-cta",
+      "label": "FinalCTA + StoreCtaButtons",
+      "viewport": "desktop",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/desktop-sections/11-final-cta.png",
+      "actual": "SEO/reports/screenshots/visual-parity/desktop-final-cta.png",
+      "diff": "SEO/reports/screenshots/visual-parity/desktop-final-cta-diff.png",
+      "reference_size": {
+        "width": 1512,
+        "height": 205
+      },
+      "actual_size": {
+        "width": 1512,
+        "height": 205
+      },
+      "width_delta": 0,
+      "height_delta": 0,
+      "pixel_similarity": 0.964847077042199,
+      "color_similarity": 0.9593902649888622,
+      "score": 0.9672710069273117
+    },
+    {
+      "id": "hero",
+      "label": "HeroProduct + HeaderNav + StoreCtaButtons + PhoneMockupShowcase",
+      "viewport": "mobile",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/mobile-sections/01-hero.png",
+      "actual": "SEO/reports/screenshots/visual-parity/mobile-hero.png",
+      "diff": "SEO/reports/screenshots/visual-parity/mobile-hero-diff.png",
+      "reference_size": {
+        "width": 402,
+        "height": 1205
+      },
+      "actual_size": {
+        "width": 402,
+        "height": 1205
+      },
+      "width_delta": 0,
+      "height_delta": 0,
+      "pixel_similarity": 0.9094506719514461,
+      "color_similarity": 0.9376620140152976,
+      "score": 0.9241478731690718
+    },
+    {
+      "id": "situation",
+      "label": "SituationBlock",
+      "viewport": "mobile",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/mobile-sections/02-situation.png",
+      "actual": "SEO/reports/screenshots/visual-parity/mobile-situation.png",
+      "diff": "SEO/reports/screenshots/visual-parity/mobile-situation-diff.png",
+      "reference_size": {
+        "width": 402,
+        "height": 560
+      },
+      "actual_size": {
+        "width": 402,
+        "height": 560
+      },
+      "width_delta": 0,
+      "height_delta": 0,
+      "pixel_similarity": 0.9668887704335466,
+      "color_similarity": 0.9746998028066948,
+      "score": 0.9717620998648215
+    },
+    {
+      "id": "features",
+      "label": "FeatureGrid",
+      "viewport": "mobile",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/mobile-sections/03-features.png",
+      "actual": "SEO/reports/screenshots/visual-parity/mobile-features.png",
+      "diff": "SEO/reports/screenshots/visual-parity/mobile-features-diff.png",
+      "reference_size": {
+        "width": 402,
+        "height": 785
+      },
+      "actual_size": {
+        "width": 402,
+        "height": 808
+      },
+      "width_delta": 0,
+      "height_delta": 0.02929936305732484,
+      "pixel_similarity": 0.920049434356878,
+      "color_similarity": 0.9391708001767111,
+      "score": 0.9289388277794244
+    },
+    {
+      "id": "how-it-works",
+      "label": "HowItWorksSteps",
+      "viewport": "mobile",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/mobile-sections/04-how-it-works.png",
+      "actual": "SEO/reports/screenshots/visual-parity/mobile-how-it-works.png",
+      "diff": "SEO/reports/screenshots/visual-parity/mobile-how-it-works-diff.png",
+      "reference_size": {
+        "width": 402,
+        "height": 690
+      },
+      "actual_size": {
+        "width": 402,
+        "height": 720
+      },
+      "width_delta": 0,
+      "height_delta": 0.043478260869565216,
+      "pixel_similarity": 0.9345951402408249,
+      "color_similarity": 0.9503034934261156,
+      "score": 0.939929470766844
+    },
+    {
+      "id": "app-flow",
+      "label": "AppFlowSteps",
+      "viewport": "mobile",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/mobile-sections/05-travel-confidence.png",
+      "actual": "SEO/reports/screenshots/visual-parity/mobile-app-flow.png",
+      "diff": "SEO/reports/screenshots/visual-parity/mobile-app-flow-diff.png",
+      "reference_size": {
+        "width": 402,
+        "height": 820
+      },
+      "actual_size": {
+        "width": 402,
+        "height": 838
+      },
+      "width_delta": 0,
+      "height_delta": 0.02195121951219512,
+      "pixel_similarity": 0.8991414876835335,
+      "color_similarity": 0.9253907927285302,
+      "score": 0.91228207797296
+    },
+    {
+      "id": "scenarios",
+      "label": "ScenarioCards",
+      "viewport": "mobile",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/mobile-sections/06-scenarios.png",
+      "actual": "SEO/reports/screenshots/visual-parity/mobile-scenarios.png",
+      "diff": "SEO/reports/screenshots/visual-parity/mobile-scenarios-diff.png",
+      "reference_size": {
+        "width": 402,
+        "height": 810
+      },
+      "actual_size": {
+        "width": 402,
+        "height": 826
+      },
+      "width_delta": 0,
+      "height_delta": 0.019753086419753086,
+      "pixel_similarity": 0.9158712609790554,
+      "color_similarity": 0.9552804283271772,
+      "score": 0.9301906597087989
+    },
+    {
+      "id": "checklist",
+      "label": "TravelChecklist",
+      "viewport": "mobile",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/mobile-sections/07-checklist.png",
+      "actual": "SEO/reports/screenshots/visual-parity/mobile-checklist.png",
+      "diff": "SEO/reports/screenshots/visual-parity/mobile-checklist-diff.png",
+      "reference_size": {
+        "width": 402,
+        "height": 550
+      },
+      "actual_size": {
+        "width": 402,
+        "height": 556
+      },
+      "width_delta": 0,
+      "height_delta": 0.01090909090909091,
+      "pixel_similarity": 0.9153505201266395,
+      "color_similarity": 0.9472689138975355,
+      "score": 0.9291082377772457
+    },
+    {
+      "id": "offline-proof",
+      "label": "OfflineProofBand",
+      "viewport": "mobile",
+      "status": "pass",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/mobile-sections/08-offline-proof.png",
+      "actual": "SEO/reports/screenshots/visual-parity/mobile-offline-proof.png",
+      "diff": "SEO/reports/screenshots/visual-parity/mobile-offline-proof-diff.png",
+      "reference_size": {
+        "width": 402,
+        "height": 840
+      },
+      "actual_size": {
+        "width": 402,
+        "height": 840
+      },
+      "width_delta": 0,
+      "height_delta": 0,
+      "pixel_similarity": 0.9792229329542762,
+      "color_similarity": 0.9744712943220406,
+      "score": 0.9803503119324014
+    },
+    {
+      "id": "privacy-conversation-destination",
+      "label": "PrivacyBlock + ConversationBlock + DestinationModule",
+      "viewport": "mobile",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/mobile-sections/09-privacy-conversation-destination.png",
+      "actual": "SEO/reports/screenshots/visual-parity/mobile-privacy-conversation-destination.png",
+      "diff": "SEO/reports/screenshots/visual-parity/mobile-privacy-conversation-destination-diff.png",
+      "reference_size": {
+        "width": 402,
+        "height": 1230
+      },
+      "actual_size": {
+        "width": 402,
+        "height": 1230
+      },
+      "width_delta": 0,
+      "height_delta": 0,
+      "pixel_similarity": 0.9468329086275937,
+      "color_similarity": 0.9445536148367044,
+      "score": 0.9516937590066564
+    },
+    {
+      "id": "comparison",
+      "label": "ComparisonTable",
+      "viewport": "mobile",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/mobile-sections/10-comparison.png",
+      "actual": "SEO/reports/screenshots/visual-parity/mobile-comparison.png",
+      "diff": "SEO/reports/screenshots/visual-parity/mobile-comparison-diff.png",
+      "reference_size": {
+        "width": 402,
+        "height": 505
+      },
+      "actual_size": {
+        "width": 402,
+        "height": 610
+      },
+      "width_delta": 0,
+      "height_delta": 0.2079207920792079,
+      "pixel_similarity": 0.9115215999211861,
+      "color_similarity": 0.9419237147595356,
+      "score": 0.9056577836888164
+    },
+    {
+      "id": "faq",
+      "label": "FAQAccordion",
+      "viewport": "mobile",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/mobile-sections/11-faq.png",
+      "actual": "SEO/reports/screenshots/visual-parity/mobile-faq.png",
+      "diff": "SEO/reports/screenshots/visual-parity/mobile-faq-diff.png",
+      "reference_size": {
+        "width": 402,
+        "height": 505
+      },
+      "actual_size": {
+        "width": 402,
+        "height": 514
+      },
+      "width_delta": 0,
+      "height_delta": 0.01782178217821782,
+      "pixel_similarity": 0.8785429289197576,
+      "color_similarity": 0.8993998492620698,
+      "score": 0.8930778418784224
+    },
+    {
+      "id": "final-cta",
+      "label": "FinalCTA + StoreCtaButtons",
+      "viewport": "mobile",
+      "status": "needs-work",
+      "reference": "design/pakt-figma-handoff/figma-screenshots/mobile-sections/12-final-cta.png",
+      "actual": "SEO/reports/screenshots/visual-parity/mobile-final-cta.png",
+      "diff": "SEO/reports/screenshots/visual-parity/mobile-final-cta-diff.png",
+      "reference_size": {
+        "width": 402,
+        "height": 247
+      },
+      "actual_size": {
+        "width": 402,
+        "height": 246
+      },
+      "width_delta": 0,
+      "height_delta": 0.004048582995951417,
+      "pixel_similarity": 0.9012830583922493,
+      "color_similarity": 0.9289825646186258,
+      "score": 0.9162897954987046
+    }
+  ],
+  "showcase_blocks_without_direct_figma_crops": [
+    "FullLanguageListPanel",
+    "LanguageSupportGrid",
+    "LongFormSEOText",
+    "RelatedPagesGrid"
+  ],
+  "desktop_reference_caveats": [
+    "SituationBlock, AppFlowSteps, ScenarioCards, FeatureGrid, HowItWorksSteps, TravelChecklist, OfflineProofBand, ComparisonTable, and FinalCTA now use isolated or cleaned desktop crops from the full Figma export.",
+    "HeroProduct and the privacy/conversation/destination stack still include production copy, asset, or layout differences versus the available Figma references.",
+    "Use the remaining low desktop scores as gap trackers until fresh Figma node exports or exact design-copy showcase references are available."
+  ]
+}
