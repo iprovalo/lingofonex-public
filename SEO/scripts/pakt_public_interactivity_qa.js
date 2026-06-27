@@ -776,6 +776,30 @@ async function auditPriorRegressions(page, errors) {
       }
     }
   }
+
+  if (await page.locator("body:not(.page-component-parity) #explore-more .related-grid").count()) {
+    const explore = await page.locator("#explore-more .related-grid").evaluate((grid) => {
+      const section = grid.closest("#explore-more");
+      const rail = section?.querySelector(".related-rail");
+      return {
+        count: grid.querySelectorAll(".related-card").length,
+        transform: window.getComputedStyle(grid).transform,
+        trackOverflow: rail ? grid.scrollWidth - rail.clientWidth : 0,
+        hasPin: Boolean(section?.querySelector(".scroll-pin")),
+      };
+    });
+    if (explore.count < 5) errors.push(`Explore more should expose 5 cards, found ${explore.count}`);
+    if (!explore.hasPin) errors.push("Explore more should use a sticky scroll-pin wrapper");
+    if (explore.trackOverflow > 2) {
+      const exploreGrid = page.locator("#explore-more .related-grid");
+      const lock = await scrollThroughParallaxSection(page, "#explore-more", 0.55);
+      assertParallaxScroll(lock, "Explore more", errors);
+      const afterTransform = await exploreGrid.evaluate((grid) => window.getComputedStyle(grid).transform);
+      if (afterTransform === explore.transform || afterTransform === "none" || afterTransform === "matrix(1, 0, 0, 1, 0, 0)") {
+        errors.push(`Explore more row did not move with scroll progress: before=${explore.transform} after=${afterTransform}`);
+      }
+    }
+  }
 }
 
 async function auditPage(browser, pageDef, viewport) {

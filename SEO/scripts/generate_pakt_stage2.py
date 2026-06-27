@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SITE = "https://www.lingofonex.com"
 STAGE2_LASTMOD = "2026-06-22"
-ASSET_VERSION = "public-fixes-55"
+ASSET_VERSION = "public-fixes-56"
 
 PLAY_STORE_URL = (
     "https://play.google.com/store/apps/details?id=com.lingofonex.android"
@@ -1518,12 +1518,14 @@ def render_related(page: dict) -> str:
         for item in EXPLORE_MORE_CARDS
     )
     return f"""
-<section class="section explore-more" data-block="RelatedPagesGrid" aria-labelledby="explore-more-title">
-  <h2 id="explore-more-title" class="section-title">Explore more</h2>
-  <p class="section-lede">More tools for smoother travel<br>and better conversations.</p>
-  <div class="related-rail" aria-label="Explore more Pakt tools">
-    <div class="related-grid">
+<section id="explore-more" class="section explore-more scroll-section" data-block="RelatedPagesGrid" aria-labelledby="explore-more-title">
+  <div class="scroll-pin explore-pin">
+    <h2 id="explore-more-title" class="section-title">Explore more</h2>
+    <p class="section-lede">More tools for smoother travel<br>and better conversations.</p>
+    <div class="related-rail" aria-label="Explore more Pakt tools">
+      <div class="related-grid">
 {cards}
+      </div>
     </div>
   </div>
 </section>"""
