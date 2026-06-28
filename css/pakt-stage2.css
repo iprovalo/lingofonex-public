@@ -4871,8 +4871,8 @@ body:not(.page-component-parity) .why-matters {
 body:not(.page-component-parity) .why-matters .section-title {
   max-width: 1560px;
   margin: 0 auto;
-  font-size: clamp(40px, 2.55vw, 50px);
-  line-height: 1.02;
+  font-size: 56px;
+  line-height: 1.03;
 }
 
 body:not(.page-component-parity) .why-title-mobile-break {
@@ -5931,8 +5931,8 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
 
   body:not(.page-component-parity) .why-matters .section-title {
     max-width: 330px;
-    font-size: 28px;
-    line-height: 0.96;
+    font-size: 34px;
+    line-height: 1.02;
   }
 
   body:not(.page-component-parity) .why-title-mobile-break {
