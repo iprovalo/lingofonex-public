@@ -5809,16 +5809,16 @@ body:not(.page-component-parity) .explore-more .explore-pin {
 
 body:not(.page-component-parity) .explore-more .section-title {
   margin: 0 auto;
-  font-size: clamp(44px, 2.9vw, 56px);
-  line-height: 1;
+  font-size: 56px;
+  line-height: 1.03;
 }
 
 body:not(.page-component-parity) .explore-more .section-lede {
   max-width: 310px;
   margin: 18px auto 0;
   color: var(--pakt-black);
-  font-size: 15px;
-  line-height: 1.15;
+  font-size: 16px;
+  line-height: 1.18;
 }
 
 body:not(.page-component-parity) .related-rail {
@@ -5885,9 +5885,9 @@ body:not(.page-component-parity) .explore-more .related-card-icon {
 
 body:not(.page-component-parity) .explore-more .related-card-title {
   display: block;
-  max-width: 132px;
+  max-width: 140px;
   margin-top: 58px;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.08;
 }
 
@@ -6001,15 +6001,16 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
   body:not(.page-component-parity) .explore-more .section-title {
     width: calc(100% - 40px);
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 34px;
+    line-height: 1.02;
   }
 
   body:not(.page-component-parity) .explore-more .section-lede {
     width: calc(100% - 40px);
-    max-width: 230px;
-    margin-top: 9px;
-    font-size: 11px;
-    line-height: 1.12;
+    max-width: 260px;
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.15;
   }
 
   body:not(.page-component-parity) .related-rail {
@@ -6032,7 +6033,7 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
   body:not(.page-component-parity) .explore-more .related-card {
     flex-basis: clamp(176px, 42vw, 224px);
     width: clamp(176px, 42vw, 224px);
-    min-height: clamp(148px, 32vw, 172px);
+    min-height: clamp(166px, 36vw, 188px);
     padding: 15px 12px 12px;
     border-radius: 6px;
   }
@@ -6043,9 +6044,9 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
   }
 
   body:not(.page-component-parity) .explore-more .related-card-title {
-    max-width: 122px;
-    margin-top: 34px;
-    font-size: 12px;
+    max-width: 136px;
+    margin-top: 30px;
+    font-size: 16px;
     line-height: 1.08;
   }
 
