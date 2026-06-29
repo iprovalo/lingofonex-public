@@ -22,27 +22,27 @@ const STAGE2_FILES = [
 const LIVE_FIGMA_MCP_ASSETS = {
   "pakt-feature-icon-offline.svg": {
     nodeId: "420:8743",
-    figmaAssetUrl: "https://www.figma.com/api/mcp/asset/95fec60d-a82d-44f2-8817-c9e7db42cae8",
+    figmaAssetUrl: "https://www.figma.com/api/mcp/asset/1ae689de-7086-42ad-9271-59ee99ae05c4",
   },
   "pakt-feature-icon-voice.svg": {
     nodeId: "420:8743",
-    figmaAssetUrl: "https://www.figma.com/api/mcp/asset/628d35ee-c323-4e6b-8bfa-9f99775a4332",
+    figmaAssetUrl: "https://www.figma.com/api/mcp/asset/1e5eec2e-3c1f-48f4-94af-d0bc781fbc64",
   },
   "pakt-feature-icon-private.svg": {
     nodeId: "420:8743",
-    figmaAssetUrl: "https://www.figma.com/api/mcp/asset/8d82d957-fb3f-4f19-ba9a-008af8bb8757",
+    figmaAssetUrl: "https://www.figma.com/api/mcp/asset/625ccedc-5a82-47b6-91fe-504a617683aa",
   },
   "pakt-feature-icon-travel.svg": {
     nodeId: "420:8743",
-    figmaAssetUrl: "https://www.figma.com/api/mcp/asset/38be5520-b247-4350-af40-a27992f8d5f9",
+    figmaAssetUrl: "https://www.figma.com/api/mcp/asset/d34e5b94-42f6-4eee-b301-0f86c89336af",
   },
   "pakt-feature-icon-cloud.svg": {
     nodeId: "420:8743",
-    figmaAssetUrl: "https://www.figma.com/api/mcp/asset/7554e604-e631-494c-aa60-73aee698a630",
+    figmaAssetUrl: "https://www.figma.com/api/mcp/asset/12031f1b-0d64-4f18-910f-8f5969715ffd",
   },
   "pakt-feature-icon-language.svg": {
     nodeId: "420:8743",
-    figmaAssetUrl: "https://www.figma.com/api/mcp/asset/3ff31164-5daa-4b58-898f-fe771a97fb79",
+    figmaAssetUrl: "https://www.figma.com/api/mcp/asset/e27b6a7b-3bad-4acb-bf1f-b27f33385c32",
   },
   "pakt-icon-mic-cream.svg": {
     nodeId: "328:10303",

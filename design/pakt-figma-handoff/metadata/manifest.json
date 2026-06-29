@@ -43,12 +43,13 @@
     "heroBackground": "assets/pakt-figma-hero-bg.png",
     "phoneMockup": "assets/pakt-figma-phone-mockup.png",
     "wordmark": "assets/pakt-wordmark-white.png",
+    "favicon": "assets/pakt-favicon.svg",
     "storeAppleIcon": "assets/pakt-store-apple.svg",
     "storeGooglePlayIcon": "assets/pakt-store-google-play.svg",
     "destinationJapanImage": "../../images/pakt-destination-japan.png"
   },
   "stage2AssetInventory": {
-    "referencedAssetCount": 58,
+    "referencedAssetCount": 65,
     "handoffAssetsDirectory": "assets",
     "auditScript": "../../SEO/scripts/pakt_asset_provenance_audit.js",
     "auditReport": "../../SEO/reports/pakt_asset_provenance_audit.md",

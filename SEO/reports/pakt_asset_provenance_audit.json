@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T23:21:47.801Z",
+  "generatedAt": "2026-06-29T14:05:33.705Z",
   "errors": [],
   "warnings": [
     "pakt-explore-icon-airplane.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
@@ -7,6 +7,7 @@
     "pakt-explore-icon-phone.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
     "pakt-explore-icon-suitcase.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
     "pakt-explore-icon-voice.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
+    "pakt-favicon.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
     "pakt-icon-check-empty.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
     "pakt-icon-check-orange.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
     "pakt-icon-close.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
@@ -146,6 +147,25 @@
       "figmaNodeId": null
     },
     {
+      "asset": "pakt-favicon.svg",
+      "status": "figma-handoff-svg",
+      "usedBy": [
+        "pakt/best-offline-translator-app/index.html",
+        "pakt/component-parity/index.html",
+        "pakt/component-showcase/index.html",
+        "pakt/index.html",
+        "pakt/offline-translator-app/index.html",
+        "pakt/offline-translator-for-travel/index.html",
+        "pakt/voice-speech-translator/index.html"
+      ],
+      "imageExists": true,
+      "handoffExists": true,
+      "sha256": "7c30d9bf47e07e236eb62374c992919470b5141655891e0905948a351769c354",
+      "handoffMatchesImage": true,
+      "figmaAssetUrl": null,
+      "figmaNodeId": null
+    },
+    {
       "asset": "pakt-feature-icon-cloud.svg",
       "status": "live-figma-mcp-export",
       "usedBy": [
@@ -153,9 +173,9 @@
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "9dec13568386b547e622d133164b8dd83050a8c8464758224097b407e588bfd8",
+      "sha256": "9a6a5ae70a38ffb3b93f245a18970b93a5fe7078b48ea787597aae81b614b78d",
       "handoffMatchesImage": true,
-      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/7554e604-e631-494c-aa60-73aee698a630",
+      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/12031f1b-0d64-4f18-910f-8f5969715ffd",
       "figmaNodeId": "420:8743"
     },
     {
@@ -166,9 +186,9 @@
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "b8bac6a5ed9b5a6c8fb793d927d0b15a1dc3846d62396071f2ab554bd7a48133",
+      "sha256": "dfcbc9355a4e6be747c01d65855e8f6ff85b016ab3ca2298949be1cb0c3926fc",
       "handoffMatchesImage": true,
-      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/3ff31164-5daa-4b58-898f-fe771a97fb79",
+      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/e27b6a7b-3bad-4acb-bf1f-b27f33385c32",
       "figmaNodeId": "420:8743"
     },
     {
@@ -179,9 +199,9 @@
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "074a84f06b427425a106a215e768ab229d1142e205784af03c5f0a5a8638170f",
+      "sha256": "6aee3636592312cb6d93f771125b5d7eaa44c5056fee286d3734cca8fbc0b820",
       "handoffMatchesImage": true,
-      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/95fec60d-a82d-44f2-8817-c9e7db42cae8",
+      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/1ae689de-7086-42ad-9271-59ee99ae05c4",
       "figmaNodeId": "420:8743"
     },
     {
@@ -192,9 +212,9 @@
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "f64ca308d5dbf0b69d15fb0631ecf672fa7061a73d47f294616eb05beb48b63c",
+      "sha256": "ab231a6c31bdc8cb1cd5d7c6efb82f5c8582f33942f3b617d2c77a82edb96d0f",
       "handoffMatchesImage": true,
-      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/8d82d957-fb3f-4f19-ba9a-008af8bb8757",
+      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/625ccedc-5a82-47b6-91fe-504a617683aa",
       "figmaNodeId": "420:8743"
     },
     {
@@ -205,9 +225,9 @@
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "dd9ba159d5b4c46fd2ba23044c3e7c94c164f091916d1d18f730e372d1b4aae2",
+      "sha256": "7d4bdc85511159303e033f34d5d4a28ed57fd51b1e92f487b510f59c16b48524",
       "handoffMatchesImage": true,
-      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/38be5520-b247-4350-af40-a27992f8d5f9",
+      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/d34e5b94-42f6-4eee-b301-0f86c89336af",
       "figmaNodeId": "420:8743"
     },
     {
@@ -218,9 +238,9 @@
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "8bd16989c6227d08f6747d40ab4b3989d31e77d49273a4aa9fc29e0540424d5a",
+      "sha256": "7362439a71a0cce6d615b89eec1a4b07153cac122bd58df871e5918941872816",
       "handoffMatchesImage": true,
-      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/628d35ee-c323-4e6b-8bfa-9f99775a4332",
+      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/1e5eec2e-3c1f-48f4-94af-d0bc781fbc64",
       "figmaNodeId": "420:8743"
     },
     {

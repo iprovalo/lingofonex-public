@@ -514,27 +514,27 @@ a {
   margin-top: 3px;
   border: 0;
   border-radius: 0;
-  background: url("/images/pakt-feature-icon-offline.svg") center / contain no-repeat;
+  background: url("/images/pakt-feature-icon-offline.svg?v=public-fixes-64") center / contain no-repeat;
 }
 
 .feature-grid .card:nth-child(2)::before {
-  background-image: url("/images/pakt-feature-icon-voice.svg");
+  background-image: url("/images/pakt-feature-icon-voice.svg?v=public-fixes-64");
 }
 
 .feature-grid .card:nth-child(3)::before {
-  background-image: url("/images/pakt-feature-icon-private.svg");
+  background-image: url("/images/pakt-feature-icon-private.svg?v=public-fixes-64");
 }
 
 .feature-grid .card:nth-child(4)::before {
-  background-image: url("/images/pakt-feature-icon-travel.svg");
+  background-image: url("/images/pakt-feature-icon-travel.svg?v=public-fixes-64");
 }
 
 .feature-grid .card:nth-child(5)::before {
-  background-image: url("/images/pakt-feature-icon-cloud.svg");
+  background-image: url("/images/pakt-feature-icon-cloud.svg?v=public-fixes-64");
 }
 
 .feature-grid .card:nth-child(6)::before {
-  background-image: url("/images/pakt-feature-icon-language.svg");
+  background-image: url("/images/pakt-feature-icon-language.svg?v=public-fixes-64");
 }
 
 .feature-grid .card h3,
@@ -1426,27 +1426,27 @@ a {
   }
 
   .feature-grid .card:nth-child(1)::before {
-    background: url("/images/pakt-feature-icon-offline.svg") center / contain no-repeat;
+    background: url("/images/pakt-feature-icon-offline.svg?v=public-fixes-64") center / contain no-repeat;
   }
 
   .feature-grid .card:nth-child(2)::before {
-    background: url("/images/pakt-feature-icon-voice.svg") center / contain no-repeat;
+    background: url("/images/pakt-feature-icon-voice.svg?v=public-fixes-64") center / contain no-repeat;
   }
 
   .feature-grid .card:nth-child(3)::before {
-    background: url("/images/pakt-feature-icon-private.svg") center / contain no-repeat;
+    background: url("/images/pakt-feature-icon-private.svg?v=public-fixes-64") center / contain no-repeat;
   }
 
   .feature-grid .card:nth-child(4)::before {
-    background: url("/images/pakt-feature-icon-travel.svg") center / contain no-repeat;
+    background: url("/images/pakt-feature-icon-travel.svg?v=public-fixes-64") center / contain no-repeat;
   }
 
   .feature-grid .card:nth-child(5)::before {
-    background: url("/images/pakt-feature-icon-cloud.svg") center / contain no-repeat;
+    background: url("/images/pakt-feature-icon-cloud.svg?v=public-fixes-64") center / contain no-repeat;
   }
 
   .feature-grid .card:nth-child(6)::before {
-    background: url("/images/pakt-feature-icon-language.svg") center / contain no-repeat;
+    background: url("/images/pakt-feature-icon-language.svg?v=public-fixes-64") center / contain no-repeat;
   }
 
   .feature-grid .card h3 {
@@ -2883,27 +2883,27 @@ body:not(.page-component-parity) #checklist .check-item.is-checked .check-copy s
   }
 
   #features .feature-grid .card:nth-child(1)::before {
-    background-image: url("/images/pakt-feature-icon-offline.svg");
+    background-image: url("/images/pakt-feature-icon-offline.svg?v=public-fixes-64");
   }
 
   #features .feature-grid .card:nth-child(2)::before {
-    background-image: url("/images/pakt-feature-icon-voice.svg");
+    background-image: url("/images/pakt-feature-icon-voice.svg?v=public-fixes-64");
   }
 
   #features .feature-grid .card:nth-child(3)::before {
-    background-image: url("/images/pakt-feature-icon-private.svg");
+    background-image: url("/images/pakt-feature-icon-private.svg?v=public-fixes-64");
   }
 
   #features .feature-grid .card:nth-child(4)::before {
-    background-image: url("/images/pakt-feature-icon-travel.svg");
+    background-image: url("/images/pakt-feature-icon-travel.svg?v=public-fixes-64");
   }
 
   #features .feature-grid .card:nth-child(5)::before {
-    background-image: url("/images/pakt-feature-icon-cloud.svg");
+    background-image: url("/images/pakt-feature-icon-cloud.svg?v=public-fixes-64");
   }
 
   #features .feature-grid .card:nth-child(6)::before {
-    background-image: url("/images/pakt-feature-icon-language.svg");
+    background-image: url("/images/pakt-feature-icon-language.svg?v=public-fixes-64");
   }
 
   #features .feature-grid .card h3,
@@ -4893,7 +4893,7 @@ body:not(.page-component-parity) .why-matters-item {
 }
 
 body:not(.page-component-parity) .why-matters-item[data-why-icon="lock"] {
-  --why-icon: url("/images/pakt-feature-icon-private.svg");
+  --why-icon: url("/images/pakt-feature-icon-private.svg?v=public-fixes-64");
 }
 
 body:not(.page-component-parity) .why-matters-item[data-why-icon="shield"] {

@@ -1,7 +1,7 @@
 # Pakt Public Interactivity QA - PASS
 
-Base URL: https://www.lingofonex.com
-Generated: 2026-06-28T02:20:52.052Z
+Base URL: https://tool.dowhatmatter.com
+Generated: 2026-06-29T14:10:26.000Z
 Total errors: 0
 Total warnings: 0
 

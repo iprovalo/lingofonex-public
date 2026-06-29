@@ -1,23 +1,23 @@
 # Pakt Asset Provenance Audit
 
-Generated: 2026-06-27T23:21:47.799Z
+Generated: 2026-06-29T14:05:33.703Z
 
 ## Summary
 
-- Referenced Pakt assets: 64
+- Referenced Pakt assets: 65
 - Live Figma MCP SVG exports fetched in this pass: 7
-- Assets mirrored in handoff package: 64
+- Assets mirrored in handoff package: 65
 - Errors: 0
-- Warnings: 22
+- Warnings: 23
 
 ## Live Figma MCP Exports
 
-- `pakt-feature-icon-cloud.svg` from node `420:8743` (9dec13568386b547e622d133164b8dd83050a8c8464758224097b407e588bfd8)
-- `pakt-feature-icon-language.svg` from node `420:8743` (b8bac6a5ed9b5a6c8fb793d927d0b15a1dc3846d62396071f2ab554bd7a48133)
-- `pakt-feature-icon-offline.svg` from node `420:8743` (074a84f06b427425a106a215e768ab229d1142e205784af03c5f0a5a8638170f)
-- `pakt-feature-icon-private.svg` from node `420:8743` (f64ca308d5dbf0b69d15fb0631ecf672fa7061a73d47f294616eb05beb48b63c)
-- `pakt-feature-icon-travel.svg` from node `420:8743` (dd9ba159d5b4c46fd2ba23044c3e7c94c164f091916d1d18f730e372d1b4aae2)
-- `pakt-feature-icon-voice.svg` from node `420:8743` (8bd16989c6227d08f6747d40ab4b3989d31e77d49273a4aa9fc29e0540424d5a)
+- `pakt-feature-icon-cloud.svg` from node `420:8743` (9a6a5ae70a38ffb3b93f245a18970b93a5fe7078b48ea787597aae81b614b78d)
+- `pakt-feature-icon-language.svg` from node `420:8743` (dfcbc9355a4e6be747c01d65855e8f6ff85b016ab3ca2298949be1cb0c3926fc)
+- `pakt-feature-icon-offline.svg` from node `420:8743` (6aee3636592312cb6d93f771125b5d7eaa44c5056fee286d3734cca8fbc0b820)
+- `pakt-feature-icon-private.svg` from node `420:8743` (ab231a6c31bdc8cb1cd5d7c6efb82f5c8582f33942f3b617d2c77a82edb96d0f)
+- `pakt-feature-icon-travel.svg` from node `420:8743` (7d4bdc85511159303e033f34d5d4a28ed57fd51b1e92f487b510f59c16b48524)
+- `pakt-feature-icon-voice.svg` from node `420:8743` (7362439a71a0cce6d615b89eec1a4b07153cac122bd58df871e5918941872816)
 - `pakt-icon-mic-cream.svg` from node `328:10303` (7d226245376421ca2801eaee6f892a3a6e94bde1ee8bbbd51721eadb0cce9584)
 
 ## Referenced Assets
@@ -33,12 +33,13 @@ Generated: 2026-06-27T23:21:47.799Z
 | `pakt-explore-icon-phone.svg` | figma-handoff-svg | `e7db43aad1be17d1ef2994fe4b1f8d2c8f00e9b19a76ca47129334ac5e12069c` | `css/pakt-stage2.css` |
 | `pakt-explore-icon-suitcase.svg` | figma-handoff-svg | `0e4ba411fd2a481f93c390d8e909605a572e60bdf2af5a60e2b4a8dec7dea7b5` | `css/pakt-stage2.css` |
 | `pakt-explore-icon-voice.svg` | figma-handoff-svg | `7706cc64d22f2ae97344e1d8c486bdf95910dd4c8f753b0aeb146267089fcc04` | `css/pakt-stage2.css` |
-| `pakt-feature-icon-cloud.svg` | live-figma-mcp-export | `9dec13568386b547e622d133164b8dd83050a8c8464758224097b407e588bfd8` | `css/pakt-stage2.css` |
-| `pakt-feature-icon-language.svg` | live-figma-mcp-export | `b8bac6a5ed9b5a6c8fb793d927d0b15a1dc3846d62396071f2ab554bd7a48133` | `css/pakt-stage2.css` |
-| `pakt-feature-icon-offline.svg` | live-figma-mcp-export | `074a84f06b427425a106a215e768ab229d1142e205784af03c5f0a5a8638170f` | `css/pakt-stage2.css` |
-| `pakt-feature-icon-private.svg` | live-figma-mcp-export | `f64ca308d5dbf0b69d15fb0631ecf672fa7061a73d47f294616eb05beb48b63c` | `css/pakt-stage2.css` |
-| `pakt-feature-icon-travel.svg` | live-figma-mcp-export | `dd9ba159d5b4c46fd2ba23044c3e7c94c164f091916d1d18f730e372d1b4aae2` | `css/pakt-stage2.css` |
-| `pakt-feature-icon-voice.svg` | live-figma-mcp-export | `8bd16989c6227d08f6747d40ab4b3989d31e77d49273a4aa9fc29e0540424d5a` | `css/pakt-stage2.css` |
+| `pakt-favicon.svg` | figma-handoff-svg | `7c30d9bf47e07e236eb62374c992919470b5141655891e0905948a351769c354` | `pakt/best-offline-translator-app/index.html`<br>`pakt/component-parity/index.html`<br>`pakt/component-showcase/index.html`<br>`pakt/index.html`<br>`pakt/offline-translator-app/index.html`<br>`pakt/offline-translator-for-travel/index.html`<br>`pakt/voice-speech-translator/index.html` |
+| `pakt-feature-icon-cloud.svg` | live-figma-mcp-export | `9a6a5ae70a38ffb3b93f245a18970b93a5fe7078b48ea787597aae81b614b78d` | `css/pakt-stage2.css` |
+| `pakt-feature-icon-language.svg` | live-figma-mcp-export | `dfcbc9355a4e6be747c01d65855e8f6ff85b016ab3ca2298949be1cb0c3926fc` | `css/pakt-stage2.css` |
+| `pakt-feature-icon-offline.svg` | live-figma-mcp-export | `6aee3636592312cb6d93f771125b5d7eaa44c5056fee286d3734cca8fbc0b820` | `css/pakt-stage2.css` |
+| `pakt-feature-icon-private.svg` | live-figma-mcp-export | `ab231a6c31bdc8cb1cd5d7c6efb82f5c8582f33942f3b617d2c77a82edb96d0f` | `css/pakt-stage2.css` |
+| `pakt-feature-icon-travel.svg` | live-figma-mcp-export | `7d4bdc85511159303e033f34d5d4a28ed57fd51b1e92f487b510f59c16b48524` | `css/pakt-stage2.css` |
+| `pakt-feature-icon-voice.svg` | live-figma-mcp-export | `7362439a71a0cce6d615b89eec1a4b07153cac122bd58df871e5918941872816` | `css/pakt-stage2.css` |
 | `pakt-figma-hero-bg.png` | figma-handoff-raster | `3f47e5d42e16bcdcde123dca6eb5a3c9dad80847a8d60f80bb3c4e5f8a61c055` | `css/pakt-stage2.css`<br>`pakt/best-offline-translator-app/index.html`<br>`pakt/component-parity/index.html`<br>`pakt/component-showcase/index.html`<br>`pakt/index.html`<br>`pakt/offline-translator-app/index.html`<br>`pakt/offline-translator-for-travel/index.html`<br>`pakt/voice-speech-translator/index.html` |
 | `pakt-figma-phone-mockup.png` | figma-handoff-raster | `7bc8f927c46e770cc5e7fc7698c84d9520b865caa17f7a031ff294e6b88fb9e2` | `pakt/best-offline-translator-app/index.html`<br>`pakt/component-parity/index.html`<br>`pakt/component-showcase/index.html`<br>`pakt/offline-translator-app/index.html`<br>`pakt/offline-translator-for-travel/index.html`<br>`pakt/voice-speech-translator/index.html` |
 | `pakt-flow-phone-hear-desktop-parity.png` | figma-section-parity-export | `640ddb90716d3e77681e8e59e6b5e6dbde40c966711b52b1323a1c4e480d3250` | `css/pakt-stage2.css` |
@@ -96,6 +97,7 @@ Generated: 2026-06-27T23:21:47.799Z
 - pakt-explore-icon-phone.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
 - pakt-explore-icon-suitcase.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
 - pakt-explore-icon-voice.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
+- pakt-favicon.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
 - pakt-icon-check-empty.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
 - pakt-icon-check-orange.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
 - pakt-icon-close.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass
