@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SITE = "https://www.lingofonex.com"
 STAGE2_LASTMOD = "2026-06-22"
-ASSET_VERSION = "public-fixes-62"
+ASSET_VERSION = "public-fixes-63"
 
 PLAY_STORE_URL = (
     "https://play.google.com/store/apps/details?id=com.lingofonex.android"
@@ -21,6 +21,7 @@ PLAY_STORE_URL = (
 APP_STORE_URL = "https://apps.apple.com/us/app/lingofonex/id6504121499?itsct=apps_box_badge&itscg=30200"
 PAKT_FIGMA_LOGO_URL = f"{SITE}/images/pakt-wordmark-white.png"
 PAKT_FIGMA_SOCIAL_IMAGE_URL = f"{SITE}/images/pakt-figma-hero-bg.png"
+PAKT_FAVICON_PATH = "/images/pakt-favicon.svg"
 
 
 def e(value: object) -> str:
@@ -978,7 +979,7 @@ def render_head(page: dict) -> str:
   <link rel="canonical" href="{e(url)}">
   <link rel="alternate" hreflang="en" href="{e(url)}">
   <link rel="alternate" hreflang="x-default" href="{e(url)}">
-  <link rel="icon" type="image/png" href="/images/pakt-wordmark-white.png">
+  <link rel="icon" type="image/svg+xml" href="{PAKT_FAVICON_PATH}?v={ASSET_VERSION}">
   <link rel="stylesheet" href="/css/pakt-stage2.css?v={ASSET_VERSION}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{e(title)}">
