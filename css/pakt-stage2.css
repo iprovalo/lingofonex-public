@@ -6318,10 +6318,13 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
   }
 
   body:not(.page-component-parity) .explore-more .related-grid {
+    --explore-open-card-width: clamp(286px, 82vw, 340px);
+    --explore-edge-center-space: max(0px, calc((100vw - 48px - var(--explore-open-card-width)) / 2));
     justify-content: flex-start;
     gap: 10px;
     margin: 0;
-    padding-right: 24px;
+    padding-right: var(--explore-edge-center-space);
+    padding-left: var(--explore-edge-center-space);
   }
 
   body:not(.page-component-parity) .explore-more .related-card {

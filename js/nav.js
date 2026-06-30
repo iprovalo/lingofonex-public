@@ -531,8 +531,61 @@
       var overflow = 0;
       var currentExpandedCard = null;
       var settleTimer = null;
+      var centerTimer = null;
 
       if (!section || !rail || cards.length < 2) return;
+
+      function isMobileExplore() {
+        return window.matchMedia && window.matchMedia('(max-width: 760px)').matches;
+      }
+
+      function scrollSectionToOffset(targetOffset) {
+        updateOverflow();
+        if (!overflow) {
+          render();
+          return;
+        }
+
+        var pin = section.querySelector('.scroll-pin');
+        var viewportHeight = window.innerHeight || document.documentElement.clientHeight || 1;
+        var top = pin ? parseFloat(window.getComputedStyle(pin).top) || 0 : 0;
+        var start = Math.max(0, section.offsetTop - top);
+        var pinHeight = pin ? pin.getBoundingClientRect().height : viewportHeight;
+        var distance = Math.max(1, section.offsetHeight - pinHeight);
+        var progress = clamp(targetOffset / overflow, 0, 1);
+
+        window.scrollTo({
+          top: start + distance * progress,
+          behavior: 'auto'
+        });
+        render();
+      }
+
+      function centeredOffsetForCard(card) {
+        var railStyles = window.getComputedStyle(rail);
+        var railLeftPadding = parseFloat(railStyles.paddingLeft) || 0;
+        var railRightPadding = parseFloat(railStyles.paddingRight) || 0;
+        var visibleWidth = Math.max(1, rail.clientWidth - railLeftPadding - railRightPadding);
+        var cardCenter = card.offsetLeft + card.offsetWidth / 2;
+        return clamp(cardCenter - visibleWidth / 2, 0, overflow);
+      }
+
+      function centerCard(card) {
+        if (!card || !isMobileExplore()) return;
+        updateOverflow();
+        scrollSectionToOffset(centeredOffsetForCard(card));
+      }
+
+      function scheduleCenterCard(card) {
+        if (!card || !isMobileExplore()) return;
+        window.clearTimeout(centerTimer);
+        window.requestAnimationFrame(function () {
+          centerCard(card);
+        });
+        centerTimer = window.setTimeout(function () {
+          centerCard(card);
+        }, 360);
+      }
 
       function applyExpanded(targetCard) {
         if (currentExpandedCard === targetCard) return;
@@ -549,7 +602,9 @@
 
       function setExpanded(targetCard) {
         var nextCard = targetCard && currentExpandedCard !== targetCard ? targetCard : null;
+        if (nextCard && isMobileExplore()) centerCard(nextCard);
         applyExpanded(nextCard);
+        if (nextCard && isMobileExplore()) scheduleCenterCard(nextCard);
         window.requestAnimationFrame(measure);
       }
 
