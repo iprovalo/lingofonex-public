@@ -6444,6 +6444,12 @@ body:not(.page-component-parity) .final-cta .store-button > * {
     margin-top: 19px;
   }
 
+  body:not(.page-component-parity) .pakt-hero .store-button.store-button {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+  }
+
   body:not(.page-component-parity) .hero-visual {
     justify-content: flex-start;
     margin-top: 52px;
