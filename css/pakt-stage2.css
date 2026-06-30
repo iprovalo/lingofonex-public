@@ -4765,8 +4765,8 @@ body:not(.page-component-parity) #comparison .compare-table th:nth-child(2)::aft
   height: 34px;
   background: var(--pakt-orange);
   vertical-align: middle;
-  -webkit-mask: url("/images/pakt-wordmark-white.png") center / contain no-repeat;
-  mask: url("/images/pakt-wordmark-white.png") center / contain no-repeat;
+  -webkit-mask: url("/images/pakt-wordmark-white.svg") center / contain no-repeat;
+  mask: url("/images/pakt-wordmark-white.svg") center / contain no-repeat;
 }
 
 body:not(.page-component-parity) #comparison .compare-table tbody td {

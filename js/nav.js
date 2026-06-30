@@ -162,7 +162,7 @@
   function buildNav() {
     var html = '<nav class="site-nav"><div class="nav-inner">';
     var isPaktPath = /\/pakt(?:\/|$)/.test(window.location.pathname);
-    var logoSrc = isPaktPath ? base + 'images/pakt-wordmark-white.png' : base + 'images/Lingofonex_Logo-Medium.png';
+    var logoSrc = isPaktPath ? base + 'images/pakt-wordmark-white.svg' : base + 'images/Lingofonex_Logo-Medium.png';
     var logoAlt = isPaktPath ? 'Pakt by Lingofonex' : 'Lingofonex';
 
     /* Brand */
