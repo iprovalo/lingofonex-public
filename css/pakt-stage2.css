@@ -6425,3 +6425,31 @@ body:not(.page-component-parity) .final-cta .store-button > * {
     border-radius: 35px;
   }
 }
+
+@media (max-width: 760px) {
+  body:not(.page-component-parity) .pakt-hero-inner {
+    padding-top: 100px;
+  }
+
+  body:not(.page-component-parity) .pakt-hero h1 {
+    font-size: 33px;
+    line-height: 1.03;
+  }
+
+  body:not(.page-component-parity) .hero-lede {
+    margin-top: 11px;
+  }
+
+  body:not(.page-component-parity) .hero-actions {
+    margin-top: 19px;
+  }
+
+  body:not(.page-component-parity) .hero-visual {
+    justify-content: flex-start;
+    margin-top: 52px;
+  }
+
+  body:not(.page-component-parity) .hero-phone {
+    width: min(324px, calc(100vw - 36px));
+  }
+}
