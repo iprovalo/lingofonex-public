@@ -4941,6 +4941,14 @@ body:not(.page-component-parity) .situation-slider.is-shifted .situation-panel-p
     padding: 28px;
   }
 
+  body:not(.page-component-parity) .situation-panel-main > * {
+    transform: none;
+  }
+
+  body:not(.page-component-parity) .situation-highlight {
+    margin-top: 52px;
+  }
+
   body:not(.page-component-parity) .situation-panel-peek p {
     max-width: 280px;
     font-size: 27px;
