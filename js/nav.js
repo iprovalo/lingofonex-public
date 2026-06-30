@@ -466,8 +466,6 @@
       var cards = Array.prototype.slice.call(slider.querySelectorAll('.scenario-card'));
       var resizeTimer = null;
       var overflow = 0;
-      var stepDistance = 0;
-      var stepCount = 0;
 
       if (!section || cards.length < 4) return;
 
@@ -491,25 +489,13 @@
           return;
         }
         var progress = animationProgressFor(section);
-        var offset = overflow * progress;
-        if (stepCount > 0) {
-          offset = Math.min(overflow, Math.round(progress * stepCount) * stepDistance);
-        }
+        var offset = Math.min(overflow, Math.max(0, overflow * progress));
         slider.style.transform = 'translate3d(' + (-offset) + 'px, 0, 0)';
         updateHiddenCards();
       }
 
       function measure() {
         overflow = Math.max(0, slider.scrollWidth - section.clientWidth);
-        var firstCard = cards[0];
-        var secondCard = cards[1];
-        if (firstCard && secondCard) {
-          stepDistance = Math.max(1, secondCard.offsetLeft - firstCard.offsetLeft);
-          stepCount = Math.max(0, Math.round(overflow / stepDistance));
-        } else {
-          stepDistance = 0;
-          stepCount = 0;
-        }
         render();
       }
 
