@@ -5437,6 +5437,7 @@ body:not(.page-component-parity) #features.features-section .feature-grid .card[
     height: min(616px, calc(100vh - var(--pin-top) - 28px));
     justify-content: flex-start;
     padding: 28px 28px 26px;
+    border-radius: 16px;
   }
 
   body:not(.page-component-parity) #features.features-section .section-kicker {
@@ -5458,16 +5459,17 @@ body:not(.page-component-parity) #features.features-section .feature-grid .card[
 
   body:not(.page-component-parity) #features.features-section .feature-grid .card {
     display: block;
-    min-height: 200px;
-    padding: 28px 24px 22px;
+    min-height: 210px;
+    padding: 24px 24px 22px;
+    border-radius: 16px;
     background: var(--pakt-cream);
   }
 
   body:not(.page-component-parity) #features.features-section .feature-grid .card::before {
     display: block;
-    width: 30px;
-    height: 30px;
-    margin: 0 0 28px;
+    width: 48px;
+    height: 48px;
+    margin: 0 0 24px;
     background: currentColor;
     transform: none;
   }
@@ -5478,14 +5480,14 @@ body:not(.page-component-parity) #features.features-section .feature-grid .card[
   }
 
   body:not(.page-component-parity) #features.features-section .feature-grid .card h3 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.15;
   }
 
   body:not(.page-component-parity) #features.features-section .feature-grid .card p {
     max-width: 310px;
-    margin-top: 12px;
-    font-size: 14px;
+    margin-top: 14px;
+    font-size: 16px;
     line-height: 1.18;
   }
 }
