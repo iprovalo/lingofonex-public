@@ -13,6 +13,14 @@ Before editing implementation, read:
 
 Use the Figma screenshots as the visual source of truth. Use the current web screenshots only as implementation evidence.
 
+## Asset Provenance Is Mandatory
+
+Do not recreate, trace, approximate, or replace Pakt icons/assets with hand-authored SVGs, CSS-drawn shapes, icon-library glyphs, or screenshot-derived substitutes unless the user explicitly approves that fallback after being told the original Figma export is unavailable.
+
+If a task asks for "original from Figma", "designer assets", "exact icons", or similar wording, only use assets with auditable source proof: live Figma export metadata, node id plus asset URL, or a user-provided original file. If Figma access is rate-limited or blocked, stop and report that blocker instead of shipping a substitute.
+
+The provenance audit must fail, not warn, for unverified icon substitutions. Never use terms like "Figma-backed", "handoff SVG", or "asset-backed" to imply an asset is original unless its source proof is documented.
+
 Primary implementation files are outside this folder:
 
 - `../../SEO/scripts/generate_pakt_stage2.py`

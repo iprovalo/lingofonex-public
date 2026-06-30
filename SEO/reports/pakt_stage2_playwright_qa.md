@@ -1,7 +1,7 @@
 # Pakt Stage 2A Playwright QA - PASS
 
-Base URL: https://tool.dowhatmatter.com
-Generated: 2026-06-23T01:40:33.427Z
+Base URL: http://127.0.0.1:8765
+Generated: 2026-06-30T03:17:05.926Z
 Total errors: 0
 Total warnings: 0
 

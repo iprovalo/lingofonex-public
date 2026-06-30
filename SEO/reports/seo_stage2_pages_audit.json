@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T15:56:34",
+  "generated_at": "2026-06-30T05:14:22",
   "passed": true,
   "error_count": 0,
   "warning_count": 0,
@@ -10,7 +10,7 @@
       "url": "https://www.lingofonex.com/pakt/offline-translator-app/",
       "errors": [],
       "warnings": [],
-      "word_count": 1316
+      "word_count": 1306
     },
     {
       "slug": "offline-translator-for-travel",
@@ -18,7 +18,7 @@
       "url": "https://www.lingofonex.com/pakt/offline-translator-for-travel/",
       "errors": [],
       "warnings": [],
-      "word_count": 1411
+      "word_count": 1398
     },
     {
       "slug": "voice-speech-translator",
@@ -26,7 +26,7 @@
       "url": "https://www.lingofonex.com/pakt/voice-speech-translator/",
       "errors": [],
       "warnings": [],
-      "word_count": 1163
+      "word_count": 1153
     },
     {
       "slug": "best-offline-translator-app",
@@ -34,7 +34,7 @@
       "url": "https://www.lingofonex.com/pakt/best-offline-translator-app/",
       "errors": [],
       "warnings": [],
-      "word_count": 1576
+      "word_count": 1566
     }
   ],
   "support": {

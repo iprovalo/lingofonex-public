@@ -12,12 +12,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SITE = "https://www.lingofonex.com"
 STAGE2_LASTMOD = "2026-06-22"
-ASSET_VERSION = "public-fixes-64"
+ASSET_VERSION = "public-fixes-83"
 
-PLAY_STORE_URL = (
-    "https://play.google.com/store/apps/details?id=com.lingofonex.android"
-    "&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-)
 APP_STORE_URL = "https://apps.apple.com/us/app/lingofonex/id6504121499?itsct=apps_box_badge&itscg=30200"
 PAKT_FIGMA_LOGO_URL = f"{SITE}/images/pakt-wordmark-white.png"
 PAKT_FIGMA_SOCIAL_IMAGE_URL = f"{SITE}/images/pakt-figma-hero-bg.png"
@@ -104,7 +100,7 @@ PAGES = [
     {
         "slug": "offline-translator-app",
         "title": "Offline Translator App - Pakt by Lingofonex",
-        "meta": "Pakt is an offline translator app for travel. Translate in 100 languages and hear voice output in 49 when WiFi, roaming, or signal fails.",
+        "meta": "Pakt is an offline translator app for travel. Translate in 100 languages and hear voice output in 50 when WiFi, roaming, or signal fails.",
         "h1": "Offline translation for real-world conversations.",
         "crumb": "Offline Translator App",
         "eyebrow": "Offline translator app",
@@ -117,7 +113,7 @@ PAGES = [
         ),
         "trust": [
             "Translate in 100 languages",
-            "Voice output in 49 languages",
+            "Voice output in 50 languages",
             "Works offline after downloads",
             "Built for travel situations",
         ],
@@ -241,10 +237,10 @@ PAGES = [
                 "type": "languages",
                 "kicker": "Language support",
                 "title": "Languages you can rely on",
-                "lede": "Pakt supports translation in 100 languages and voice output in 49. Download what you need before the trip and test common phrases while connected.",
+                "lede": "Pakt supports translation in 100 languages and voice output in 50. Download what you need before the trip and test common phrases while connected.",
                 "stats": [
                     ("100", "translation languages"),
-                    ("49", "voice output languages"),
+                    ("50", "voice output languages"),
                 ],
                 "languages": COMMON_LANGUAGE_PILLS,
             },
@@ -255,7 +251,7 @@ PAGES = [
                 "paragraphs": [
                     "A good offline translator app should be judged by what it can do after setup, not only by what it can do on a perfect connection. Travelers should check whether the app supports the language they need, whether voice output is available, whether the app can run in airplane mode after downloads, and whether it is easy to use quickly under pressure.",
                     "Airport WiFi can be slow, mobile roaming can be disabled, and a subway platform or hotel basement may have no usable signal. That is when a traveler still needs to ask for directions, confirm an address, explain a food allergy, or understand a short answer from someone nearby.",
-                    "Voice output is especially important abroad. A translated sentence on screen can help, but spoken output can be faster in a taxi, hotel lobby, or station queue. Pakt supports voice output in 49 languages, so the app can help you communicate when pronunciation is unfamiliar or when the other person needs to hear the phrase rather than read it.",
+                    "Voice output is especially important abroad. A translated sentence on screen can help, but spoken output can be faster in a taxi, hotel lobby, or station queue. Pakt supports voice output in 50 languages, so the app can help you communicate when pronunciation is unfamiliar or when the other person needs to hear the phrase rather than read it.",
                     "Preparation matters. Download Pakt and the required languages before the trip, test a few phrases at home, then try the same phrases with mobile data disabled. That small check makes the app part of your travel routine instead of a last-minute rescue attempt after connection has already failed.",
                     "For prepared offline languages, Pakt translates locally on your phone and does not require cloud translation. Product downloads, app store behavior, diagnostics, and policy details are handled separately, so the safe claim is simple: no cloud is required for offline translation after the needed languages are downloaded.",
                 ],
@@ -266,7 +262,7 @@ PAGES = [
             ("Do I need to download languages before traveling?", "Yes. Download the languages you expect to use while WiFi is reliable, then test offline mode before leaving."),
             ("Can I use it in airplane mode?", "Yes. After preparation, Pakt can translate prepared languages when airplane mode is on."),
             ("Is offline translation private?", "For prepared offline languages, Pakt translates locally on your phone and does not require cloud translation."),
-            ("What languages are supported?", "Pakt supports translation in 100 languages and voice output in 49 languages."),
+            ("What languages are supported?", "Pakt supports translation in 100 languages and voice output in 50 languages."),
             ("Is it useful for taxis, hotels, and restaurants?", "Yes. Pakt is useful for short travel conversations in taxis, hotels, restaurants, stations, pharmacies, and markets."),
         ],
     },
@@ -287,7 +283,7 @@ PAGES = [
             "Prepare before departure",
             "Translate in taxis and hotels",
             "Works when roaming is off",
-            "Voice output in 49 languages",
+            "Voice output in 50 languages",
         ],
         "sections": [
             {
@@ -316,7 +312,7 @@ PAGES = [
                     "Install Pakt and open it once before travel day.",
                     "Download the destination language and your home language.",
                     "Test a few phrases with mobile data disabled.",
-                    "Save the App Store or Google Play page for updates before departure.",
+                    "Save the App Store page for updates before departure.",
                     "Pack a charger or power bank so offline translation is available when needed.",
                     "Practice key phrases for taxis, hotels, restaurants, pharmacies, and stations.",
                 ],
@@ -351,7 +347,7 @@ PAGES = [
                 "lede": "Pakt supports the trip pattern travelers actually face: prepare first, then translate later without depending on a live network request.",
                 "metrics": [
                     ("100", "translation languages for broad travel coverage"),
-                    ("49", "voice output languages for spoken results"),
+                    ("50", "voice output languages for spoken results"),
                     ("3", "core travel moments: arrival, transit, and service counters"),
                 ],
             },
@@ -362,7 +358,7 @@ PAGES = [
                 "title": "When text is not enough, let the translation be heard.",
                 "paragraphs": [
                     "Travel conversations are often brief but urgent. A driver may need to hear the destination. A hotel receptionist may need to understand a room issue. A restaurant server may need to hear a dietary restriction. In those cases, voice output can be more useful than a block of text on screen.",
-                    "Pakt supports voice output in 49 languages. That gives travelers a way to communicate a translated phrase without guessing pronunciation. It is not a replacement for learning local basics, but it is a practical fallback when the phrase is too important to improvise.",
+                    "Pakt supports voice output in 50 languages. That gives travelers a way to communicate a translated phrase without guessing pronunciation. It is not a replacement for learning local basics, but it is a practical fallback when the phrase is too important to improvise.",
                 ],
             },
             {
@@ -389,7 +385,7 @@ PAGES = [
             ("When should I download languages?", "Download languages before leaving home or while you have reliable WiFi before the part of the trip where you need them."),
             ("Can I use Pakt in taxis and hotels?", "Yes. Pakt is built for practical travel conversations in taxis, hotels, restaurants, stations, airports, and similar places."),
             ("Does Pakt replace learning basic phrases?", "No. Basic local phrases are still useful. Pakt helps when the phrase is longer, unfamiliar, or important enough to translate clearly."),
-            ("Does Pakt support voice output?", "Yes. Pakt supports voice output in 49 languages, depending on the selected language."),
+            ("Does Pakt support voice output?", "Yes. Pakt supports voice output in 50 languages, depending on the selected language."),
             ("What should I test before leaving?", "Test destination, hotel, restaurant, pharmacy, and transport phrases, then repeat them with mobile data disabled."),
             ("Is Pakt private for offline travel translation?", "For prepared offline languages, Pakt translates locally on your phone and does not require cloud translation."),
         ],
@@ -401,7 +397,7 @@ PAGES = [
         "h1": "Offline voice and speech translator",
         "crumb": "Voice & Speech Translator",
         "eyebrow": "Voice translator",
-        "lede": "Pakt helps travelers speak or type where supported, translate prepared languages offline, and hear results out loud in 49 voice output languages.",
+        "lede": "Pakt helps travelers speak or type where supported, translate prepared languages offline, and hear results out loud in 50 voice output languages.",
         "min_words": 800,
         "hero_dialogue": (
             "Is this train going to the city center?",
@@ -409,7 +405,7 @@ PAGES = [
         ),
         "trust": [
             "Speak or type where supported",
-            "Hear voice output in 49 languages",
+            "Hear voice output in 50 languages",
             "Built for travel conversations",
             "Works offline after setup",
         ],
@@ -447,7 +443,7 @@ PAGES = [
                 "title": "Voice output is the competitive gap that matters for travel.",
                 "lede": "Offline text is useful. Offline voice output makes the app more practical when the other person needs to hear the translation immediately.",
                 "metrics": [
-                    ("49", "languages with voice output"),
+                    ("50", "languages with voice output"),
                     ("100", "languages for translation support"),
                     ("Ready", "prepared phone for offline translation"),
                 ],
@@ -469,7 +465,7 @@ PAGES = [
                 "type": "languages",
                 "kicker": "Voice language support",
                 "title": "Check voice output before you travel.",
-                "lede": "Pakt supports voice output in 49 languages. Availability can vary by language, so the best travel habit is to test the exact language pair and phrases before departure.",
+                "lede": "Pakt supports voice output in 50 languages. Availability can vary by language, so the best travel habit is to test the exact language pair and phrases before departure.",
                 "languages": [
                     ("Japanese", "voice output when supported"),
                     ("Spanish", "voice output when supported"),
@@ -504,8 +500,8 @@ PAGES = [
             },
         ],
         "faqs": [
-            ("Is Pakt a voice translator app?", "Yes. Pakt supports voice-oriented travel workflows, including voice output in 49 languages, while also supporting offline translation more broadly."),
-            ("Can I hear translated speech offline?", "Pakt supports voice output in 49 languages. Download required languages before travel and test your language pair first."),
+            ("Is Pakt a voice translator app?", "Yes. Pakt supports voice-oriented travel workflows, including voice output in 50 languages, while also supporting offline translation more broadly."),
+            ("Can I hear translated speech offline?", "Pakt supports voice output in 50 languages. Download required languages before travel and test your language pair first."),
             ("Does Pakt only work by voice?", "No. Pakt is an offline travel translator. Voice output is important, but text remains useful as a backup."),
             ("Why is voice output useful for travel?", "It helps when the other person needs to hear the phrase, such as in a taxi, restaurant, hotel, pharmacy, or station."),
             ("Should I use long sentences?", "Short clear sentences work best. Ask one thing at a time and confirm important numbers or addresses separately."),
@@ -539,7 +535,7 @@ PAGES = [
                 "paragraphs": [
                     "Most translator apps look good when WiFi is fast and the phrase is simple. Travel is a harsher test. The app may need to work after landing, in a taxi, inside a station, or while roaming is disabled. That is why the best offline translator app for travel should be judged by preparation, offline reliability, voice output, privacy posture, and coverage for common trip situations.",
                     "Offline capabilities vary by app. Some apps support downloaded language packs for selected use cases. Some features may still need a connection. Some apps are stronger at text, while others are stronger at speech or other specialized workflows. A fair comparison should avoid broad claims and focus on the exact travel job you need done.",
-                    "Pakt is designed around offline travel translation after setup. It supports translation in 100 languages and voice output in 49 languages, with a focus on practical moments like taxis, hotels, restaurants, pharmacies, train stations, and airports.",
+                    "Pakt is designed around offline travel translation after setup. It supports translation in 100 languages and voice output in 50 languages, with a focus on practical moments like taxis, hotels, restaurants, pharmacies, train stations, and airports.",
                 ],
             },
             {
@@ -563,10 +559,10 @@ PAGES = [
                 "columns": ["Criteria", "Pakt", "Other offline translator apps", "Cloud-first translator apps"],
                 "rows": [
                     ["Offline translation", "Built for prepared offline translation after required language downloads.", "Capabilities vary by app, language, and feature.", "Often strong online; offline support may be limited or require setup."],
-                    ["Voice output", "Voice output in 49 languages, useful when a phrase should be heard.", "May support speech in selected languages or online modes.", "Often strong with connection; offline voice support should be checked."],
+                    ["Voice output", "Voice output in 50 languages, useful when a phrase should be heard.", "May support speech in selected languages or online modes.", "Often strong with connection; offline voice support should be checked."],
                     ["Travel focus", "Designed around taxis, hotels, restaurants, airports, stations, and pharmacies.", "May be general purpose rather than trip-preparation focused.", "Useful online, but less predictable when connection fails."],
                     ["Privacy model", "Prepared offline translation runs locally on the phone without requiring cloud translation.", "Depends on app architecture and feature selected.", "Typically relies on live service requests for core translation."],
-                    ["Language coverage", "100 translation languages and 49 voice output languages.", "Coverage varies, especially for offline speech features.", "Broad online coverage is common; offline coverage should be verified."],
+                    ["Language coverage", "100 translation languages and 50 voice output languages.", "Coverage varies, especially for offline speech features.", "Broad online coverage is common; offline coverage should be verified."],
                     ["Account and setup", "Travel setup focuses on downloading languages before leaving.", "Setup varies by app and platform.", "May be easiest online, but less useful if the connection is unavailable."],
                 ],
             },
@@ -577,7 +573,7 @@ PAGES = [
                 "lede": "A translator app should match the moment you fear most on a trip.",
                 "paragraphs": [
                     "If your main concern is perfect online translation at home, many apps can help. If your concern is landing in a new country with mobile data disabled, the comparison changes. The app needs downloaded languages, offline behavior that you have tested, and an interface that works under pressure.",
-                    "Voice output also changes the comparison. A phrase on screen is useful, but spoken output can make a taxi, restaurant, or hotel conversation move faster. Pakt emphasizes this gap by supporting voice output in 49 languages.",
+                    "Voice output also changes the comparison. A phrase on screen is useful, but spoken output can make a taxi, restaurant, or hotel conversation move faster. Pakt emphasizes this gap by supporting voice output in 50 languages.",
                     "The right test is practical: download the app, choose the language you need, turn off mobile data, and try the exact phrases you expect to use. If the app cannot handle those phrases before you leave, do not rely on it as your only travel translation plan.",
                 ],
                 "cards": [
@@ -593,7 +589,7 @@ PAGES = [
                 "lede": "Pakt is built for the travel-specific category rather than as a generic online translator page with offline mentioned in passing.",
                 "metrics": [
                     ("100", "translation languages"),
-                    ("49", "voice output languages"),
+                    ("50", "voice output languages"),
                     ("6", "core travel scenarios covered on this page"),
                 ],
             },
@@ -626,7 +622,7 @@ PAGES = [
                 "title": "How to decide what is best for your trip.",
                 "paragraphs": [
                     "Start with the destination. A weekend in Spain, a rail trip through France, and a first visit to Japan create different translation needs. The language, script, public transportation system, and restaurant habits all shape what matters. Pakt is strongest when you prepare the languages for the trip and use it for practical conversations abroad.",
-                    "Next, decide whether voice output matters. If you are comfortable showing text on screen, offline text may be enough for many moments. If pronunciation is unfamiliar or you expect fast spoken exchanges, voice output can save time. Pakt supports voice output in 49 languages, which is why it is a strong candidate for travelers who care about spoken phrases.",
+                    "Next, decide whether voice output matters. If you are comfortable showing text on screen, offline text may be enough for many moments. If pronunciation is unfamiliar or you expect fast spoken exchanges, voice output can save time. Pakt supports voice output in 50 languages, which is why it is a strong candidate for travelers who care about spoken phrases.",
                     "Then test privacy and offline behavior. The safe expectation is that app downloads, updates, stores, diagnostics, and support may involve online systems, while prepared offline translation can run locally on your phone. Look for clear language rather than broad slogans. For Pakt, the claim is that no cloud is required for offline translation after required languages are downloaded.",
                     "Finally, keep the app in the right role. Translation apps are useful travel tools, but they should not be the only plan for medical, legal, emergency, or safety-critical situations. For everyday travel friction, Pakt can make the ordinary conversations easier: where to go, what to order, what something costs, or how to explain a simple problem.",
                 ],
@@ -638,7 +634,7 @@ PAGES = [
             ("How is Pakt different from online translators?", "Pakt is built around prepared offline travel translation and voice output for situations where WiFi or mobile signal may fail."),
             ("Do other translator apps have offline modes?", "Some do. Offline capabilities vary by app, language, and feature, so travelers should test the exact workflow before relying on it abroad."),
             ("Why does voice output matter?", "Voice output lets the other person hear a translated phrase, which can be faster in taxis, hotels, restaurants, pharmacies, and stations."),
-            ("How many languages does Pakt support?", "Pakt supports translation in 100 languages and voice output in 49 languages."),
+            ("How many languages does Pakt support?", "Pakt supports translation in 100 languages and voice output in 50 languages."),
             ("Should I use an offline translator for emergencies?", "Use translation apps for everyday travel friction, but keep separate help plans for medical, legal, emergency, or safety-critical situations."),
             ("How should I test an offline translator app?", "Download the languages, turn on airplane mode, and try the taxi, hotel, restaurant, pharmacy, and station phrases you expect to use."),
         ],
@@ -650,27 +646,37 @@ EXPLORE_MORE_CARDS = [
     {
         "href": "/pakt/offline-translator-app/",
         "title": "Offline Translator App",
+        "preview": "Offline Translation",
         "icon": "phone",
+        "background": "offline",
     },
     {
         "href": "/pakt/voice-speech-translator/",
         "title": "Voice Translator",
+        "preview": "Voice Translation",
         "icon": "voice",
+        "background": "voice",
     },
     {
         "href": "/pakt/offline-translator-for-travel/",
         "title": "Travel Translator",
+        "preview": "Travel Translation",
         "icon": "suitcase",
+        "background": "travel",
     },
     {
         "href": "/pakt/offline-translator-app/#destination-mini-title",
         "title": "Japan Travel Translator",
+        "preview": "Japan Travel",
         "icon": "flag",
+        "background": "japan",
     },
     {
         "href": "/pakt/offline-translator-app/#offline-proof",
         "title": "Airplane Mode Translator",
+        "preview": "Airplane Mode",
         "icon": "airplane",
+        "background": "airplane",
     },
 ]
 
@@ -883,15 +889,14 @@ def store_buttons() -> str:
     return f"""
       <div class="store-buttons" data-block="StoreCtaButtons">
         <a class="store-button apple" href="{e(APP_STORE_URL)}" target="_blank" rel="noopener" aria-label="Download Pakt on the App Store">
-          <img class="store-icon" src="/images/pakt-store-apple.svg" alt="" width="18" height="22" loading="lazy" decoding="async">
-          <span><small>Download on the</small>App Store</span>
-        </a>
-        <a class="store-button google" href="{e(PLAY_STORE_URL)}" target="_blank" rel="noopener" aria-label="Get Pakt on Google Play">
-          <img class="store-icon" src="/images/pakt-store-google-play.svg" alt="" width="19" height="22" loading="lazy" decoding="async">
-          <span><small>Get it on</small>Google Play</span>
+          <img class="store-badge" src="/images/pakt-store-app-store-button.svg?v={ASSET_VERSION}" alt="Download on the App Store" width="144" height="48" loading="lazy" decoding="async">
         </a>
       </div>
     """
+
+
+def mic_button_svg() -> str:
+    return f"""<svg class="mic-button-svg" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><use href="/images/pakt-icon-mic-button.svg?v={ASSET_VERSION}#pakt-mic-button"></use></svg>"""
 
 
 def render_json_ld(page: dict) -> str:
@@ -1072,15 +1077,20 @@ def section_shell(
     return f'<section{id_attr} class="{class_name}"{block_attr}>\n{content}\n</section>'
 
 
-def render_cards(cards: list[tuple[str, str]], class_name: str = "card-grid") -> str:
-    return f'<div class="{class_name}">' + "\n".join(
-        f"""
-      <article class="card">
+def render_cards(cards: list[tuple[str, str]], class_name: str = "card-grid", active_first: bool = False) -> str:
+    articles = []
+    for index, (title, text) in enumerate(cards):
+        active = active_first and index == 0
+        card_class = "card is-active" if active else "card"
+        current_attr = f' aria-current="{"true" if active else "false"}"' if active_first else ""
+        articles.append(
+            f"""
+      <article class="{card_class}"{current_attr}>
         <h3>{e(title)}</h3>
         <p>{e(text)}</p>
       </article>"""
-        for title, text in cards
-    ) + "\n    </div>"
+        )
+    return f'<div class="{class_name}">' + "\n".join(articles) + "\n    </div>"
 
 
 def block_for_section(section: dict) -> tuple[str, str]:
@@ -1216,11 +1226,13 @@ def render_section(section: dict) -> str:
 
     if stype == "features":
         content = f"""
-  {kicker}
-  {title}
-  {lede}
-  {render_cards(section["cards"], "card-grid feature-grid")}"""
-        return section_shell(content, band, block_name=block_name, section_id=section_id)
+  <div class="scroll-pin features-pin">
+    {kicker}
+    {title}
+    {lede}
+    {render_cards(section["cards"], "card-grid feature-grid", active_first=True)}
+  </div>"""
+        return section_shell(content, band, "section features-section scroll-section", block_name, section_id)
 
     if stype == "steps":
         steps = "\n".join(
@@ -1307,7 +1319,7 @@ def render_section(section: dict) -> str:
         return section_shell(content, band, "section proof-section", block_name, section_id)
 
     if stype == "languages":
-        stat_values = [("100+", "Languages"), ("49", "Voice languages")]
+        stat_values = [("100+", "Languages"), ("50", "Voice languages")]
         language_title = f'<h2 class="section-title">{e(section.get("title", ""))}</h2>' if section.get("title") else ""
         stats = "\n".join(
             f"""
@@ -1333,7 +1345,7 @@ def render_section(section: dict) -> str:
   <div class="languages-layout">
     <div class="languages-copy">
       {language_title}
-      <p class="section-lede">Translate in <strong>100+</strong> languages.<br>Hear natural voice output in <strong>49</strong></p>
+      <p class="section-lede">Translate in <strong>100+</strong> languages.<br>Hear natural voice output in <strong>50</strong></p>
       <div class="language-stats">
 {stats}
       </div>
@@ -1453,9 +1465,9 @@ def render_section(section: dict) -> str:
       <p class="section-lede">{e(conversation["body"])}</p>
       <div class="conversation-card" aria-hidden="true">
         <div class="bubble blue"><small>English</small>Type here...</div>
-        <div class="mic-dot"> </div>
+        <div class="mic-dot">{mic_button_svg()}</div>
         <div class="bubble orange"><small>Russian</small>Type here...</div>
-        <div class="mic-dot orange"> </div>
+        <div class="mic-dot orange">{mic_button_svg()}</div>
       </div>
     </section>
 {destination_html}
@@ -1469,7 +1481,12 @@ def render_section(section: dict) -> str:
         for row in section["rows"]:
             cells = []
             for label, value in zip(columns, row):
-                cls = ' class="pakt-col"' if label == "Pakt" else ""
+                classes = []
+                if label == "Pakt":
+                    classes.append("pakt-col")
+                if label == "Pakt" and value == "✓":
+                    classes.append("pakt-col-is-check")
+                cls = f' class="{" ".join(classes)}"' if classes else ""
                 cells.append(f'<td data-label="{e(label)}"{cls}>{e(value)}</td>')
             rows.append("<tr>" + "".join(cells) + "</tr>")
         content = f"""
@@ -1511,11 +1528,12 @@ def render_faq(page: dict) -> str:
 def render_related(page: dict) -> str:
     cards = "\n".join(
         f"""
-    <a class="related-card" href="{e(item["href"])}" data-explore-icon="{e(item["icon"])}">
+    <button class="related-card" type="button" data-explore-icon="{e(item["icon"])}" data-explore-bg="{e(item["background"])}" data-explore-target="{e(item["href"])}" aria-expanded="false">
       <span class="related-card-icon" aria-hidden="true"></span>
       <span class="related-card-title">{e(item["title"])}</span>
+      <span class="related-card-preview" aria-hidden="true">{e(item["preview"])}</span>
       <span class="related-card-plus" aria-hidden="true"></span>
-    </a>"""
+    </button>"""
         for item in EXPLORE_MORE_CARDS
     )
     return f"""
@@ -1674,25 +1692,25 @@ def update_llms() -> None:
     )
     text = f"""# Pakt - Offline Translator App for Travel
 
-> Pakt is an offline translator app for travelers, built by Lingofonex. It supports translation in 100 languages and voice output in 49 languages after the required languages or models are downloaded.
+> Pakt is an offline translator app for travelers, built by Lingofonex. It supports translation in 100 languages and voice output in 50 languages after the required languages or models are downloaded.
 
 Publisher: Lingofonex ({SITE})
 App brand: Pakt (alternate name: "Pakt by Lingofonex")
 Primary use case: offline text and voice-oriented translation for travel
 Languages supported: 100
-Voice output: 49 languages
+Voice output: 50 languages
 Privacy posture: Pakt translates locally on your phone for prepared offline languages. No cloud required for offline translation.
 
 ## Pakt Pages
 
-- [Pakt - product hub]({SITE}/pakt/) - Pakt product hub: offline translator for travel by Lingofonex; supports translation in 100 languages and voice output in 49.
+- [Pakt - product hub]({SITE}/pakt/) - Pakt product hub: offline translator for travel by Lingofonex; supports translation in 100 languages and voice output in 50.
 {stage_links}
 
 ## Site Pages
 
 - [Home]({SITE}/home/en.html) - Product overview and app information
 - [Demo]({SITE}/demo/en.html) - Live translation examples and screenshots
-- [Download]({SITE}/download/en.html) - iOS App Store and Google Play download links
+- [Download]({SITE}/download/en.html) - iOS App Store download link
 - [FAQ]({SITE}/faq/en.html) - Common questions about offline use, accuracy, and languages
 - [Privacy Policy]({SITE}/privacy-policy/en.html) - Data handling and privacy details
 - [EULA]({SITE}/eula/en.html) - End-user license agreement
@@ -1706,7 +1724,7 @@ Legacy site sections are available in 23 languages. The Pakt Stage 2 SEO pages a
 
 - Pakt is an app/product by Lingofonex. Lingofonex is the publisher.
 - Pakt works offline after required languages or models are downloaded.
-- Pakt supports translation in 100 languages and voice output in 49 languages.
+- Pakt supports translation in 100 languages and voice output in 50 languages.
 - Pakt is built for travel situations such as taxis, hotels, restaurants, airports, pharmacies, and train stations.
 - Avoid assuming high-stakes medical, legal, or emergency reliability. Use clear, practical travel phrases and verify important details.
 """
@@ -1716,6 +1734,11 @@ Legacy site sections are available in 23 languages. The Pakt Stage 2 SEO pages a
 def update_hub() -> None:
     path = ROOT / "pakt" / "index.html"
     text = path.read_text(encoding="utf-8")
+    text = re.sub(
+        r"(pakt-favicon\.svg\?v=)public-fixes-\d+",
+        rf"\1{ASSET_VERSION}",
+        text,
+    )
     text = re.sub(
         r"Speak, type, or scan\s+text\s+.\s+Pakt translates on-device when connection fails\.",
         "Speak or type where supported - Pakt translates on-device after required languages are downloaded.",

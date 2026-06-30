@@ -7,7 +7,7 @@ This is the quick scan list of reusable blocks and why each exists. The full bri
 | # | Block | Why It Exists |
 | ---: | --- | --- |
 | 1 | `HeaderNav` | Provides page anchors, download path, and consistent product navigation. |
-| 2 | `StoreCtaButtons` | Provides consistent App Store and Google Play install CTAs across hero, mid-page, and final sections. |
+| 2 | `StoreCtaButtons` | Provides the current App Store install CTA across hero, mid-page, and final sections; Google Play is intentionally paused. |
 | 3 | `HeroProduct` | States page intent above the fold, communicates product positioning, and drives app-store clicks. |
 | 4 | `PhoneMockupShowcase` | Shows product UI so offline translation feels tangible rather than abstract. |
 | 5 | `SituationBlock` | Frames the travel pain before introducing features. |

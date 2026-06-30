@@ -1,18 +1,18 @@
 # Pakt - Offline Translator App for Travel
 
-> Pakt is an offline translator app for travelers, built by Lingofonex. It supports translation in 100 languages and voice output in 49 languages after the required languages or models are downloaded.
+> Pakt is an offline translator app for travelers, built by Lingofonex. It supports translation in 100 languages and voice output in 50 languages after the required languages or models are downloaded.
 
 Publisher: Lingofonex (https://www.lingofonex.com)
 App brand: Pakt (alternate name: "Pakt by Lingofonex")
 Primary use case: offline text and voice-oriented translation for travel
 Languages supported: 100
-Voice output: 49 languages
+Voice output: 50 languages
 Privacy posture: Pakt translates locally on your phone for prepared offline languages. No cloud required for offline translation.
 
 ## Pakt Pages
 
-- [Pakt - product hub](https://www.lingofonex.com/pakt/) - Pakt product hub: offline translator for travel by Lingofonex; supports translation in 100 languages and voice output in 49.
-- [Offline Translator App](https://www.lingofonex.com/pakt/offline-translator-app/) - Pakt is an offline translator app for travel. Translate in 100 languages and hear voice output in 49 when WiFi, roaming, or signal fails.
+- [Pakt - product hub](https://www.lingofonex.com/pakt/) - Pakt product hub: offline translator for travel by Lingofonex; supports translation in 100 languages and voice output in 50.
+- [Offline Translator App](https://www.lingofonex.com/pakt/offline-translator-app/) - Pakt is an offline translator app for travel. Translate in 100 languages and hear voice output in 50 when WiFi, roaming, or signal fails.
 - [Offline Translator for Travel](https://www.lingofonex.com/pakt/offline-translator-for-travel/) - Download Pakt before your trip and translate offline while traveling. Use it in taxis, hotels, restaurants, airports, and more.
 - [Voice & Speech Translator](https://www.lingofonex.com/pakt/voice-speech-translator/) - Speak, translate, and hear voice output offline with Pakt. Built for travel conversations when internet access is unreliable.
 - [Best Offline Translator App](https://www.lingofonex.com/pakt/best-offline-translator-app/) - Compare offline translator apps by offline use, voice output, privacy, travel readiness, language support, and account requirements.
@@ -21,7 +21,7 @@ Privacy posture: Pakt translates locally on your phone for prepared offline lang
 
 - [Home](https://www.lingofonex.com/home/en.html) - Product overview and app information
 - [Demo](https://www.lingofonex.com/demo/en.html) - Live translation examples and screenshots
-- [Download](https://www.lingofonex.com/download/en.html) - iOS App Store and Google Play download links
+- [Download](https://www.lingofonex.com/download/en.html) - iOS App Store download link
 - [FAQ](https://www.lingofonex.com/faq/en.html) - Common questions about offline use, accuracy, and languages
 - [Privacy Policy](https://www.lingofonex.com/privacy-policy/en.html) - Data handling and privacy details
 - [EULA](https://www.lingofonex.com/eula/en.html) - End-user license agreement
@@ -35,6 +35,6 @@ Legacy site sections are available in 23 languages. The Pakt Stage 2 SEO pages a
 
 - Pakt is an app/product by Lingofonex. Lingofonex is the publisher.
 - Pakt works offline after required languages or models are downloaded.
-- Pakt supports translation in 100 languages and voice output in 49 languages.
+- Pakt supports translation in 100 languages and voice output in 50 languages.
 - Pakt is built for travel situations such as taxis, hotels, restaurants, airports, pharmacies, and train stations.
 - Avoid assuming high-stakes medical, legal, or emergency reliability. Use clear, practical travel phrases and verify important details.

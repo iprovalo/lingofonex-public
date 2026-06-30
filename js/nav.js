@@ -383,6 +383,24 @@
       render();
     });
 
+    document.querySelectorAll('body:not(.page-component-parity) #features .feature-grid').forEach(function (grid) {
+      var section = grid.closest('#features');
+      var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+      if (!section || cards.length < 2) return;
+
+      function render() {
+        var activeIndex = activeIndexFor(animationProgressFor(section), cards.length);
+        cards.forEach(function (card, index) {
+          var active = index === activeIndex;
+          card.classList.toggle('is-active', active);
+          card.setAttribute('aria-current', active ? 'true' : 'false');
+        });
+      }
+
+      scrollDrivenBlocks.push(render);
+      render();
+    });
+
     document.querySelectorAll('#checklist .checklist').forEach(function (list) {
       var items = Array.prototype.slice.call(list.querySelectorAll('.check-item'));
       if (!items.length) return;
@@ -511,11 +529,36 @@
       var cards = Array.prototype.slice.call(slider.querySelectorAll('.related-card'));
       var resizeTimer = null;
       var overflow = 0;
-      var stepDistance = 0;
-      var stepCount = 0;
-      var stepInset = 0;
+      var currentExpandedCard = null;
+      var settleTimer = null;
 
       if (!section || !rail || cards.length < 2) return;
+
+      function applyExpanded(targetCard) {
+        if (currentExpandedCard === targetCard) return;
+        currentExpandedCard = targetCard;
+        cards.forEach(function (card) {
+          var active = card === targetCard;
+          card.setAttribute('aria-expanded', active ? 'true' : 'false');
+          card.classList.toggle('is-open', active);
+        });
+        section.classList.toggle('has-open-related-card', Boolean(targetCard));
+        window.clearTimeout(settleTimer);
+        settleTimer = window.setTimeout(render, 220);
+      }
+
+      function setExpanded(targetCard) {
+        var nextCard = targetCard && currentExpandedCard !== targetCard ? targetCard : null;
+        applyExpanded(nextCard);
+        window.requestAnimationFrame(measure);
+      }
+
+      cards.forEach(function (card) {
+        card.setAttribute('aria-expanded', card.getAttribute('aria-expanded') === 'true' ? 'true' : 'false');
+        card.addEventListener('click', function () {
+          setExpanded(card);
+        });
+      });
 
       function updateHiddenCards() {
         var railRect = rail.getBoundingClientRect();
@@ -530,30 +573,21 @@
 
       function render() {
         var progress = animationProgressFor(section);
-        var offset = overflow * progress;
-        if (stepCount > 0) {
-          var step = Math.round(progress * stepCount);
-          offset = step === 0 ? 0 : (step * stepDistance) + stepInset;
-        }
+        updateOverflow();
+        var offset = Math.min(Math.max(overflow * progress, 0), overflow);
         slider.style.transform = 'translate3d(' + (-offset) + 'px, 0, 0)';
         updateHiddenCards();
       }
 
-      function measure() {
+      function updateOverflow() {
         var railStyles = window.getComputedStyle(rail);
         var railLeftPadding = parseFloat(railStyles.paddingLeft) || 0;
-        overflow = Math.max(0, slider.scrollWidth - rail.clientWidth + railLeftPadding);
-        var firstCard = cards[0];
-        var secondCard = cards[1];
-        if (firstCard && secondCard) {
-          stepDistance = Math.max(1, secondCard.offsetLeft - firstCard.offsetLeft);
-          stepCount = Math.max(0, Math.round(overflow / stepDistance));
-          stepInset = Math.max(0, railLeftPadding - Math.max(0, stepDistance - firstCard.offsetWidth));
-        } else {
-          stepDistance = 0;
-          stepCount = 0;
-          stepInset = 0;
-        }
+        var railRightPadding = parseFloat(railStyles.paddingRight) || 0;
+        overflow = Math.max(0, slider.scrollWidth + railLeftPadding + railRightPadding - rail.clientWidth);
+      }
+
+      function measure() {
+        updateOverflow();
         render();
       }
 

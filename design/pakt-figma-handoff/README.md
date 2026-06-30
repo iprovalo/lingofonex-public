@@ -19,6 +19,7 @@ This is not a native `.fig` export. It is an agent-readable local handoff built 
 
 - `figma-screenshots/pakt-mobile-full.png` - full mobile Figma frame.
 - `figma-screenshots/pakt-desktop-full.png` - full desktop Figma frame.
+- `figma-screenshots/pakt-desktop-grid-reference.jpg` - user-provided designer grid screenshot for desktop spacing checks.
 - `figma-screenshots/mobile-sections/` - mobile frame cropped into named page sections.
 - `figma-screenshots/desktop-sections/` - desktop frame cropped into named page sections.
 - `figma-screenshots/live-import/` - authenticated in-app browser verification screenshots for updated Figma frames.
@@ -26,6 +27,7 @@ This is not a native `.fig` export. It is an agent-readable local handoff built 
 - `tokens/figma-variable-defs.json` - colors and typography variables pulled from Figma.
 - `tokens/pakt-tokens.css` - CSS custom property reference for implementation work.
 - `metadata/manifest.json` - machine-readable index of the package.
+- `metadata/product-requirements.md` - canonical SEO/product claim ledger, including the `100+ / 50` language coverage rules.
 - `metadata/node-map.json` - source Figma nodes and local screenshot mapping.
 - `metadata/screenshot-inventory.md` - dimensions for every Figma and web screenshot.
 - `component-library/` - reusable SEO landing-page block inventory, page recipes, and out-of-scope block rules.
@@ -72,6 +74,6 @@ The full component catalog is available locally at `/pakt/component-showcase/`. 
 - The current web implementation uses the local handoff assets `images/pakt-figma-hero-bg.png` and `images/pakt-figma-phone-mockup.png`; fresh live re-export from Figma was not available in the resumed Codex session on 2026-06-26.
 - The hero phone mockup is still an image/CSS reconstruction, not a full exported app implementation.
 - `OfflineProofBand` now uses a Figma-cropped phone/control-center visual from `images/pakt-offline-proof-phone.png` and `images/pakt-offline-proof-phone-desktop.png`.
-- Public SVG icons are asset-backed in CSS. Icons that existed as local Figma SVG exports are used directly; small glyphs that only existed as local reference crops/screenshots are stored as separate SVG asset files and should be replaced with fresh Figma-native SVG exports when connector access is available.
+- Public SVG icons must have explicit provenance. Stage-2 UI icons now come from user-provided named Figma SVG exports or extracted glyphs from user-provided full-page Figma SVG exports, and are checksum-pinned in `SEO/scripts/pakt_asset_provenance_audit.js`. Do not add a hand-authored/recreated SVG and describe it as original Figma artwork.
 - Key assets surfaced by Figma are local in `assets/`; full-image sections should be reconstructed from screenshots or refreshed through Figma if exact production assets are needed.
 - Figma temporary asset URLs can expire. Use the file key and node IDs in `metadata/` to refresh the package.

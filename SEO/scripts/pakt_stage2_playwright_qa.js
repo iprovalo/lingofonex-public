@@ -80,8 +80,11 @@ async function auditPage(browser, pageDef, viewport) {
         errors.push(`Missing component block: ${blockName}`);
       }
     }
-    if ((await visibleCount(page.locator(".store-button"))) < 2) {
-      errors.push("App Store and Google Play CTA badges are not both visible");
+    if ((await visibleCount(page.locator(".store-button"))) < 1) {
+      errors.push("App Store CTA badge is not visible");
+    }
+    if ((await page.locator('.store-button[href*="play.google.com"], .store-button.google').count()) > 0) {
+      errors.push("Google Play CTA should be removed for now");
     }
     if ((await page.locator(".faq-question").count()) < 5) {
       errors.push("Expected at least five FAQ questions");

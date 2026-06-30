@@ -66,7 +66,10 @@ const requiredSvgReferences = [
   "/images/pakt-icon-proof-no-wifi.svg",
   "/images/pakt-icon-proof-weak-signal.svg",
   "/images/pakt-icon-privacy-lock.svg",
-  "/images/pakt-icon-mic-cream.svg",
+  "/images/pakt-icon-mic-button.svg",
+  "/images/pakt-why-icon-connection.svg",
+  "/images/pakt-why-icon-lock.svg",
+  "/images/pakt-why-icon-shield.svg",
   "/images/pakt-icon-faq-plus.svg",
   "/images/pakt-icon-faq-minus.svg",
   "/images/pakt-icon-close.svg",
@@ -90,6 +93,14 @@ function ignoreConsole(text) {
 function auditRasterIconReferences(errors) {
   const cssPath = path.join(ROOT, "css", "pakt-stage2.css");
   const css = fs.existsSync(cssPath) ? fs.readFileSync(cssPath, "utf8") : "";
+  const stage2Files = [
+    "css/pakt-stage2.css",
+    "pakt/index.html",
+    ...pages.map((pageDef) => `pakt/${pageDef.slug}/index.html`).filter((file) => fs.existsSync(path.join(ROOT, file))),
+  ];
+  const stageText = stage2Files
+    .map((file) => (fs.existsSync(path.join(ROOT, file)) ? fs.readFileSync(path.join(ROOT, file), "utf8") : ""))
+    .join("\n");
   const matches = new Set();
   for (const pattern of bannedRasterIconPatterns) {
     for (const match of css.matchAll(pattern)) matches.add(match[0]);
@@ -101,7 +112,7 @@ function auditRasterIconReferences(errors) {
     if (pattern.test(css)) errors.push(`${label} remains in CSS`);
   }
   for (const asset of requiredSvgReferences) {
-    if (!css.includes(asset)) errors.push(`Required SVG icon asset is not referenced by CSS: ${asset}`);
+    if (!stageText.includes(asset)) errors.push(`Required SVG icon asset is not referenced by generated Pakt files: ${asset}`);
   }
 }
 
@@ -144,6 +155,12 @@ function auditPaktAssetReferences(errors) {
 
 function bgUsesAsset(value, assetName) {
   return typeof value === "string" && value.includes(assetName);
+}
+
+function styleUsesAsset(value, assetName) {
+  if (typeof value === "string") return bgUsesAsset(value, assetName);
+  if (!value) return false;
+  return bgUsesAsset(`${value.backgroundImage || ""} ${value.maskImage || ""} ${value.webkitMaskImage || ""}`, assetName);
 }
 
 async function countVisible(locator) {
@@ -266,9 +283,68 @@ async function auditFaq(page, errors) {
   const initiallyOpen = await page.locator(".faq-item[open], .faq-item.open").count();
   if (initiallyOpen !== 0) errors.push(`FAQ should start closed, found ${initiallyOpen} open items`);
 
+  const shouldAuditDesktopGeometry = await page.evaluate(() => window.innerWidth > 760 && Boolean(document.querySelector("body:not(.page-component-parity) #faq .faq-item")));
+  let closedGeometry = null;
+  if (shouldAuditDesktopGeometry) {
+    closedGeometry = await page.locator("body:not(.page-component-parity) #faq .faq-item").first().evaluate((item) => {
+      const question = item.querySelector(".faq-question");
+      const icon = window.getComputedStyle(question, "::after");
+      const rect = item.getBoundingClientRect();
+      return {
+        width: rect.width,
+        height: rect.height,
+        radius: parseFloat(window.getComputedStyle(item).borderTopLeftRadius) || 0,
+        questionHeight: question.getBoundingClientRect().height,
+        questionFontSize: parseFloat(window.getComputedStyle(question).fontSize) || 0,
+        iconWidth: parseFloat(icon.width) || 0,
+        iconImage: icon.backgroundImage,
+      };
+    });
+  }
+
   await questions.nth(0).click();
   let openCount = await page.locator(".faq-item[open], .faq-item.open").count();
   if (openCount !== 1) errors.push(`FAQ first click should leave one item open, found ${openCount}`);
+
+  if (shouldAuditDesktopGeometry) {
+    const openGeometry = await page.locator("body:not(.page-component-parity) #faq .faq-item").first().evaluate((item) => {
+      const question = item.querySelector(".faq-question");
+      const answer = item.querySelector(".faq-answer");
+      const icon = window.getComputedStyle(question, "::after");
+      const rect = item.getBoundingClientRect();
+      return {
+        width: rect.width,
+        height: rect.height,
+        radius: parseFloat(window.getComputedStyle(item).borderTopLeftRadius) || 0,
+        answerHeight: answer.getBoundingClientRect().height,
+        answerFontSize: parseFloat(window.getComputedStyle(answer).fontSize) || 0,
+        answerColor: window.getComputedStyle(answer).color,
+        iconWidth: parseFloat(icon.width) || 0,
+        iconImage: icon.backgroundImage,
+      };
+    });
+    if (closedGeometry.width < 930 || closedGeometry.width > 980) {
+      errors.push(`FAQ desktop closed width should match 957px component: ${JSON.stringify(closedGeometry)}`);
+    }
+    if (closedGeometry.height < 68 || closedGeometry.height > 75 || closedGeometry.radius < 32 || closedGeometry.radius > 38) {
+      errors.push(`FAQ desktop closed row should match 71px pill state: ${JSON.stringify(closedGeometry)}`);
+    }
+    if (closedGeometry.questionHeight < 66 || closedGeometry.questionHeight > 72 || closedGeometry.questionFontSize < 19 || closedGeometry.questionFontSize > 21) {
+      errors.push(`FAQ desktop question text geometry should match component: ${JSON.stringify(closedGeometry)}`);
+    }
+    if (!closedGeometry.iconImage.includes("pakt-icon-faq-plus.svg") || closedGeometry.iconWidth < 14 || closedGeometry.iconWidth > 18) {
+      errors.push(`FAQ desktop closed icon should be 16px plus SVG: ${JSON.stringify(closedGeometry)}`);
+    }
+    if (openGeometry.width < 930 || openGeometry.width > 980 || openGeometry.height < 170 || openGeometry.radius < 36 || openGeometry.radius > 44) {
+      errors.push(`FAQ desktop expanded row should match 957x179 component state: ${JSON.stringify(openGeometry)}`);
+    }
+    if (openGeometry.answerHeight <= 30 || openGeometry.answerFontSize < 19 || openGeometry.answerFontSize > 21 || !/rgba?\(23,\s*23,\s*26/.test(openGeometry.answerColor)) {
+      errors.push(`FAQ desktop expanded answer should be visible muted 20px text: ${JSON.stringify(openGeometry)}`);
+    }
+    if (!openGeometry.iconImage.includes("pakt-icon-faq-minus.svg") || openGeometry.iconWidth < 14 || openGeometry.iconWidth > 18) {
+      errors.push(`FAQ desktop expanded icon should be 16px minus SVG: ${JSON.stringify(openGeometry)}`);
+    }
+  }
 
   if (count > 1) {
     await questions.nth(1).click();
@@ -284,8 +360,8 @@ async function auditStoreButtons(page, errors) {
   const buttons = page.locator(".store-button");
   const count = await buttons.count();
   if (!count) return;
-  if ((await countVisible(buttons)) < 2) {
-    errors.push("App Store and Google Play CTA badges are not both visible");
+  if ((await countVisible(buttons)) < 1) {
+    errors.push("App Store CTA badge is not visible");
   }
 
   const data = await buttons.evaluateAll((anchors) =>
@@ -297,34 +373,84 @@ async function auditStoreButtons(page, errors) {
     })),
   );
 
-  for (const button of data) {
-    if (!/^https:\/\/(apps\.apple\.com|play\.google\.com)\//.test(button.href)) {
-      errors.push(`Store CTA is not an expected external store URL: ${button.href}`);
+  const appStoreButtons = data.filter((button) => /^https:\/\/apps\.apple\.com\//.test(button.href));
+  const googleButtons = data.filter((button) => /play\.google\.com|Google Play/i.test(`${button.href} ${button.label}`));
+  if (!appStoreButtons.length) errors.push("No App Store CTA badge found");
+  if (googleButtons.length) errors.push(`Google Play CTA should be removed for now: ${googleButtons.map((button) => button.label).join(", ")}`);
+
+  for (const button of appStoreButtons) {
+    if (!/^https:\/\/apps\.apple\.com\//.test(button.href)) {
+      errors.push(`Store CTA is not an expected App Store URL: ${button.href}`);
     }
     if (button.target !== "_blank") errors.push(`Store CTA should open a new tab: ${button.label}`);
     if (!button.rel.includes("noopener")) errors.push(`Store CTA missing noopener: ${button.label}`);
   }
 }
 
-async function auditRelatedCards(page, errors, warnings) {
-  const cards = await page.locator(".related-card").evaluateAll((anchors) =>
-    anchors.map((anchor) => ({
-      href: anchor.href,
-      text: anchor.textContent.trim().replace(/\s+/g, " "),
+async function auditRelatedCards(page, errors) {
+  const cards = await page.locator("#explore-more .related-card").evaluateAll((elements) =>
+    elements.map((element) => ({
+      tagName: element.tagName.toLowerCase(),
+      href: element.getAttribute("href"),
+      type: element.getAttribute("type"),
+      expanded: element.getAttribute("aria-expanded"),
+      text: element.textContent.trim().replace(/\s+/g, " "),
     })),
   );
   for (const card of cards) {
-    if (!card.href.includes("/pakt/")) {
-      errors.push(`Related card points outside Pakt: ${card.text} -> ${card.href}`);
-      continue;
+    if (card.tagName !== "button") {
+      errors.push(`Explore card should be an in-page button, found <${card.tagName}>: ${card.text}`);
     }
-    try {
-      const response = await page.request.get(card.href, { timeout: 10000 });
-      if (response.status() >= 400) {
-        errors.push(`Related card returned HTTP ${response.status()}: ${card.href}`);
-      }
-    } catch (error) {
-      warnings.push(`Related card request failed: ${card.href} (${error.message})`);
+    if (card.href) {
+      errors.push(`Explore card should not navigate with href: ${card.text} -> ${card.href}`);
+    }
+    if (card.type !== "button") {
+      errors.push(`Explore card should use type=button: ${card.text}`);
+    }
+    if (card.expanded !== "false") {
+      errors.push(`Explore card should start collapsed: ${card.text}`);
+    }
+  }
+
+  const firstCard = page.locator("#explore-more .related-card").first();
+  const secondCard = page.locator("#explore-more .related-card").nth(1);
+  if ((await firstCard.count()) && (await secondCard.count())) {
+    await scrollThroughParallaxSection(page, "#explore-more", 0.55);
+    const scrollExpanded = await page.locator("#explore-more .related-card[aria-expanded='true']").count();
+    if (scrollExpanded) {
+      errors.push(`Explore more scroll should move the rail only, not open cards; expanded=${scrollExpanded}`);
+    }
+
+    await page.evaluate(() => {
+      const section = document.querySelector("#explore-more");
+      if (!section) return;
+      const pin = section.querySelector(".scroll-pin");
+      const top = pin ? parseFloat(window.getComputedStyle(pin).top) || 0 : 0;
+      window.scrollTo(0, Math.max(0, section.offsetTop - top));
+    });
+    await page.waitForTimeout(180);
+    const beforeUrl = page.url();
+    const before = await firstCard.boundingBox();
+    await firstCard.evaluate((card) => card.click());
+    await page.waitForTimeout(260);
+    const after = await firstCard.boundingBox();
+    const firstExpanded = await firstCard.getAttribute("aria-expanded");
+    if (page.url() !== beforeUrl) errors.push(`Explore card click navigated away: ${beforeUrl} -> ${page.url()}`);
+    if (firstExpanded !== "true") errors.push("Explore card did not enter expanded state on click");
+    if (before && after && after.width <= before.width + 30) {
+      errors.push(`Explore expanded card did not grow enough: before=${before.width} after=${after.width}`);
+    }
+    await secondCard.evaluate((card) => card.click());
+    await page.waitForTimeout(260);
+    const firstCollapsed = await firstCard.getAttribute("aria-expanded");
+    const secondExpanded = await secondCard.getAttribute("aria-expanded");
+    if (firstCollapsed !== "false" || secondExpanded !== "true") {
+      errors.push(`Explore card state should move to the newly clicked card: first=${firstCollapsed} second=${secondExpanded}`);
+    }
+    await secondCard.evaluate((card) => card.click());
+    await page.waitForTimeout(260);
+    if ((await secondCard.getAttribute("aria-expanded")) !== "false") {
+      errors.push("Explore card should collapse when clicked while open");
     }
   }
 }
@@ -390,6 +516,9 @@ async function auditProofTabs(page, errors) {
       selected: button.getAttribute("aria-selected"),
       iconOpacity: Number(window.getComputedStyle(button.querySelector(".status-icon")).opacity),
       iconImage: window.getComputedStyle(button.querySelector(".status-icon")).backgroundImage,
+      maskImage:
+        window.getComputedStyle(button.querySelector(".status-icon")).webkitMaskImage ||
+        window.getComputedStyle(button.querySelector(".status-icon")).maskImage,
     })),
   );
   const expectedProofIcons = [
@@ -398,7 +527,7 @@ async function auditProofTabs(page, errors) {
     "pakt-icon-proof-weak-signal.svg",
   ];
   iconStates.forEach((item, index) => {
-    if (!bgUsesAsset(item.iconImage, expectedProofIcons[index])) {
+    if (!styleUsesAsset(item, expectedProofIcons[index])) {
       errors.push(`Proof status icon ${index + 1} should use ${expectedProofIcons[index]}: ${JSON.stringify(item)}`);
     }
   });
@@ -424,6 +553,9 @@ async function auditProofTabs(page, errors) {
       selected: button.getAttribute("aria-selected"),
       iconOpacity: Number(window.getComputedStyle(button.querySelector(".status-icon")).opacity),
       iconImage: window.getComputedStyle(button.querySelector(".status-icon")).backgroundImage,
+      maskImage:
+        window.getComputedStyle(button.querySelector(".status-icon")).webkitMaskImage ||
+        window.getComputedStyle(button.querySelector(".status-icon")).maskImage,
     })),
   );
   const selectedIndex = iconStates.findIndex((item) => item.selected === "true");
@@ -546,16 +678,26 @@ async function auditImages(page, errors) {
 async function auditAssetBackedGlyphs(page, errors) {
   const glyphs = await page.evaluate(() => {
     const bg = (element, pseudo) => (element ? window.getComputedStyle(element, pseudo).backgroundImage : "");
+    const imageStyle = (element, pseudo) => {
+      if (!element) return {};
+      const styles = window.getComputedStyle(element, pseudo);
+      return {
+        backgroundImage: styles.backgroundImage,
+        maskImage: styles.maskImage,
+        webkitMaskImage: styles.webkitMaskImage,
+      };
+    };
     const content = (element, pseudo) => (element ? window.getComputedStyle(element, pseudo).content : "");
     const publicPage = !document.body.classList.contains("page-component-parity");
     const featureCards = publicPage ? Array.from(document.querySelectorAll("#features .feature-grid .card")) : [];
     const scenarioCards = publicPage ? Array.from(document.querySelectorAll("#scenarios .scenario-card[data-scenario]")) : [];
     const checkControls = Array.from(document.querySelectorAll("#checklist .check-control"));
     const proofIcons = Array.from(document.querySelectorAll(".proof-band .status-icon"));
+    const whyIcons = Array.from(document.querySelectorAll(".why-matters .why-matters-icon"));
     const micDots = Array.from(document.querySelectorAll(".mic-dot"));
 
     return {
-      featureIcons: featureCards.map((card) => bg(card, "::before")),
+      featureIcons: featureCards.map((card) => imageStyle(card, "::before")),
       scenarioIcons: scenarioCards.map((card) => ({
         scenario: card.getAttribute("data-scenario"),
         before: bg(card, "::before"),
@@ -567,7 +709,8 @@ async function auditAssetBackedGlyphs(page, errors) {
         backgroundImage: bg(control),
         afterContent: content(control, "::after"),
       })),
-      proofIcons: proofIcons.map((icon) => bg(icon)),
+      proofIcons: proofIcons.map((icon) => imageStyle(icon)),
+      whyIcons: whyIcons.map((icon) => imageStyle(icon)),
       faqPlus: {
         backgroundImage: bg(document.querySelector("#faq .faq-question"), "::after"),
         content: content(document.querySelector("#faq .faq-question"), "::after"),
@@ -578,11 +721,11 @@ async function auditAssetBackedGlyphs(page, errors) {
         afterContent: content(document.querySelector(".lock-icon"), "::after"),
       },
       micDots: micDots.map((dot) => ({
-        backgroundImage: bg(dot),
+        useHref: dot.querySelector(".mic-button-svg use")?.getAttribute("href") || "",
         beforeContent: content(dot, "::before"),
         afterContent: content(dot, "::after"),
       })),
-      comparisonChecks: Array.from(document.querySelectorAll("body:not(.page-component-parity) #comparison .compare-table .pakt-col")).map((cell) => bg(cell, "::after")),
+      comparisonChecks: Array.from(document.querySelectorAll("body:not(.page-component-parity) #comparison .compare-table .pakt-col-is-check")).map((cell) => bg(cell, "::after")),
       closeButtons: Array.from(document.querySelectorAll(".language-modal-close, .final-cta-close")).map((button) => ({
         backgroundImage: bg(button),
         beforeContent: content(button, "::before"),
@@ -599,9 +742,9 @@ async function auditAssetBackedGlyphs(page, errors) {
     "pakt-feature-icon-cloud.svg",
     "pakt-feature-icon-language.svg",
   ];
-  glyphs.featureIcons.forEach((backgroundImage, index) => {
-    if (!bgUsesAsset(backgroundImage, expectedFeatures[index])) {
-      errors.push(`Feature card ${index + 1} should use ${expectedFeatures[index]}: ${backgroundImage}`);
+  glyphs.featureIcons.forEach((style, index) => {
+    if (!styleUsesAsset(style, expectedFeatures[index])) {
+      errors.push(`Feature card ${index + 1} should use ${expectedFeatures[index]}: ${JSON.stringify(style)}`);
     }
   });
 
@@ -631,9 +774,20 @@ async function auditAssetBackedGlyphs(page, errors) {
     "pakt-icon-proof-no-wifi.svg",
     "pakt-icon-proof-weak-signal.svg",
   ];
-  glyphs.proofIcons.forEach((backgroundImage, index) => {
-    if (!bgUsesAsset(backgroundImage, expectedProofIcons[index])) {
-      errors.push(`Proof icon ${index + 1} should use ${expectedProofIcons[index]}: ${backgroundImage}`);
+  glyphs.proofIcons.forEach((style, index) => {
+    if (!styleUsesAsset(style, expectedProofIcons[index])) {
+      errors.push(`Proof icon ${index + 1} should use ${expectedProofIcons[index]}: ${JSON.stringify(style)}`);
+    }
+  });
+
+  const expectedWhyIcons = [
+    "pakt-why-icon-connection.svg",
+    "pakt-why-icon-lock.svg",
+    "pakt-why-icon-shield.svg",
+  ];
+  glyphs.whyIcons.forEach((style, index) => {
+    if (!styleUsesAsset(style, expectedWhyIcons[index])) {
+      errors.push(`Why matters icon ${index + 1} should use ${expectedWhyIcons[index]}: ${JSON.stringify(style)}`);
     }
   });
 
@@ -647,7 +801,7 @@ async function auditAssetBackedGlyphs(page, errors) {
     errors.push(`Privacy lock should not be drawn with pseudo-elements: ${JSON.stringify(glyphs.lockIcon)}`);
   }
   glyphs.micDots.forEach((item, index) => {
-    if (!bgUsesAsset(item.backgroundImage, "pakt-icon-mic-cream.svg") || item.beforeContent !== "none" || item.afterContent !== "none") {
+    if (!item.useHref.includes("pakt-icon-mic-button.svg") || !item.useHref.includes("#pakt-mic-button") || item.beforeContent !== "none" || item.afterContent !== "none") {
       errors.push(`Conversation mic ${index + 1} should use SVG asset: ${JSON.stringify(item)}`);
     }
   });
@@ -683,6 +837,55 @@ async function auditPriorRegressions(page, errors) {
     const activeCount = await situationSlider.locator(".situation-panel.is-active").count();
     if (after === before) errors.push("Situation progression did not change state on scroll");
     if (activeCount !== 1) errors.push(`Situation gallery should have one active card, found ${activeCount}`);
+  }
+
+  if (await page.locator("body:not(.page-component-parity) #features .feature-grid").count()) {
+    await page.locator("#features").evaluate((section) => {
+      const pin = section.querySelector(".scroll-pin");
+      const top = pin ? parseFloat(window.getComputedStyle(pin).top) || 0 : 0;
+      window.scrollTo(0, Math.max(0, section.offsetTop - top + 2));
+    });
+    await page.waitForTimeout(180);
+    const initial = await page.locator("#features").evaluate((section) => {
+      const cards = Array.from(section.querySelectorAll(".feature-grid .card"));
+      const activeIndex = cards.findIndex((card) => card.getAttribute("aria-current") === "true");
+      return {
+        hasPin: Boolean(section.querySelector(".scroll-pin")),
+        count: cards.length,
+        activeCount: cards.filter((card) => card.getAttribute("aria-current") === "true").length,
+        activeIndex,
+      };
+    });
+    if (initial.count !== 6) errors.push(`Built For feature grid should expose 6 cards, found ${initial.count}`);
+    if (!initial.hasPin) errors.push("Built For feature grid should use a sticky scroll-pin wrapper");
+    if (initial.activeCount !== 1) errors.push(`Built For feature grid should have one active card, found ${initial.activeCount}`);
+
+    const lock = await scrollThroughParallaxSection(page, "#features", 0.84);
+    assertParallaxScroll(lock, "Built For feature grid", errors);
+    const after = await page.locator("#features").evaluate((section) => {
+      const cards = Array.from(section.querySelectorAll(".feature-grid .card"));
+      const activeIndex = cards.findIndex((card) => card.getAttribute("aria-current") === "true");
+      const activeCard = cards[activeIndex];
+      const inactiveCard = cards.find((card, index) => index !== activeIndex);
+      const activeTitle = activeCard?.querySelector("h3");
+      const activeCopy = activeCard?.querySelector("p");
+      return {
+        activeIndex,
+        activeCount: cards.filter((card) => card.getAttribute("aria-current") === "true").length,
+        activeBorder: activeCard ? window.getComputedStyle(activeCard).borderColor : "",
+        activeTitleColor: activeTitle ? window.getComputedStyle(activeTitle).color : "",
+        activeCopyColor: activeCopy ? window.getComputedStyle(activeCopy).color : "",
+        inactiveBorder: inactiveCard ? window.getComputedStyle(inactiveCard).borderColor : "",
+      };
+    });
+    if (after.activeCount !== 1) errors.push(`Built For feature grid should keep one current card after scroll, found ${after.activeCount}`);
+    if (after.activeIndex <= initial.activeIndex) errors.push(`Built For feature grid did not advance active card on scroll: ${initial.activeIndex}->${after.activeIndex}`);
+    if (!/241,\s*120,\s*60/.test(`${after.activeBorder} ${after.activeTitleColor} ${after.activeCopyColor}`)) {
+      errors.push(`Built For active card should use Pakt orange state: ${JSON.stringify(after)}`);
+    }
+    if (after.inactiveBorder === after.activeBorder) {
+      errors.push(`Built For inactive card should not share active border color: ${JSON.stringify(after)}`);
+    }
   }
 
   if (await page.locator(".app-flow-card").count()) {
@@ -848,7 +1051,7 @@ async function auditPage(browser, pageDef, viewport) {
   await auditNav(page, viewport, errors);
   await auditFaq(page, errors);
   await auditStoreButtons(page, errors);
-  await auditRelatedCards(page, errors, warnings);
+  await auditRelatedCards(page, errors);
   await auditChecklist(page, errors);
   await auditProofTabs(page, errors);
   await auditAppFlowCards(page, errors);

@@ -55,13 +55,13 @@ primary_cta:
 ## 2. StoreCtaButtons
 
 **What it does**  
-Reusable App Store / Google Play download button group.
+Reusable App Store download button group. Google Play is intentionally paused for now.
 
 **Purpose**  
 Provides consistent install CTAs across hero, mid-page sections, and final CTA.
 
 **Visible in design**  
-Hero and final CTA include App Store / Google Play style badges.
+Hero and final CTA include the App Store badge.
 
 **Required slots**
 
@@ -528,7 +528,7 @@ Language coverage section with language list and stats.
 Communicates breadth of language support and voice-language coverage.
 
 **Visible in design**  
-“Languages you can rely on” with language list and large 100+ / 49 stats.
+“Languages you can rely on” with language list and large 100+ / 50 stats.
 
 **Required slots**
 

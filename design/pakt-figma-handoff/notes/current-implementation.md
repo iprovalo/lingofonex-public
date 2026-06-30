@@ -11,17 +11,18 @@ The current local Stage 2 implementation lives outside this handoff folder.
 - App-flow phone crops: `images/pakt-flow-phone-speak-tall.png`, `images/pakt-flow-phone-speak-desktop.png`, `images/pakt-flow-phone-translate-desktop.png`, `images/pakt-flow-phone-hear-desktop.png`
 - App-flow parity fixture crops: `images/pakt-flow-phone-speak-mobile-parity.png`, `images/pakt-flow-phone-speak-desktop-parity.png`, `images/pakt-flow-phone-translate-desktop-parity.png`, `images/pakt-flow-phone-hear-desktop-parity.png`
 - Approved wordmark: `images/pakt-wordmark-white.png`
-- Figma store icons: `images/pakt-store-apple.svg`, `images/pakt-store-google-play.svg`
-- Hero parity store badge crops: `images/pakt-store-hero-mobile-apple-parity.png`, `images/pakt-store-hero-mobile-google-parity.png`, `images/pakt-store-hero-desktop-apple-parity.png`, `images/pakt-store-hero-desktop-google-parity.png`
-- Final CTA parity store badge crops: `images/pakt-store-final-mobile-apple-parity.png`, `images/pakt-store-final-mobile-google-parity.png`, `images/pakt-store-final-desktop-apple-parity.png`, `images/pakt-store-final-desktop-google-parity.png`
+- Store CTA badge: `images/pakt-store-app-store-button.svg`, copied exactly from the user-provided Figma SVG export `/Users/dmit-mini/Downloads/Store download button.svg`. Google Play CTAs are intentionally removed for now.
+- Hero parity App Store badge crops: `images/pakt-store-hero-mobile-apple-parity.png`, `images/pakt-store-hero-desktop-apple-parity.png`
+- Final CTA App Store badge crops: `images/pakt-store-final-mobile-apple-parity.png`, `images/pakt-store-final-desktop-apple-parity.png`
 - Mobile comparison parity wordmark crop: `images/pakt-comparison-wordmark-mobile-parity.png`
 - Mobile privacy/conversation parity card crops: `images/pakt-privacy-card-mobile-parity.png`, `images/pakt-conversation-card-mobile-parity.png`
 - Destination teaser image: `images/pakt-destination-japan.png`
 - Mobile destination crop: `images/pakt-destination-japan-mobile.png`
-- Feature icons now render from SVG assets: `images/pakt-feature-icon-offline.svg`, `images/pakt-feature-icon-voice.svg`, `images/pakt-feature-icon-private.svg`, `images/pakt-feature-icon-travel.svg`, `images/pakt-feature-icon-cloud.svg`, `images/pakt-feature-icon-language.svg`. The older PNG crops are retained only as reference material.
-- Mobile checklist control reference crops: `images/pakt-check-control-checked.png`, `images/pakt-check-control-empty.png`; the rendered controls now use SVG assets (`images/pakt-icon-check-empty.svg`, `images/pakt-icon-check-orange.svg`) traced from the Figma reference state so they are no longer filled CSS dots.
-- Scenario icons now render from SVG assets: `images/pakt-scenario-icon-taxis.svg`, `images/pakt-scenario-icon-hotels.svg`, `images/pakt-scenario-icon-restaurants.svg`, `images/pakt-scenario-icon-stations.svg`, `images/pakt-scenario-icon-pharmacies.svg`, `images/pakt-scenario-icon-markets.svg`. The older desktop/mobile PNG icon crops are retained only as reference material.
-- Public UI glyphs that previously had CSS-drawn fallbacks now render from SVG assets: `images/pakt-icon-proof-airplane.svg`, `images/pakt-icon-proof-no-wifi.svg`, `images/pakt-icon-proof-weak-signal.svg`, `images/pakt-icon-privacy-lock.svg`, `images/pakt-icon-mic-cream.svg`, `images/pakt-icon-faq-plus.svg`, `images/pakt-icon-faq-minus.svg`, and `images/pakt-icon-close.svg`.
+- Feature icons now render from user-provided named Figma SVG exports: `images/pakt-feature-icon-offline.svg`, `images/pakt-feature-icon-voice.svg`, `images/pakt-feature-icon-private.svg`, `images/pakt-feature-icon-travel.svg`, `images/pakt-feature-icon-cloud.svg`, `images/pakt-feature-icon-language.svg`. The older PNG crops are retained only as reference material.
+- Mobile checklist controls now use user-provided Figma SVG exports: `images/pakt-icon-check-empty.svg`, `images/pakt-icon-check-orange.svg`.
+- Scenario icons now render from user-provided Figma SVG exports: `images/pakt-scenario-icon-taxis.svg`, `images/pakt-scenario-icon-hotels.svg`, `images/pakt-scenario-icon-restaurants.svg`, `images/pakt-scenario-icon-stations.svg`, `images/pakt-scenario-icon-pharmacies.svg`, `images/pakt-scenario-icon-markets.svg`, and `images/pakt-scenario-icon-airports.svg`.
+- Public UI glyphs that previously had CSS-drawn fallbacks now render from provenance-verified SVG assets: `images/pakt-icon-proof-airplane.svg`, `images/pakt-icon-proof-no-wifi.svg`, `images/pakt-icon-proof-weak-signal.svg`, `images/pakt-icon-privacy-lock.svg`, `images/pakt-icon-mic-button.svg`, `images/pakt-why-icon-connection.svg`, `images/pakt-why-icon-lock.svg`, `images/pakt-why-icon-shield.svg`, `images/pakt-icon-faq-plus.svg`, `images/pakt-icon-faq-minus.svg`, and `images/pakt-icon-close.svg`.
+- Explore more open-card background: `images/pakt-explore-card-open-bg.jpg`, extracted from the embedded JPEG in the user-provided Figma SVG export `/Users/dmit-mini/Downloads/explore_more_card.svg`.
 - Offline proof phone crops: `images/pakt-offline-proof-phone.png`, `images/pakt-offline-proof-phone-desktop.png`
 - Previous generated hero image: `images/pakt-travel-hero.png`
 - Hub page touched for related links: `pakt/index.html`
@@ -83,7 +84,7 @@ The page intentionally does not include sticky mobile CTA, visual breadcrumb blo
 
 ## Asset Provenance Caveat
 
-The live Figma connector was not callable in the resumed Codex session on 2026-06-26, and direct Figma API calls had no valid token. The implementation therefore uses the local Figma handoff package and its exported/reference assets as the source of truth. SVG icons that did not exist as local SVG exports were recreated as small asset files from the Figma reference crops/screenshots, then wired as external assets so future work can replace them with fresh Figma-native SVG exports without touching layout CSS.
+The live Figma connector was not callable in the resumed Codex session on 2026-06-26, and direct Figma API calls had no valid token. On 2026-06-29 the user provided named Figma SVG exports in `/Users/dmit-mini/Downloads/website icons svg/`; those exports replaced the prior recreated FeatureGrid, scenario, proof, checklist, explore, privacy-lock, and shield icons and are checksum-pinned in `SEO/scripts/pakt_asset_provenance_audit.js`. The close and FAQ plus/minus controls were later replaced with extracted glyphs from user-provided full-page Figma SVG exports (`/Users/dmit-mini/Downloads/iPhone 17 - 72.svg` and `/Users/dmit-mini/Downloads/MacBook Pro 14_ - 11.svg`) and are checksum-pinned with both source-export and shipped-asset hashes. The Explore more open-card image was extracted from the embedded JPEG in `/Users/dmit-mini/Downloads/explore_more_card.svg` and is likewise checksum-pinned.
 - Component showcase screenshots: `SEO/reports/screenshots/component-showcase/desktop-fullpage.png` and `SEO/reports/screenshots/component-showcase/mobile-fullpage.png`
 - Visual parity screenshots and diffs: `SEO/reports/screenshots/visual-parity/`
 - Design/SEO review: `SEO/reports/stage2_design_seo_review.md`
@@ -249,10 +250,10 @@ Current high-priority visual status:
 
 - Removed legacy non-Figma Pakt page asset references from generated page metadata: the Lingofonex favicon, Lingofonex schema logo, and generic `og-card.png` are no longer emitted by `SEO/scripts/generate_pakt_stage2.py`.
 - Regenerated the Pakt stage-2 pages so favicon/schema/social image references point to Figma-origin Pakt assets: `pakt-wordmark-white.png` and `pakt-figma-hero-bg.png`.
-- Replaced the six FeatureGrid SVG icons and the microphone SVG with live Figma MCP asset exports before the Starter-plan tool-call limit was hit again.
+- Replaced the six FeatureGrid SVG icons with user-provided named Figma SVG exports on 2026-06-29. Replaced the conversation mic control with the user-provided Figma SVG export `Property 1=mic_button.svg`, stored as `pakt-icon-mic-button.svg` with color inherited for blue/orange variants.
 - Mirrored all 58 image assets referenced by the stage-2 Pakt CSS/pages into `design/pakt-figma-handoff/assets/`; the provenance audit verifies every handoff copy hash-matches `images/`.
 - Added `SEO/scripts/pakt_asset_provenance_audit.js` and reports at `SEO/reports/pakt_asset_provenance_audit.md` / `.json`.
 - Hardened `SEO/scripts/pakt_public_interactivity_qa.js` so Playwright QA now rejects legacy non-Figma assets, missing handoff asset mirrors, and raster icon regressions.
 - Removed unused raster icon leftovers and the old `pakt-travel-hero.png` from both `images/` and `design/pakt-figma-handoff/assets/`; the provenance audit now fails if those files return, even if no page references them.
-- Remaining SVGs listed under `stage2AssetInventory.needsFreshLiveFigmaSvgExportWhenMcpLimitResets` in `metadata/manifest.json` are handoff-backed and SVG-rendered, but not freshly live-exported in this pass because the Figma MCP limit returned.
+- `stage2AssetInventory.needsFreshLiveFigmaSvgExportWhenMcpLimitResets` is empty as of the 2026-06-29 provenance pass. Any future unverified local SVG substitutions must be added there and should fail the provenance audit until replaced or explicitly approved.
 - Rechecked the Figma MCP on 2026-06-27 after cleanup; it still returns the Starter-plan tool-call limit, so the remaining fresh SVG export work is explicitly blocked by Figma access rather than skipped.

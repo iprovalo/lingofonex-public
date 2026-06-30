@@ -1,6 +1,6 @@
 # Pakt Stage 2A SEO Audit - PASS
 
-Generated: 2026-06-29T15:56:34
+Generated: 2026-06-30T05:14:22
 Pages audited: 4
 Sitemap URL count: 166
 Total errors: 0
@@ -8,10 +8,10 @@ Total warnings: 0
 
 ## Page Results
 
-- `https://www.lingofonex.com/pakt/offline-translator-app/` - PASS - 1316 visible words
-- `https://www.lingofonex.com/pakt/offline-translator-for-travel/` - PASS - 1411 visible words
-- `https://www.lingofonex.com/pakt/voice-speech-translator/` - PASS - 1163 visible words
-- `https://www.lingofonex.com/pakt/best-offline-translator-app/` - PASS - 1576 visible words
+- `https://www.lingofonex.com/pakt/offline-translator-app/` - PASS - 1306 visible words
+- `https://www.lingofonex.com/pakt/offline-translator-for-travel/` - PASS - 1398 visible words
+- `https://www.lingofonex.com/pakt/voice-speech-translator/` - PASS - 1153 visible words
+- `https://www.lingofonex.com/pakt/best-offline-translator-app/` - PASS - 1566 visible words
 
 ## Support Files
 

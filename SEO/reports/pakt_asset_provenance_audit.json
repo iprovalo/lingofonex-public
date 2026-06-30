@@ -1,31 +1,7 @@
 {
-  "generatedAt": "2026-06-29T14:05:33.705Z",
+  "generatedAt": "2026-06-30T03:14:23.336Z",
   "errors": [],
-  "warnings": [
-    "pakt-explore-icon-airplane.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-explore-icon-flag.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-explore-icon-phone.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-explore-icon-suitcase.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-explore-icon-voice.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-favicon.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-icon-check-empty.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-icon-check-orange.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-icon-close.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-icon-faq-minus.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-icon-faq-plus.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-icon-privacy-lock.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-icon-proof-airplane.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-icon-proof-no-wifi.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-icon-proof-weak-signal.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-scenario-icon-airports.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-scenario-icon-hotels.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-scenario-icon-markets.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-scenario-icon-pharmacies.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-scenario-icon-restaurants.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-scenario-icon-stations.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-scenario-icon-taxis.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass",
-    "pakt-why-icon-shield.svg is SVG-backed and mirrored into the handoff, but not freshly live-exported in this pass"
-  ],
+  "warnings": [],
   "assets": [
     {
       "asset": "pakt-comparison-wordmark-mobile-parity.png",
@@ -38,7 +14,16 @@
       "sha256": "6d1362fab56937ea222ac0342c92f8a09a5938f115656ece8db1324acdd5f63c",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-conversation-card-mobile-parity.png",
@@ -51,7 +36,16 @@
       "sha256": "1ad390b83608ffe453d533312ce5604436103500e72fd7539a292380f3023c43",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-destination-japan-mobile.png",
@@ -64,7 +58,16 @@
       "sha256": "4e1ed5ff0a378080aa4f91e2bbd93fe5cef67445b3abe53f56c85e46e7620fb5",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-destination-japan.png",
@@ -79,76 +82,262 @@
       "sha256": "7f2faed076486b917a5ff3b443945890f2576a6120ec994719221653c493675d",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
+    },
+    {
+      "asset": "pakt-explore-bg-airplane.jpg",
+      "status": "user-provided-jpg-background",
+      "usedBy": [
+        "css/pakt-stage2.css"
+      ],
+      "imageExists": true,
+      "handoffExists": true,
+      "sha256": "cfdc8dae326bbfe537f16c798db652d573ae460ed7ec60d8c44a12781ec10b24",
+      "handoffMatchesImage": true,
+      "figmaAssetUrl": null,
+      "figmaNodeId": null,
+      "explicitApproval": "User-provided Explore more JPG background: /Users/dmit-mini/Downloads/keya-vadgama-dupe 1.jpg",
+      "explicitApprovalSha256": "df84277f3cc60f2003321ffe90bc9562bc5449fe5b665512e6650d8a7fef6596",
+      "explicitApprovalAssetSha256": "cfdc8dae326bbfe537f16c798db652d573ae460ed7ec60d8c44a12781ec10b24",
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
+    },
+    {
+      "asset": "pakt-explore-bg-japan.jpg",
+      "status": "user-provided-jpg-background",
+      "usedBy": [
+        "css/pakt-stage2.css"
+      ],
+      "imageExists": true,
+      "handoffExists": true,
+      "sha256": "c5b680d9eba7dc35c4e4328ae3b31d28f6aa850144f0f1f73a381b8dbb844987",
+      "handoffMatchesImage": true,
+      "figmaAssetUrl": null,
+      "figmaNodeId": null,
+      "explicitApproval": "User-provided Explore more JPG background: /Users/dmit-mini/Downloads/peter-thomas-RS-gDRmaPfU-unsplash.jpg",
+      "explicitApprovalSha256": "35bfb4a115a4d1fb383195f6ca05a3933840f2e4436d4251092211d0af7c06e5",
+      "explicitApprovalAssetSha256": "c5b680d9eba7dc35c4e4328ae3b31d28f6aa850144f0f1f73a381b8dbb844987",
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
+    },
+    {
+      "asset": "pakt-explore-bg-offline.jpg",
+      "status": "user-provided-jpg-background",
+      "usedBy": [
+        "css/pakt-stage2.css"
+      ],
+      "imageExists": true,
+      "handoffExists": true,
+      "sha256": "f9c51f7df4396eda1042f09399e6bc8e632c1ec3ffec3cdb567f4c824102b54d",
+      "handoffMatchesImage": true,
+      "figmaAssetUrl": null,
+      "figmaNodeId": null,
+      "explicitApproval": "User-provided Explore more JPG background: /Users/dmit-mini/Downloads/peter-thomas-NLAm9Jg9RDs-unsplash.jpg",
+      "explicitApprovalSha256": "88e309d29895c0eedbe8747e58a1c82d336552c70715e9c1ffd586804032761a",
+      "explicitApprovalAssetSha256": "f9c51f7df4396eda1042f09399e6bc8e632c1ec3ffec3cdb567f4c824102b54d",
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
+    },
+    {
+      "asset": "pakt-explore-bg-travel.jpg",
+      "status": "user-provided-jpg-background",
+      "usedBy": [
+        "css/pakt-stage2.css"
+      ],
+      "imageExists": true,
+      "handoffExists": true,
+      "sha256": "6e8947b4adbea7968f529ba220031b806e1f25061b9f84363a8893d567b3add3",
+      "handoffMatchesImage": true,
+      "figmaAssetUrl": null,
+      "figmaNodeId": null,
+      "explicitApproval": "User-provided Explore more JPG background: /Users/dmit-mini/Downloads/michal-janek-17KfAMkxQyw-unsplash.jpg",
+      "explicitApprovalSha256": "d478911be3f1d6f3dce6f61385f7cd02d281a3b4fbbf5f3f2865a22b55388b3a",
+      "explicitApprovalAssetSha256": "6e8947b4adbea7968f529ba220031b806e1f25061b9f84363a8893d567b3add3",
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
+    },
+    {
+      "asset": "pakt-explore-bg-voice.jpg",
+      "status": "user-provided-jpg-background",
+      "usedBy": [
+        "css/pakt-stage2.css"
+      ],
+      "imageExists": true,
+      "handoffExists": true,
+      "sha256": "f356f570804b2f57ae2be25db7199203b067c8bc22e7dad60ab478b3eb58bd1c",
+      "handoffMatchesImage": true,
+      "figmaAssetUrl": null,
+      "figmaNodeId": null,
+      "explicitApproval": "User-provided Explore more JPG background: /Users/dmit-mini/Downloads/IMG_5608 1.jpg",
+      "explicitApprovalSha256": "ff2f3f6d0a351967d5b604993e6c764fbe95b953ee272243c7d554cd810aeb9b",
+      "explicitApprovalAssetSha256": "f356f570804b2f57ae2be25db7199203b067c8bc22e7dad60ab478b3eb58bd1c",
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
+    },
+    {
+      "asset": "pakt-explore-card-open-bg.jpg",
+      "status": "user-provided-figma-raster-export",
+      "usedBy": [
+        "css/pakt-stage2.css"
+      ],
+      "imageExists": true,
+      "handoffExists": true,
+      "sha256": "b96f0b6a53dd43e4496dfb52b4ff82f28f23c68547bd07c8fe5d64c3472fe3cf",
+      "handoffMatchesImage": true,
+      "figmaAssetUrl": null,
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": "Extracted embedded JPEG from user-provided Explore more open-card Figma SVG export: /Users/dmit-mini/Downloads/explore_more_card.svg",
+      "userProvidedFigmaRasterExportSha256": "93bc97de1f244ba4976feb2b54c7fb6d475df33415f19ba2acbc91b56148c600",
+      "userProvidedFigmaRasterAssetSha256": "b96f0b6a53dd43e4496dfb52b4ff82f28f23c68547bd07c8fe5d64c3472fe3cf"
     },
     {
       "asset": "pakt-explore-icon-airplane.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "35c0e43dc8c7985e1cc96ba545902c0659d6ab0f9d56b4874036a8e985b1e824",
+      "sha256": "cd39d212db1247f68ad10d88735185bac55c11206b86e859567da33cf65c7136",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=flight_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "cd39d212db1247f68ad10d88735185bac55c11206b86e859567da33cf65c7136",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-explore-icon-flag.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "df253906639ed2b1f52db5963108df2a71d3970776af1dfbbc404e9fc614f35f",
+      "sha256": "648f71e6676b06b5f8463e58f43109ac201c9f6723879452e35cc7b1002be519",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=japanese_flag_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "648f71e6676b06b5f8463e58f43109ac201c9f6723879452e35cc7b1002be519",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-explore-icon-phone.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "e7db43aad1be17d1ef2994fe4b1f8d2c8f00e9b19a76ca47129334ac5e12069c",
+      "sha256": "dda5c1826c8e0d42c6c56f86abece065dc219b6b1800f6c645ba295d286740dd",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=mobile_3_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "dda5c1826c8e0d42c6c56f86abece065dc219b6b1800f6c645ba295d286740dd",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-explore-icon-suitcase.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "0e4ba411fd2a481f93c390d8e909605a572e60bdf2af5a60e2b4a8dec7dea7b5",
+      "sha256": "603c5950dd821bfea3bf83bc19c159434dcb5adb48c8b37a3ab728ea09dabe28",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=card_travel_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "603c5950dd821bfea3bf83bc19c159434dcb5adb48c8b37a3ab728ea09dabe28",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-explore-icon-voice.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "7706cc64d22f2ae97344e1d8c486bdf95910dd4c8f753b0aeb146267089fcc04",
+      "sha256": "095f8db9b59b39dcbfe6d663f2ab5d0080ed16540d01bf57fcb1efbb28bd35b7",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=graphic_eq_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "095f8db9b59b39dcbfe6d663f2ab5d0080ed16540d01bf57fcb1efbb28bd35b7",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-favicon.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-original",
       "usedBy": [
         "pakt/best-offline-translator-app/index.html",
         "pakt/component-parity/index.html",
@@ -163,85 +352,148 @@
       "sha256": "7c30d9bf47e07e236eb62374c992919470b5141655891e0905948a351769c354",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": "User-provided original SVG file: Frame 2147239122.svg",
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-feature-icon-cloud.svg",
-      "status": "live-figma-mcp-export",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "9a6a5ae70a38ffb3b93f245a18970b93a5fe7078b48ea787597aae81b614b78d",
+      "sha256": "470812711f5ea4a8857a2930bab13de9f2771a16d31369af104d6843b0878fcb",
       "handoffMatchesImage": true,
-      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/12031f1b-0d64-4f18-910f-8f5969715ffd",
-      "figmaNodeId": "420:8743"
+      "figmaAssetUrl": null,
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=cloud_off_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 2.svg",
+      "userProvidedFigmaExportSha256": "470812711f5ea4a8857a2930bab13de9f2771a16d31369af104d6843b0878fcb",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-feature-icon-language.svg",
-      "status": "live-figma-mcp-export",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "dfcbc9355a4e6be747c01d65855e8f6ff85b016ab3ca2298949be1cb0c3926fc",
+      "sha256": "5b6de8fa8cc47f7fd42df8378903509a48fba593a0a5c8f70ee759c1637707f9",
       "handoffMatchesImage": true,
-      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/e27b6a7b-3bad-4acb-bf1f-b27f33385c32",
-      "figmaNodeId": "420:8743"
+      "figmaAssetUrl": null,
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=emoji_language_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 2.svg",
+      "userProvidedFigmaExportSha256": "5b6de8fa8cc47f7fd42df8378903509a48fba593a0a5c8f70ee759c1637707f9",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-feature-icon-offline.svg",
-      "status": "live-figma-mcp-export",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "6aee3636592312cb6d93f771125b5d7eaa44c5056fee286d3734cca8fbc0b820",
+      "sha256": "2802f94b494e9f1ef7e7c135aeaa3b6985edc28c7aa0b8d0a2c413d32db1c2d6",
       "handoffMatchesImage": true,
-      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/1ae689de-7086-42ad-9271-59ee99ae05c4",
-      "figmaNodeId": "420:8743"
+      "figmaAssetUrl": null,
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=android_wifi_4_bar_off_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "2802f94b494e9f1ef7e7c135aeaa3b6985edc28c7aa0b8d0a2c413d32db1c2d6",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-feature-icon-private.svg",
-      "status": "live-figma-mcp-export",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "ab231a6c31bdc8cb1cd5d7c6efb82f5c8582f33942f3b617d2c77a82edb96d0f",
+      "sha256": "f97fece263ae5339c700ce9e42777781c289287bbef597ea52ac19570e17433e",
       "handoffMatchesImage": true,
-      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/625ccedc-5a82-47b6-91fe-504a617683aa",
-      "figmaNodeId": "420:8743"
+      "figmaAssetUrl": null,
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=lock_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 2.svg",
+      "userProvidedFigmaExportSha256": "f97fece263ae5339c700ce9e42777781c289287bbef597ea52ac19570e17433e",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-feature-icon-travel.svg",
-      "status": "live-figma-mcp-export",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "7d4bdc85511159303e033f34d5d4a28ed57fd51b1e92f487b510f59c16b48524",
+      "sha256": "8be75c6551c563e9758fe6a025f8b142f6eaed4d68d107649db779f0ec84ce4f",
       "handoffMatchesImage": true,
-      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/d34e5b94-42f6-4eee-b301-0f86c89336af",
-      "figmaNodeId": "420:8743"
+      "figmaAssetUrl": null,
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=luggage_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 2.svg",
+      "userProvidedFigmaExportSha256": "8be75c6551c563e9758fe6a025f8b142f6eaed4d68d107649db779f0ec84ce4f",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-feature-icon-voice.svg",
-      "status": "live-figma-mcp-export",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "7362439a71a0cce6d615b89eec1a4b07153cac122bd58df871e5918941872816",
+      "sha256": "5dbda235b992c5610edc86a9ac2e64de2b1dbada708d5cdf691874ca8dc05045",
       "handoffMatchesImage": true,
-      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/1e5eec2e-3c1f-48f4-94af-d0bc781fbc64",
-      "figmaNodeId": "420:8743"
+      "figmaAssetUrl": null,
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=mic_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "5dbda235b992c5610edc86a9ac2e64de2b1dbada708d5cdf691874ca8dc05045",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-figma-hero-bg.png",
@@ -261,7 +513,16 @@
       "sha256": "3f47e5d42e16bcdcde123dca6eb5a3c9dad80847a8d60f80bb3c4e5f8a61c055",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-figma-phone-mockup.png",
@@ -279,7 +540,16 @@
       "sha256": "7bc8f927c46e770cc5e7fc7698c84d9520b865caa17f7a031ff294e6b88fb9e2",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-flow-phone-hear-desktop-parity.png",
@@ -292,7 +562,16 @@
       "sha256": "640ddb90716d3e77681e8e59e6b5e6dbde40c966711b52b1323a1c4e480d3250",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-flow-phone-hear-desktop-public.png",
@@ -305,7 +584,16 @@
       "sha256": "bfefd9698b6d08c84c0292036e650fdbb59025b9dc6854be939a8ca7d4f98be5",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-flow-phone-speak-desktop-parity.png",
@@ -318,7 +606,16 @@
       "sha256": "912444636ed08a4b90f8937b1627165c518952c47ea3a72964adf40f208826ec",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-flow-phone-speak-desktop.png",
@@ -331,7 +628,16 @@
       "sha256": "912444636ed08a4b90f8937b1627165c518952c47ea3a72964adf40f208826ec",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-flow-phone-speak-mobile-parity.png",
@@ -344,7 +650,16 @@
       "sha256": "2a391cb6a032e5908eefaebd558da3aa86633f2f890768ef1bbd96d19b59cf96",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-flow-phone-speak-tall.png",
@@ -359,7 +674,16 @@
       "sha256": "ac8801e6a3881fa2adda692124204fd39d98b934608c79d3153bae95f92b4a32",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-flow-phone-translate-desktop-parity.png",
@@ -372,7 +696,16 @@
       "sha256": "10f136d176c998cc7d075749ae3ff08706c0aa0e6960c3e50a85da8a8b3618aa",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-flow-phone-translate-desktop-public.png",
@@ -385,137 +718,238 @@
       "sha256": "a845b306d3f8c9879f1200c5366e22aed1e9f0aa2950e34d98eab4582fb3dcb7",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-icon-check-empty.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "935e0f5ee09315f06c32769b43817cd45c67118963e0f85e47510a4ec0e3de1f",
+      "sha256": "94534189c27ea7a4667212b081a4cf2d9b729f3e1e1992680a9c8b617d528e21",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=check_circle_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "94534189c27ea7a4667212b081a4cf2d9b729f3e1e1992680a9c8b617d528e21",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-icon-check-orange.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "fac471f637bda3e74e7d3c1c743a82243e7955737856574f70a1eac4aa1a2cfe",
+      "sha256": "abdad8476e12e7222a2f65d5b11115becd79cfb18ba68446b9ef478af9d6b690",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=check_circle_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 2.svg",
+      "userProvidedFigmaExportSha256": "abdad8476e12e7222a2f65d5b11115becd79cfb18ba68446b9ef478af9d6b690",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-icon-close.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "9bb5399af8df0899a4f0920c68c1dc78ebdb654b08ba3719150366edc50c1ddc",
+      "sha256": "706c13dd319ae35cc4e26a8cdf039f438f59d8440bcd5460901314f6284cad56",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "Extracted close glyph from user-provided full-page Figma SVG export: /Users/dmit-mini/Downloads/iPhone 17 - 72.svg",
+      "userProvidedFigmaExportSha256": "35fdde3b8f3f3c7d2bad8d6964f10708e58439233f0c96fcbb9ee52e53033ccb",
+      "userProvidedFigmaAssetSha256": "706c13dd319ae35cc4e26a8cdf039f438f59d8440bcd5460901314f6284cad56",
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-icon-faq-minus.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "de4b5425413f62ee4f121eb178f4eb194aeb509235dd8d0856479deb82524272",
+      "sha256": "bdf8a95b7fc185642cb36c4d4a099c0a1b202c32ffd308db70a1d2d10c1ee602",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "Extracted FAQ minus glyph from user-provided full-page Figma SVG export: /Users/dmit-mini/Downloads/MacBook Pro 14_ - 11.svg",
+      "userProvidedFigmaExportSha256": "b5762db3fdc08b2717988ee80d182ad0e04944aaf31544041ff4bc88e58aefb8",
+      "userProvidedFigmaAssetSha256": "bdf8a95b7fc185642cb36c4d4a099c0a1b202c32ffd308db70a1d2d10c1ee602",
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-icon-faq-plus.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "0dbc2ccb288b4613bddc061cb1d826e5731d2cb34b6d9a75634ccc8ee3795c91",
+      "sha256": "d75d20f95ec622b58293c5d93a523e4a2886902e555076c09e3e8e2ae255433f",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "Extracted FAQ plus glyph from user-provided full-page Figma SVG export: /Users/dmit-mini/Downloads/MacBook Pro 14_ - 11.svg",
+      "userProvidedFigmaExportSha256": "b5762db3fdc08b2717988ee80d182ad0e04944aaf31544041ff4bc88e58aefb8",
+      "userProvidedFigmaAssetSha256": "d75d20f95ec622b58293c5d93a523e4a2886902e555076c09e3e8e2ae255433f",
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
-      "asset": "pakt-icon-mic-cream.svg",
-      "status": "live-figma-mcp-export",
+      "asset": "pakt-icon-mic-button.svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
-        "css/pakt-stage2.css"
+        "pakt/component-parity/index.html",
+        "pakt/component-showcase/index.html",
+        "pakt/offline-translator-app/index.html"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "7d226245376421ca2801eaee6f892a3a6e94bde1ee8bbbd51721eadb0cce9584",
+      "sha256": "34a6d5ba1b23a80813e02df5ae6d3f625c763800f9146a3e15c5a9d4f12885c5",
       "handoffMatchesImage": true,
-      "figmaAssetUrl": "https://www.figma.com/api/mcp/asset/39a5d274-0884-49b1-9695-3c1ac4eb2ecb",
-      "figmaNodeId": "328:10303"
+      "figmaAssetUrl": null,
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export transformed into a reusable currentColor symbol: /Users/dmit-mini/Downloads/Property 1=mic_button.svg",
+      "userProvidedFigmaExportSha256": "9d0ef20b0591ba01057fb0fbf708e9bf4ad0859349be06141ce3c28cccebf1d0",
+      "userProvidedFigmaAssetSha256": "34a6d5ba1b23a80813e02df5ae6d3f625c763800f9146a3e15c5a9d4f12885c5",
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-icon-privacy-lock.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "3736a1e37a516ba04faaaab1be8b3f68d64d812bd6db0e655647f750f1e7f377",
+      "sha256": "f97fece263ae5339c700ce9e42777781c289287bbef597ea52ac19570e17433e",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=lock_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 2.svg",
+      "userProvidedFigmaExportSha256": "f97fece263ae5339c700ce9e42777781c289287bbef597ea52ac19570e17433e",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-icon-proof-airplane.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "19741d9404daac26c0b5237e0869cdbad15b52a1e6a56900e7ff1914926e1c10",
+      "sha256": "cd39d212db1247f68ad10d88735185bac55c11206b86e859567da33cf65c7136",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=flight_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "cd39d212db1247f68ad10d88735185bac55c11206b86e859567da33cf65c7136",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-icon-proof-no-wifi.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "b0263f07a75450bc638a31739531ba08c90481e509a65e111b6048351801ad1c",
+      "sha256": "2802f94b494e9f1ef7e7c135aeaa3b6985edc28c7aa0b8d0a2c413d32db1c2d6",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=android_wifi_4_bar_off_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "2802f94b494e9f1ef7e7c135aeaa3b6985edc28c7aa0b8d0a2c413d32db1c2d6",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-icon-proof-weak-signal.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "f7453a4d21f9e7ea4572e73ec977c20e0580e030cfc2c11e2c8d751a5266550b",
+      "sha256": "593097c1b5f224ec58d4543f8f88a37ecf9d1099027ef2a7d5c8112b3504827c",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/signal_cellular_nodata_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "593097c1b5f224ec58d4543f8f88a37ecf9d1099027ef2a7d5c8112b3504827c",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-offline-proof-phone-desktop.png",
@@ -530,7 +964,16 @@
       "sha256": "6ba870aabbabe2d254a48869469d52b9477a09b58970f65f71bad56fa3545409",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-offline-proof-phone.png",
@@ -545,7 +988,16 @@
       "sha256": "0ebe88eecce44baa13d694cc2ab104596ad8609ffac57ebb52f7171af9ad03d8",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-parity-mobile-comparison.png",
@@ -558,7 +1010,16 @@
       "sha256": "4c4cfd9838aa50949aecdaccb3f61aef2d09bdc2ffaf14e2ab51f685f5894881",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-parity-mobile-faq.png",
@@ -571,7 +1032,16 @@
       "sha256": "5355e4a2ba7cabb568aacc991ffa0b87c348d21164db42cfcc5e1f7e9864eadb",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-parity-mobile-features.png",
@@ -584,7 +1054,16 @@
       "sha256": "2c49ead69f1c447cd026a3f793e6c9e88f1e1ef99ef0451d72fadd9b7fe162b9",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-parity-mobile-final-cta.png",
@@ -597,7 +1076,16 @@
       "sha256": "5c820b7bc6a06613b92413182915d2783556e07fbaf1305d40f099b8225b7a2d",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-parity-mobile-hero.png",
@@ -610,7 +1098,16 @@
       "sha256": "e8d6505c05bdbad7f7e1aac2cf1c2ebf4ce44844eb800aaf372ce5a115b14656",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-parity-mobile-privacy-conversation-destination.png",
@@ -623,7 +1120,16 @@
       "sha256": "3d8158557d189a084a08ab9e7728a1d46f77c5ef5fa8274e28613be5a6420141",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-parity-mobile-scenarios.png",
@@ -636,7 +1142,16 @@
       "sha256": "965e6f3e9481a8565a4e279b80fe917ab63a6d92421d9a6692d98a917188c7d9",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-privacy-card-mobile-parity.png",
@@ -649,102 +1164,174 @@
       "sha256": "866eb6358f6429a8e9d717d8cd16827959104db2da585c886541696d0419bb93",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-scenario-icon-airports.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "34fabd6f71960821a64e0142561a16baba0bdedd884f3add20b0a9cc32b3f963",
+      "sha256": "cd39d212db1247f68ad10d88735185bac55c11206b86e859567da33cf65c7136",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=flight_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "cd39d212db1247f68ad10d88735185bac55c11206b86e859567da33cf65c7136",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-scenario-icon-hotels.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "5f05f83c1529a1322dbe71015d978f628b5d3bdee30d1a79bc2cc8edeeb7b805",
+      "sha256": "b3cbb0d3b5821359bec2a21a792bac99fe2201024962897db8dc4127d344ebe7",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=hotel_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "b3cbb0d3b5821359bec2a21a792bac99fe2201024962897db8dc4127d344ebe7",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-scenario-icon-markets.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "010345d8451adc7cc3f67b37620fe2a8beb0f0fd57855bce5920f30f5873f306",
+      "sha256": "f2744068dd3ac342df4dd250cc7de81f7aee71422eb5b6b356220424321a9211",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=local_mall_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "f2744068dd3ac342df4dd250cc7de81f7aee71422eb5b6b356220424321a9211",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-scenario-icon-pharmacies.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "5b7178895f000e23ff6f68ad254549b688354accdc65f0f019f23aaaa0703e62",
+      "sha256": "317f18d7f5392a382edbcfc6868f2c555cf4c5848a7fed20726e4d08fc014f8b",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=health_cross_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "317f18d7f5392a382edbcfc6868f2c555cf4c5848a7fed20726e4d08fc014f8b",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-scenario-icon-restaurants.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "584470ce56d0d68576ce22d06e0b4a8949db0aa80f32364d7908d0f7f0760344",
+      "sha256": "a996cb8b54417ee882950257faa46683197cb483166c13dbcf378d6d416721c2",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=restaurant_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "a996cb8b54417ee882950257faa46683197cb483166c13dbcf378d6d416721c2",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-scenario-icon-stations.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "2b57468e82ddc0774fb0e71d8b32632a30fc535861c837c098ae0492b4112e66",
+      "sha256": "c440d2f0490c7598e57e58247237609a50c3820318d90476dff978695068f1fc",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=train_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "c440d2f0490c7598e57e58247237609a50c3820318d90476dff978695068f1fc",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-scenario-icon-taxis.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "4dfe1dbc27d3f976d880f1508319493cf8e40b4430917f512dce68814f33a3d3",
+      "sha256": "f17ca412a09590cbfcb3e95bee57177121536219f4f82fdf6b98739adde4d292",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/website icons svg/Property 1=local_taxi_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 2.svg",
+      "userProvidedFigmaExportSha256": "f17ca412a09590cbfcb3e95bee57177121536219f4f82fdf6b98739adde4d292",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
-      "asset": "pakt-store-apple.svg",
-      "status": "figma-store-badge-export",
+      "asset": "pakt-store-app-store-button.svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "pakt/best-offline-translator-app/index.html",
         "pakt/component-parity/index.html",
@@ -755,10 +1342,19 @@
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "bc95e61b0701810291ecb9618c9084727b1bf118fe49663ce3a2f451e565618b",
+      "sha256": "c969693dd42649b4b74c110d38ffa509a073a6806d2aa79819b091415df2d916",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export: /Users/dmit-mini/Downloads/Store download button.svg",
+      "userProvidedFigmaExportSha256": "c969693dd42649b4b74c110d38ffa509a073a6806d2aa79819b091415df2d916",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-store-final-desktop-apple-parity.png",
@@ -771,20 +1367,16 @@
       "sha256": "a1463e5133b331fcd1b1bf598a52a65141e75fb27eb42599951fd02ed06235a1",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
-    },
-    {
-      "asset": "pakt-store-final-desktop-google-parity.png",
-      "status": "figma-section-parity-export",
-      "usedBy": [
-        "css/pakt-stage2.css"
-      ],
-      "imageExists": true,
-      "handoffExists": true,
-      "sha256": "c811742aed8fda3d8ba22de58e06d8870a896b749bc0971de388626b82e2447f",
-      "handoffMatchesImage": true,
-      "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-store-final-mobile-apple-parity.png",
@@ -797,38 +1389,16 @@
       "sha256": "08f0518e4e2ed2b7a00437311baa8273b1e50bd9eb227eaeef77114cd2a1984c",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
-    },
-    {
-      "asset": "pakt-store-final-mobile-google-parity.png",
-      "status": "figma-section-parity-export",
-      "usedBy": [
-        "css/pakt-stage2.css"
-      ],
-      "imageExists": true,
-      "handoffExists": true,
-      "sha256": "4fe3f1ebcf08d3e120a4faf17c10a5d62d57d984d7f42dc24880542bab79133b",
-      "handoffMatchesImage": true,
-      "figmaAssetUrl": null,
-      "figmaNodeId": null
-    },
-    {
-      "asset": "pakt-store-google-play.svg",
-      "status": "figma-store-badge-export",
-      "usedBy": [
-        "pakt/best-offline-translator-app/index.html",
-        "pakt/component-parity/index.html",
-        "pakt/component-showcase/index.html",
-        "pakt/offline-translator-app/index.html",
-        "pakt/offline-translator-for-travel/index.html",
-        "pakt/voice-speech-translator/index.html"
-      ],
-      "imageExists": true,
-      "handoffExists": true,
-      "sha256": "05b395ccb5c02aeefd09b6d01b0e95c781b9d6380e2ce4f13e094e08a8f1b8fa",
-      "handoffMatchesImage": true,
-      "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-store-hero-desktop-apple-parity.png",
@@ -841,20 +1411,16 @@
       "sha256": "cee856dfdd4a86ecbb9a94c27796a9c60d515b07064538b5ead7cb69686fcb43",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
-    },
-    {
-      "asset": "pakt-store-hero-desktop-google-parity.png",
-      "status": "figma-section-parity-export",
-      "usedBy": [
-        "css/pakt-stage2.css"
-      ],
-      "imageExists": true,
-      "handoffExists": true,
-      "sha256": "67b9a3c9acb77025ee79c7ce240456529bc564fd1892362756dbcd91c5eff18b",
-      "handoffMatchesImage": true,
-      "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-store-hero-mobile-apple-parity.png",
@@ -867,33 +1433,82 @@
       "sha256": "cf5dfe11c0280f27760643c0c743852109533ad3e56e976b78e4e33852cd2ed4",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
-      "asset": "pakt-store-hero-mobile-google-parity.png",
-      "status": "figma-section-parity-export",
+      "asset": "pakt-why-icon-connection.svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "077f8346d7825a4b7acba661daa869fdcb46209ce44f49b297110ee79a54d377",
+      "sha256": "593097c1b5f224ec58d4543f8f88a37ecf9d1099027ef2a7d5c8112b3504827c",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export for Why offline translation matters: /Users/dmit-mini/Downloads/signal_cellular_nodata_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "593097c1b5f224ec58d4543f8f88a37ecf9d1099027ef2a7d5c8112b3504827c",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
+    },
+    {
+      "asset": "pakt-why-icon-lock.svg",
+      "status": "user-provided-figma-svg-export",
+      "usedBy": [
+        "css/pakt-stage2.css"
+      ],
+      "imageExists": true,
+      "handoffExists": true,
+      "sha256": "f97fece263ae5339c700ce9e42777781c289287bbef597ea52ac19570e17433e",
+      "handoffMatchesImage": true,
+      "figmaAssetUrl": null,
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export for Why offline translation matters: /Users/dmit-mini/Downloads/lock_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 2.svg",
+      "userProvidedFigmaExportSha256": "f97fece263ae5339c700ce9e42777781c289287bbef597ea52ac19570e17433e",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-why-icon-shield.svg",
-      "status": "figma-handoff-svg",
+      "status": "user-provided-figma-svg-export",
       "usedBy": [
         "css/pakt-stage2.css"
       ],
       "imageExists": true,
       "handoffExists": true,
-      "sha256": "f5485bcde03b7ff53b5f1dbebb8c0020be123d1e2d7528ff47f518fe57395cd3",
+      "sha256": "32264097beb9aa2bbf052faa879001319e8bce4aa4c6bfe54afb02ea9d646641",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": "User-provided Figma SVG export for Why offline translation matters: /Users/dmit-mini/Downloads/verified_user_24dp_E3E3E3_FILL0_wght200_GRAD0_opsz24 1.svg",
+      "userProvidedFigmaExportSha256": "32264097beb9aa2bbf052faa879001319e8bce4aa4c6bfe54afb02ea9d646641",
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     },
     {
       "asset": "pakt-wordmark-white.png",
@@ -913,7 +1528,16 @@
       "sha256": "b0069685a16393dd89919c9b8d85614caf63183d42939cbfdeb416015e64b48d",
       "handoffMatchesImage": true,
       "figmaAssetUrl": null,
-      "figmaNodeId": null
+      "figmaNodeId": null,
+      "explicitApproval": null,
+      "explicitApprovalSha256": null,
+      "explicitApprovalAssetSha256": null,
+      "userProvidedFigmaExport": null,
+      "userProvidedFigmaExportSha256": null,
+      "userProvidedFigmaAssetSha256": null,
+      "userProvidedFigmaRasterExport": null,
+      "userProvidedFigmaRasterExportSha256": null,
+      "userProvidedFigmaRasterAssetSha256": null
     }
   ]
 }
