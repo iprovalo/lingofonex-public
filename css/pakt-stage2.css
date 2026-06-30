@@ -5153,6 +5153,12 @@ body:not(.page-component-parity) #app-flow .flow-card.is-active .flow-phone-imag
 }
 
 @media (max-width: 760px) {
+  body:not(.page-component-parity) #app-flow .flow-phone-image {
+    right: 20px;
+    bottom: -36px;
+    width: 142px;
+  }
+
   body:not(.page-component-parity) #app-flow .flow-card:nth-child(2) .flow-phone-image {
     content: url("/images/pakt-flow-phone-translate-desktop-public.png");
   }
