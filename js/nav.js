@@ -625,6 +625,12 @@
         var railLeftPadding = parseFloat(railStyles.paddingLeft) || 0;
         var railRightPadding = parseFloat(railStyles.paddingRight) || 0;
         overflow = Math.max(0, slider.scrollWidth + railLeftPadding + railRightPadding - rail.clientWidth);
+        var isScrollable = overflow > 2;
+        var viewportHeight = window.innerHeight || document.documentElement.clientHeight || 1;
+        var minScroll = isMobileExplore() ? viewportHeight * 1.2 : 240;
+        var scrollDistance = isScrollable ? Math.round(Math.max(minScroll, overflow * 1.15)) : 0;
+        section.classList.toggle('is-scrollable', isScrollable);
+        section.style.setProperty('--pin-scroll', scrollDistance + 'px');
       }
 
       function measure() {
