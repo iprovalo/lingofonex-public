@@ -5524,10 +5524,58 @@ body:not(.page-component-parity) #offline-proof.proof-band.scroll-section {
 }
 
 body:not(.page-component-parity) #offline-proof .proof-pin {
-  min-height: 500px;
+  min-height: 380px;
   overflow: hidden;
-  padding: 42px 40px 0;
+  padding: 36px 32px 0;
   border-radius: inherit;
+}
+
+body:not(.page-component-parity) #offline-proof .section-kicker {
+  display: none;
+}
+
+body:not(.page-component-parity) #offline-proof .section-title {
+  max-width: 360px;
+  font-size: 34px;
+  line-height: 0.98;
+}
+
+body:not(.page-component-parity) #offline-proof .section-lede {
+  display: block;
+  max-width: 430px;
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+body:not(.page-component-parity) #offline-proof .status-chip-list {
+  grid-template-columns: repeat(3, 128px);
+  gap: 20px;
+  max-width: 424px;
+  margin-top: 100px;
+}
+
+body:not(.page-component-parity) #offline-proof .status-chip-button {
+  gap: 22px;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+body:not(.page-component-parity) #offline-proof .status-chip-button::before {
+  width: 128px;
+}
+
+body:not(.page-component-parity) #offline-proof .status-icon {
+  width: 34px;
+  height: 34px;
+}
+
+body:not(.page-component-parity) #offline-proof .proof-device {
+  top: 64px;
+  right: clamp(52px, 7.1vw, 120px);
+  bottom: auto;
+  width: clamp(300px, 26.6vw, 388px);
+  max-width: none;
 }
 
 body:not(.page-component-parity) #scenarios.scroll-section {
@@ -5600,8 +5648,13 @@ body:not(.page-component-parity) #checklist .check-item.is-checked .check-copy s
   }
 
   body:not(.page-component-parity) #offline-proof .proof-pin {
-    min-height: 520px;
-    padding: 34px 24px 0;
+    min-height: 380px;
+    padding: 36px 28px 0;
+  }
+
+  body:not(.page-component-parity) #offline-proof .proof-device {
+    right: 38px;
+    width: 300px;
   }
 }
 
@@ -5676,20 +5729,30 @@ body:not(.page-component-parity) #checklist .check-item.is-checked .check-copy s
   }
 
   body:not(.page-component-parity) #offline-proof .proof-pin {
-    min-height: 650px;
-    padding: 44px 24px 0;
+    min-height: 400px;
+    padding: 38px 24px 0;
   }
 
   body:not(.page-component-parity) #offline-proof .section-title {
+    max-width: 360px;
+    font-size: 34px;
+    line-height: 0.98;
+  }
+
+  body:not(.page-component-parity) #offline-proof .section-lede {
+    display: block;
     max-width: 330px;
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.16;
   }
 
   body:not(.page-component-parity) #offline-proof .status-chip-list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, 108px);
     gap: 12px;
-    margin-top: 34px;
-    max-width: none;
+    margin-top: 74px;
+    max-width: 348px;
   }
 
   body:not(.page-component-parity) #offline-proof .status-chip {
@@ -5734,11 +5797,12 @@ body:not(.page-component-parity) #checklist .check-item.is-checked .check-copy s
 
   body:not(.page-component-parity) #offline-proof .proof-device {
     right: auto;
-    bottom: 0;
-    left: 50%;
-    width: min(388px, 106vw);
+    top: 78px;
+    bottom: auto;
+    left: min(380px, calc(100% - 190px));
+    width: 300px;
     max-width: none;
-    transform: translateX(-50%);
+    transform: none;
   }
 
   body:not(.page-component-parity) #faq {
