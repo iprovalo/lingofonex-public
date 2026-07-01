@@ -5671,7 +5671,18 @@ body:not(.page-component-parity) #checklist .check-item.is-checked .check-copy s
   }
 
   body:not(.page-component-parity) #offline-proof.proof-band.scroll-section {
-    --pin-scroll: 95vh;
+    --pin-scroll: 0px;
+    width: calc(100% - 28px);
+    min-height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  body:not(.page-component-parity) #offline-proof.scroll-section > .scroll-pin {
+    position: relative;
+    top: auto;
   }
 
   body:not(.page-component-parity) #privacy.privacy-conversation-section {
@@ -5729,19 +5740,19 @@ body:not(.page-component-parity) #checklist .check-item.is-checked .check-copy s
   }
 
   body:not(.page-component-parity) #offline-proof .proof-pin {
-    min-height: 400px;
-    padding: 38px 24px 0;
+    min-height: 372px;
+    padding: 32px 20px 0;
   }
 
   body:not(.page-component-parity) #offline-proof .section-title {
-    max-width: 360px;
-    font-size: 34px;
+    max-width: 330px;
+    font-size: 32px;
     line-height: 0.98;
   }
 
   body:not(.page-component-parity) #offline-proof .section-lede {
     display: block;
-    max-width: 330px;
+    max-width: 315px;
     margin-top: 12px;
     font-size: 15px;
     line-height: 1.16;
@@ -5749,10 +5760,10 @@ body:not(.page-component-parity) #checklist .check-item.is-checked .check-copy s
 
   body:not(.page-component-parity) #offline-proof .status-chip-list {
     display: grid;
-    grid-template-columns: repeat(3, 108px);
-    gap: 12px;
-    margin-top: 74px;
-    max-width: 348px;
+    grid-template-columns: repeat(3, 96px);
+    gap: 14px;
+    max-width: 316px;
+    margin-top: 70px;
   }
 
   body:not(.page-component-parity) #offline-proof .status-chip {
@@ -5797,10 +5808,10 @@ body:not(.page-component-parity) #checklist .check-item.is-checked .check-copy s
 
   body:not(.page-component-parity) #offline-proof .proof-device {
     right: auto;
-    top: 78px;
+    top: 70px;
     bottom: auto;
-    left: min(380px, calc(100% - 190px));
-    width: 300px;
+    left: max(342px, calc(100% - 238px));
+    width: 260px;
     max-width: none;
     transform: none;
   }
