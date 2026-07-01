@@ -6437,16 +6437,16 @@ body:not(.page-component-parity) .final-cta .store-button > * {
 
 @media (max-width: 760px) {
   body:not(.page-component-parity) .pakt-hero-inner {
-    padding-top: 100px;
+    padding-top: 110px;
   }
 
   body:not(.page-component-parity) .pakt-hero h1 {
-    font-size: 33px;
+    font-size: 36.75px;
     line-height: 1.03;
   }
 
   body:not(.page-component-parity) .hero-lede {
-    margin-top: 11px;
+    margin-top: 16.75px;
   }
 
   body:not(.page-component-parity) .hero-actions {
@@ -6461,7 +6461,7 @@ body:not(.page-component-parity) .final-cta .store-button > * {
 
   body:not(.page-component-parity) .hero-visual {
     justify-content: center;
-    margin-top: 52px;
+    margin-top: 81px;
   }
 
   body:not(.page-component-parity) .hero-phone {
