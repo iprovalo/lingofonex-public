@@ -4839,8 +4839,8 @@ body:not(.page-component-parity) .why-matters-item[data-why-icon="shield"] {
 
 body:not(.page-component-parity) .why-matters-icon {
   display: block;
-  width: 31px;
-  height: 31px;
+  width: 48px;
+  height: 48px;
   margin-bottom: 20px;
   background: var(--pakt-black);
   -webkit-mask: var(--why-icon) center / contain no-repeat;
@@ -6282,8 +6282,8 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
   }
 
   body:not(.page-component-parity) .why-matters-icon {
-    width: 28px;
-    height: 28px;
+    width: 48px;
+    height: 48px;
     margin-bottom: 18px;
   }
 
