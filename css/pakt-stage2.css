@@ -6091,8 +6091,8 @@ body:not(.page-component-parity) .explore-more .related-card[data-explore-icon="
 
 body:not(.page-component-parity) .explore-more .related-card-icon {
   display: block;
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   background: var(--pakt-black);
   -webkit-mask: var(--explore-icon) center / contain no-repeat;
   mask: var(--explore-icon) center / contain no-repeat;
@@ -6388,13 +6388,13 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
   }
 
   body:not(.page-component-parity) .explore-more .related-card-icon {
-    width: 18px;
-    height: 18px;
+    width: 48px;
+    height: 48px;
   }
 
   body:not(.page-component-parity) .explore-more .related-card[aria-expanded="true"] .related-card-icon {
-    width: 28px;
-    height: 28px;
+    width: 48px;
+    height: 48px;
   }
 
   body:not(.page-component-parity) .explore-more .related-card-title {
