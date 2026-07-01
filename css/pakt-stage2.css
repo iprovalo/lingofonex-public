@@ -4796,6 +4796,13 @@ body:not(.page-component-parity) #comparison .compare-table .pakt-col-is-check::
   background: url("/images/pakt-icon-check-orange.svg") center / contain no-repeat;
 }
 
+@media (min-width: 761px) {
+  body:not(.page-component-parity) #guide {
+    width: min(calc(100% - 60px), 1382px);
+    max-width: 1382px;
+  }
+}
+
 body:not(.page-component-parity) .why-matters {
   width: min(calc(100% - 60px), 1382px);
   max-width: 1382px;
