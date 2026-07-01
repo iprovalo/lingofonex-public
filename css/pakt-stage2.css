@@ -6472,3 +6472,42 @@ body:not(.page-component-parity) .final-cta .store-button > * {
     width: min(367px, calc(100vw - 36px));
   }
 }
+
+@media (min-width: 431px) and (max-width: 760px) {
+  body:not(.page-component-parity) .nav-inner,
+  body:not(.page-component-parity) .pakt-hero-inner {
+    padding-right: clamp(24px, 5vw, 32px);
+    padding-left: clamp(24px, 5vw, 32px);
+  }
+
+  body:not(.page-component-parity) .hero-copy {
+    max-width: min(500px, 100%);
+  }
+
+  body:not(.page-component-parity) .pakt-hero h1 {
+    width: min(500px, 100%);
+    font-size: clamp(36.75px, 7.3vw, 44px);
+    line-height: 1;
+  }
+
+  body:not(.page-component-parity) .hero-lede {
+    width: min(470px, 100%);
+    font-size: clamp(15px, 2.7vw, 17px);
+    line-height: 1.2;
+  }
+
+  body:not(.page-component-parity) .pakt-hero .store-button.store-button {
+    width: clamp(144px, 27.5vw, 168px);
+    height: auto;
+    aspect-ratio: 3 / 1;
+    border-radius: 999px;
+  }
+
+  body:not(.page-component-parity) .hero-visual {
+    margin-top: clamp(96px, 15vw, 112px);
+  }
+
+  body:not(.page-component-parity) .hero-phone {
+    width: min(520px, calc(100vw - 56px));
+  }
+}
