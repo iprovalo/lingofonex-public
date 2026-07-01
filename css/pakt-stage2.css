@@ -6428,10 +6428,62 @@ body:not(.page-component-parity) .final-cta .store-button > * {
 }
 
 @media (min-width: 761px) {
+  body:not(.page-component-parity) .pakt-hero {
+    min-height: clamp(720px, 48vw, 980px);
+    background-position: center top;
+  }
+
+  body:not(.page-component-parity) .pakt-hero-inner {
+    position: relative;
+    max-width: none;
+    min-height: clamp(720px, 48vw, 980px);
+    display: block;
+    padding: clamp(166px, 9vw, 228px) clamp(24px, 2.8vw, 70px) 96px;
+  }
+
+  body:not(.page-component-parity) .hero-copy {
+    width: min(clamp(620px, 48vw, 900px), calc(100vw - 48px));
+    max-width: none;
+    padding-top: 0;
+  }
+
+  body:not(.page-component-parity) .pakt-hero h1 {
+    max-width: none;
+    font-size: clamp(42px, 4vw, 82px);
+    line-height: 0.98;
+  }
+
+  body:not(.page-component-parity) .hero-lede {
+    width: min(560px, 100%);
+    max-width: none;
+    margin-top: clamp(18px, 1.4vw, 26px);
+    font-size: clamp(15px, 1.25vw, 20px);
+    line-height: 1.22;
+  }
+
+  body:not(.page-component-parity) .hero-actions {
+    margin-top: clamp(24px, 2.3vw, 58px);
+  }
+
   body:not(.page-component-parity) .pakt-hero .store-button.store-button {
-    width: 210px;
-    height: 70px;
-    border-radius: 35px;
+    width: clamp(145px, 10vw, 210px);
+    height: auto;
+    aspect-ratio: 3 / 1;
+    border-radius: 999px;
+  }
+
+  body:not(.page-component-parity) .hero-visual {
+    position: absolute;
+    top: clamp(76px, 4.7vw, 118px);
+    right: clamp(90px, calc(-120px + 21.5vw), 430px);
+    width: clamp(245px, calc(130px + 12vw), 430px);
+    margin-top: 0;
+    transform: none;
+  }
+
+  body:not(.page-component-parity) .hero-phone {
+    width: 100%;
+    height: auto;
   }
 }
 
