@@ -6460,11 +6460,11 @@ body:not(.page-component-parity) .final-cta .store-button > * {
   }
 
   body:not(.page-component-parity) .hero-visual {
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 52px;
   }
 
   body:not(.page-component-parity) .hero-phone {
-    width: min(324px, calc(100vw - 36px));
+    width: min(367px, calc(100vw - 36px));
   }
 }
