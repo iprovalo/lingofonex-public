@@ -6436,8 +6436,12 @@ body:not(.page-component-parity) .final-cta .store-button > * {
 }
 
 @media (max-width: 760px) {
+  body:not(.page-component-parity) .nav-inner {
+    padding-top: 26px;
+  }
+
   body:not(.page-component-parity) .pakt-hero-inner {
-    padding-top: 110px;
+    padding-top: 127px;
   }
 
   body:not(.page-component-parity) .pakt-hero h1 {
@@ -6461,26 +6465,10 @@ body:not(.page-component-parity) .final-cta .store-button > * {
 
   body:not(.page-component-parity) .hero-visual {
     justify-content: center;
-    margin-top: 81px;
+    margin-top: 102px;
   }
 
   body:not(.page-component-parity) .hero-phone {
     width: min(367px, calc(100vw - 36px));
-  }
-}
-
-@media (min-width: 431px) and (max-width: 760px) {
-  body:not(.page-component-parity) .site-nav,
-  body:not(.page-component-parity) .pakt-hero-inner {
-    width: 402px;
-    max-width: 402px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  body:not(.page-component-parity) .site-nav {
-    right: auto;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
