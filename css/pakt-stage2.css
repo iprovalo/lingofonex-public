@@ -5146,13 +5146,13 @@ body:not(.page-component-parity) #app-flow .flow-card p {
 }
 
 body:not(.page-component-parity) #app-flow .flow-card[aria-selected="false"] {
-  border-color: rgba(23, 23, 26, 0.42);
+  border-color: rgba(23, 23, 26, 0.2);
 }
 
 body:not(.page-component-parity) #app-flow .flow-card[aria-selected="false"] h3,
 body:not(.page-component-parity) #app-flow .flow-card[aria-selected="false"] p,
 body:not(.page-component-parity) #app-flow .flow-card[aria-selected="false"] .flow-phone-image {
-  opacity: 0.42;
+  opacity: 0.2;
 }
 
 body:not(.page-component-parity) #app-flow .flow-card[aria-selected="true"],
