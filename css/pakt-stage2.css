@@ -5390,6 +5390,7 @@ body:not(.page-component-parity) .scroll-section > .scroll-pin {
 }
 
 body:not(.page-component-parity) #situation.scroll-section {
+  --situation-deck-height: 500px;
   --pin-scroll: 85vh;
   overflow: visible;
   padding-top: 8vh;
@@ -5397,7 +5398,14 @@ body:not(.page-component-parity) #situation.scroll-section {
 }
 
 body:not(.page-component-parity) #situation .situation-pin {
+  top: clamp(24px, calc((100vh - var(--situation-deck-height, 500px)) / 2), 220px);
   width: var(--situation-deck-width, min(980px, calc(100vw - 60px)));
+}
+
+@media (max-width: 760px) {
+  body:not(.page-component-parity) #situation.scroll-section {
+    --situation-deck-height: 346px;
+  }
 }
 
 body:not(.page-component-parity) #features.features-section {
