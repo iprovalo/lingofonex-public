@@ -243,6 +243,30 @@
       });
     }
 
+    var siteNav = document.querySelector('.site-nav');
+    var hero = document.querySelector('.pakt-hero');
+    var stickyNavTicking = false;
+
+    function syncStickyNavState() {
+      if (!siteNav) return;
+      var navHeight = siteNav.offsetHeight || 76;
+      var isPastHero = hero
+        ? hero.getBoundingClientRect().bottom <= navHeight + 8
+        : (window.pageYOffset || document.documentElement.scrollTop || 0) > 8;
+      siteNav.classList.toggle('is-scrolled', isPastHero);
+      stickyNavTicking = false;
+    }
+
+    function requestStickyNavState() {
+      if (stickyNavTicking) return;
+      stickyNavTicking = true;
+      window.requestAnimationFrame(syncStickyNavState);
+    }
+
+    syncStickyNavState();
+    window.addEventListener('scroll', requestStickyNavState, { passive: true });
+    window.addEventListener('resize', requestStickyNavState);
+
     /* Dropdown toggle (language switcher) */
     var dropdownBtns = document.querySelectorAll('.nav-links .has-dropdown > button');
     dropdownBtns.forEach(function (btn) {
