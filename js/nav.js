@@ -246,6 +246,10 @@
     var siteNav = document.querySelector('.site-nav');
     var hero = document.querySelector('.pakt-hero');
     var stickyNavTicking = false;
+    var centeredStickyPins = document.body.classList.contains('page-component-parity')
+      ? []
+      : Array.prototype.slice.call(document.querySelectorAll('#features .features-pin, #app-flow .flow-pin'));
+    var centeredPinsTicking = false;
 
     function syncStickyNavState() {
       if (!siteNav) return;
@@ -263,9 +267,34 @@
       window.requestAnimationFrame(syncStickyNavState);
     }
 
+    function syncCenteredStickyPins() {
+      if (!centeredStickyPins.length) return;
+      var navHeight = siteNav ? (siteNav.offsetHeight || 76) : 0;
+      var viewportHeight = window.innerHeight || document.documentElement.clientHeight || 1;
+      centeredStickyPins.forEach(function (pin) {
+        pin.style.top = '';
+        var pinHeight = pin.getBoundingClientRect().height || pin.offsetHeight || 0;
+        var centeredTop = Math.round((viewportHeight + navHeight - pinHeight) / 2);
+        pin.style.top = Math.max(navHeight + 8, centeredTop) + 'px';
+      });
+      centeredPinsTicking = false;
+    }
+
+    function requestCenteredStickyPins() {
+      if (centeredPinsTicking) return;
+      centeredPinsTicking = true;
+      window.requestAnimationFrame(syncCenteredStickyPins);
+    }
+
     syncStickyNavState();
+    syncCenteredStickyPins();
     window.addEventListener('scroll', requestStickyNavState, { passive: true });
-    window.addEventListener('resize', requestStickyNavState);
+    window.addEventListener('resize', function () {
+      requestStickyNavState();
+      requestCenteredStickyPins();
+    });
+    window.addEventListener('load', requestCenteredStickyPins);
+    window.setTimeout(requestCenteredStickyPins, 600);
 
     /* Dropdown toggle (language switcher) */
     var dropdownBtns = document.querySelectorAll('.nav-links .has-dropdown > button');

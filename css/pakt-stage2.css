@@ -5538,7 +5538,7 @@ body:not(.page-component-parity) #app-flow.scroll-section {
 
 body:not(.page-component-parity) #app-flow .flow-pin {
   padding-top: 33px;
-  padding-bottom: 96px;
+  padding-bottom: 16px;
 }
 
 body:not(.page-component-parity) #offline-proof.proof-band.scroll-section {
