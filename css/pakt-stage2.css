@@ -5678,9 +5678,9 @@ body:not(.page-component-parity) #checklist .check-item.is-checked .check-copy s
   }
 
   body:not(.page-component-parity) #offline-proof.proof-band.scroll-section {
-    --pin-scroll: 0px;
+    --pin-scroll: 125vh;
     width: calc(100% - 28px);
-    min-height: auto;
+    min-height: calc(100vh + var(--pin-scroll));
     margin-right: auto;
     margin-left: auto;
     overflow: visible;
@@ -5688,8 +5688,8 @@ body:not(.page-component-parity) #checklist .check-item.is-checked .check-copy s
   }
 
   body:not(.page-component-parity) #offline-proof.scroll-section > .scroll-pin {
-    position: relative;
-    top: auto;
+    position: sticky;
+    top: var(--pin-top);
   }
 
   body:not(.page-component-parity) #privacy.privacy-conversation-section {
