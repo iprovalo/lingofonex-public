@@ -396,15 +396,18 @@
 
     document.querySelectorAll('.proof-band .status-chip-list').forEach(function (list) {
       var items = Array.prototype.slice.call(list.querySelectorAll('.status-chip-button'));
-      var panel = document.getElementById('proof-status-copy');
+      var section = list.closest('.proof-band') || document;
+      var panel = section.querySelector('.proof-status-copy') || document.getElementById('proof-status-copy');
       if (!items.length) return;
 
-      function render() {
-        var section = list.closest('.proof-band') || list;
-        var activeIndex = activeIndexFor(animationProgressFor(section), items.length);
+      list.setAttribute('role', 'tablist');
+
+      function activateProofTab(activeItem, shouldFocus) {
         items.forEach(function (item, index) {
-          var active = index === activeIndex;
+          var active = item === activeItem;
           item.setAttribute('aria-selected', active ? 'true' : 'false');
+          item.setAttribute('role', 'tab');
+          item.setAttribute('tabindex', active ? '0' : '-1');
           var chip = item.closest('.status-chip');
           if (chip) chip.classList.toggle('is-active', active);
           if (active && panel) {
@@ -412,10 +415,35 @@
             if (item.id) panel.setAttribute('aria-labelledby', item.id);
           }
         });
+        if (shouldFocus && activeItem.focus) activeItem.focus();
       }
 
-      scrollDrivenBlocks.push(render);
-      render();
+      items.forEach(function (item, index) {
+        item.addEventListener('click', function () {
+          activateProofTab(item, false);
+        });
+
+        item.addEventListener('keydown', function (event) {
+          var nextIndex = index;
+          if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+            nextIndex = (index + 1) % items.length;
+          } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+            nextIndex = (index - 1 + items.length) % items.length;
+          } else if (event.key === 'Home') {
+            nextIndex = 0;
+          } else if (event.key === 'End') {
+            nextIndex = items.length - 1;
+          } else {
+            return;
+          }
+          event.preventDefault();
+          activateProofTab(items[nextIndex], true);
+        });
+      });
+
+      activateProofTab(items.find(function (item) {
+        return item.getAttribute('aria-selected') === 'true';
+      }) || items[0], false);
     });
 
     document.querySelectorAll('.app-flow-section .flow-grid').forEach(function (grid) {

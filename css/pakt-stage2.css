@@ -719,8 +719,12 @@ body:not(.page-component-parity) .site-nav.is-scrolled {
   align-items: center;
   gap: 20px;
   padding: 0;
+  border: 0;
+  background: transparent;
   color: inherit;
+  font: inherit;
   text-align: left;
+  cursor: pointer;
 }
 
 .proof-status-copy {
@@ -5541,9 +5545,9 @@ body:not(.page-component-parity) #app-flow .flow-pin {
   padding-bottom: 16px;
 }
 
-body:not(.page-component-parity) #offline-proof.proof-band.scroll-section {
-  --pin-scroll: 150vh;
+body:not(.page-component-parity) #offline-proof.proof-band {
   height: auto;
+  min-height: auto;
   overflow: visible;
   padding: 0;
   border-radius: 0;
@@ -5704,10 +5708,9 @@ body:not(.page-component-parity) #checklist .check-item.is-checked .check-copy s
     overflow: visible;
   }
 
-  body:not(.page-component-parity) #offline-proof.proof-band.scroll-section {
-    --pin-scroll: 125vh;
+  body:not(.page-component-parity) #offline-proof.proof-band {
     width: calc(100% - 28px);
-    min-height: calc(100vh + var(--pin-scroll));
+    min-height: auto;
     margin-right: auto;
     margin-left: auto;
     overflow: visible;
