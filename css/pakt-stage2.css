@@ -5602,12 +5602,14 @@ body:not(.page-component-parity) #offline-proof .proof-device {
 }
 
 body:not(.page-component-parity) #scenarios.scroll-section {
+  --scenarios-card-center-offset: 335px;
   --pin-scroll: 165vh;
   overflow-x: clip;
   overflow-y: visible;
 }
 
 body:not(.page-component-parity) #scenarios .scenarios-pin {
+  top: max(24px, calc(50vh - var(--scenarios-card-center-offset)));
   overflow: hidden;
 }
 
