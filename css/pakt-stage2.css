@@ -4800,16 +4800,12 @@ body:not(.page-component-parity) #comparison .compare-table .pakt-col-is-check::
   body:not(.page-component-parity) #guide {
     width: min(calc(100% - 60px), 1382px);
     max-width: 1382px;
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    column-gap: 24px;
   }
 
   body:not(.page-component-parity) #guide > .section-kicker,
   body:not(.page-component-parity) #guide > .section-title,
   body:not(.page-component-parity) #guide > .body-copy {
-    grid-column: 3 / span 7;
-    max-width: none;
+    max-width: 850px;
   }
 }
 
@@ -4818,7 +4814,7 @@ body:not(.page-component-parity) .why-matters {
   max-width: 1382px;
   margin-right: auto;
   margin-left: auto;
-  padding: 36px 28px 34px;
+  padding: 36px 0 34px;
   text-align: left;
 }
 
