@@ -6057,7 +6057,7 @@ body:not(.page-component-parity) .explore-more .explore-pin {
   align-items: center;
   justify-content: center;
   padding: 84px 0 92px;
-  overflow: hidden;
+  overflow: clip visible;
 }
 
 body:not(.page-component-parity) #explore-more.scroll-section.is-scrollable .explore-pin {
@@ -6085,7 +6085,8 @@ body:not(.page-component-parity) .related-rail {
   margin-top: 76px;
   margin-right: auto;
   margin-left: auto;
-  overflow: hidden;
+  overflow: clip visible;
+  padding-bottom: 2px;
   padding-right: max(45px, calc((100vw - 1560px) / 2));
   padding-left: max(45px, calc((100vw - 1560px) / 2));
 }
@@ -6420,7 +6421,7 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
     align-items: center;
     justify-content: center;
     padding: 48px 0 62px;
-    overflow: hidden;
+    overflow: clip visible;
   }
 
   body:not(.page-component-parity) #explore-more.scroll-section.is-scrollable .explore-pin {
@@ -6447,7 +6448,8 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
     width: 100vw;
     max-width: none;
     margin: 44px auto 0;
-    overflow: hidden;
+    overflow: clip visible;
+    padding-bottom: 2px;
     padding-right: 24px;
     padding-left: 24px;
   }
