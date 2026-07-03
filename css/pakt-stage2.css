@@ -45,6 +45,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body:not(.page-component-parity) {
+  overflow-x: clip;
+}
+
 body.menu-open,
 body.language-modal-open {
   overflow: hidden;
@@ -391,6 +395,7 @@ body:not(.page-component-parity) .site-nav.is-scrolled {
 
 .section {
   padding: 76px 0;
+  scroll-margin-top: 96px;
 }
 
 .section.tight {
@@ -504,7 +509,7 @@ body:not(.page-component-parity) .site-nav.is-scrolled {
 }
 
 .feature-grid .card {
-  --feature-icon: url("/images/pakt-feature-icon-offline.svg?v=public-fixes-83");
+  --feature-icon: url("/images/pakt-feature-icon-offline.svg?v=public-fixes-108");
   position: relative;
   display: grid;
   grid-template-columns: 42px minmax(0, 1fr);
@@ -527,23 +532,23 @@ body:not(.page-component-parity) .site-nav.is-scrolled {
 }
 
 .feature-grid .card:nth-child(2) {
-  --feature-icon: url("/images/pakt-feature-icon-voice.svg?v=public-fixes-83");
+  --feature-icon: url("/images/pakt-feature-icon-voice.svg?v=public-fixes-108");
 }
 
 .feature-grid .card:nth-child(3) {
-  --feature-icon: url("/images/pakt-feature-icon-private.svg?v=public-fixes-83");
+  --feature-icon: url("/images/pakt-feature-icon-private.svg?v=public-fixes-108");
 }
 
 .feature-grid .card:nth-child(4) {
-  --feature-icon: url("/images/pakt-feature-icon-travel.svg?v=public-fixes-83");
+  --feature-icon: url("/images/pakt-feature-icon-travel.svg?v=public-fixes-108");
 }
 
 .feature-grid .card:nth-child(5) {
-  --feature-icon: url("/images/pakt-feature-icon-cloud.svg?v=public-fixes-83");
+  --feature-icon: url("/images/pakt-feature-icon-cloud.svg?v=public-fixes-108");
 }
 
 .feature-grid .card:nth-child(6) {
-  --feature-icon: url("/images/pakt-feature-icon-language.svg?v=public-fixes-83");
+  --feature-icon: url("/images/pakt-feature-icon-language.svg?v=public-fixes-108");
 }
 
 .feature-grid .card h3,
@@ -1054,6 +1059,7 @@ body:not(.page-component-parity) .site-nav.is-scrolled {
   width: min(calc(100% - 48px), var(--pakt-content));
   margin-top: 76px;
   margin-bottom: 76px;
+  scroll-margin-top: 96px;
   padding: 50px;
   overflow: hidden;
   border-radius: var(--pakt-radius);
@@ -2245,7 +2251,7 @@ body:not(.page-component-parity) #checklist .check-item.is-checked .check-copy s
 .language-modal {
   position: fixed;
   inset: 0;
-  z-index: 120;
+  z-index: 3000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3485,7 +3491,7 @@ body:not(.page-component-parity) #checklist .check-item.is-checked .check-copy s
   }
 
   .page-component-parity #features .feature-grid .card:nth-child(3) p::after {
-    content: "Conversations never leave your phone.\A No servers, no logs, no accounts.";
+    content: "Prepared offline translation stays on your phone.";
   }
 
   .page-component-parity #features .feature-grid .card:nth-child(4) p::after {
@@ -6133,7 +6139,7 @@ body:not(.page-component-parity) .explore-more .related-grid {
 
 body:not(.page-component-parity) .explore-more .related-card {
   --explore-icon: url("/images/pakt-explore-icon-phone.svg");
-  --explore-bg: url("/images/pakt-explore-card-open-bg.jpg?v=public-fixes-83");
+  --explore-bg: url("/images/pakt-explore-card-open-bg.jpg?v=public-fixes-108");
   --explore-bg-position: center 87%;
   position: relative;
   display: flex;
@@ -6170,27 +6176,27 @@ body:not(.page-component-parity) .explore-more .related-card[aria-expanded="true
 }
 
 body:not(.page-component-parity) .explore-more .related-card[data-explore-bg="offline"] {
-  --explore-bg: url("/images/pakt-explore-bg-offline.jpg?v=public-fixes-83");
+  --explore-bg: url("/images/pakt-explore-bg-offline.jpg?v=public-fixes-108");
   --explore-bg-position: center 57%;
 }
 
 body:not(.page-component-parity) .explore-more .related-card[data-explore-bg="voice"] {
-  --explore-bg: url("/images/pakt-explore-bg-voice.jpg?v=public-fixes-83");
+  --explore-bg: url("/images/pakt-explore-bg-voice.jpg?v=public-fixes-108");
   --explore-bg-position: center 48%;
 }
 
 body:not(.page-component-parity) .explore-more .related-card[data-explore-bg="travel"] {
-  --explore-bg: url("/images/pakt-explore-bg-travel.jpg?v=public-fixes-83");
+  --explore-bg: url("/images/pakt-explore-bg-travel.jpg?v=public-fixes-108");
   --explore-bg-position: center 42%;
 }
 
 body:not(.page-component-parity) .explore-more .related-card[data-explore-bg="japan"] {
-  --explore-bg: url("/images/pakt-explore-bg-japan.jpg?v=public-fixes-83");
+  --explore-bg: url("/images/pakt-explore-bg-japan.jpg?v=public-fixes-108");
   --explore-bg-position: center 58%;
 }
 
 body:not(.page-component-parity) .explore-more .related-card[data-explore-bg="airplane"] {
-  --explore-bg: url("/images/pakt-explore-bg-airplane.jpg?v=public-fixes-83");
+  --explore-bg: url("/images/pakt-explore-bg-airplane.jpg?v=public-fixes-108");
   --explore-bg-position: center 45%;
 }
 
@@ -6544,7 +6550,7 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
   }
 }
 
-/* User-provided App Store badge; Google Play is intentionally hidden for now. */
+/* User-provided App Store badge; secondary store badge is intentionally hidden for now. */
 .store-button.store-button,
 body:not(.page-component-parity) .store-button.store-button,
 body:not(.page-component-parity) .final-cta .store-button.store-button {
