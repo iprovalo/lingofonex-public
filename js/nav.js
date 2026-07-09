@@ -253,11 +253,8 @@
 
     function syncStickyNavState() {
       if (!siteNav) return;
-      var navHeight = siteNav.offsetHeight || 76;
-      var isPastHero = hero
-        ? hero.getBoundingClientRect().bottom <= navHeight + 8
-        : (window.pageYOffset || document.documentElement.scrollTop || 0) > 8;
-      siteNav.classList.toggle('is-scrolled', isPastHero);
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || 0;
+      siteNav.classList.toggle('is-scrolled', scrollTop > 8);
       stickyNavTicking = false;
     }
 
@@ -677,8 +674,29 @@
 
       cards.forEach(function (card) {
         card.setAttribute('aria-expanded', card.getAttribute('aria-expanded') === 'true' ? 'true' : 'false');
-        card.addEventListener('click', function () {
+        card.addEventListener('click', function (event) {
+          var modifiedClick = event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button > 0;
+          if (modifiedClick) return;
+          if (card.getAttribute('aria-expanded') === 'true' && event.target.closest('.related-card-plus')) {
+            event.preventDefault();
+            setExpanded(null);
+            return;
+          }
+          if (currentExpandedCard !== card) {
+            event.preventDefault();
+          }
           setExpanded(card);
+        });
+        card.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape' && card.getAttribute('aria-expanded') === 'true') {
+            event.preventDefault();
+            setExpanded(null);
+            return;
+          }
+          if ((event.key === 'Enter' || event.key === ' ') && currentExpandedCard !== card) {
+            event.preventDefault();
+            setExpanded(card);
+          }
         });
       });
 
