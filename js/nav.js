@@ -162,7 +162,7 @@
   function buildNav() {
     var html = '<nav class="site-nav"><div class="nav-inner">';
     var isPaktPath = /\/pakt(?:\/|$)/.test(window.location.pathname);
-    var logoSrc = isPaktPath ? base + 'images/pakt-wordmark-white.png' : base + 'images/Lingofonex_Logo-Medium.png';
+    var logoSrc = isPaktPath ? base + 'images/pakt-wordmark-white.svg' : base + 'images/Lingofonex_Logo-Medium.png';
     var logoAlt = isPaktPath ? 'Pakt by Lingofonex' : 'Lingofonex';
 
     /* Brand */
@@ -242,6 +242,56 @@
         });
       });
     }
+
+    var siteNav = document.querySelector('.site-nav');
+    var hero = document.querySelector('.pakt-hero');
+    var stickyNavTicking = false;
+    var centeredStickyPins = document.body.classList.contains('page-component-parity')
+      ? []
+      : Array.prototype.slice.call(document.querySelectorAll('#features .features-pin, #app-flow .flow-pin'));
+    var centeredPinsTicking = false;
+
+    function syncStickyNavState() {
+      if (!siteNav) return;
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || 0;
+      siteNav.classList.toggle('is-scrolled', scrollTop > 8);
+      stickyNavTicking = false;
+    }
+
+    function requestStickyNavState() {
+      if (stickyNavTicking) return;
+      stickyNavTicking = true;
+      window.requestAnimationFrame(syncStickyNavState);
+    }
+
+    function syncCenteredStickyPins() {
+      if (!centeredStickyPins.length) return;
+      var navHeight = siteNav ? (siteNav.offsetHeight || 76) : 0;
+      var viewportHeight = window.innerHeight || document.documentElement.clientHeight || 1;
+      centeredStickyPins.forEach(function (pin) {
+        pin.style.top = '';
+        var pinHeight = pin.getBoundingClientRect().height || pin.offsetHeight || 0;
+        var centeredTop = Math.round((viewportHeight + navHeight - pinHeight) / 2);
+        pin.style.top = Math.max(navHeight + 8, centeredTop) + 'px';
+      });
+      centeredPinsTicking = false;
+    }
+
+    function requestCenteredStickyPins() {
+      if (centeredPinsTicking) return;
+      centeredPinsTicking = true;
+      window.requestAnimationFrame(syncCenteredStickyPins);
+    }
+
+    syncStickyNavState();
+    syncCenteredStickyPins();
+    window.addEventListener('scroll', requestStickyNavState, { passive: true });
+    window.addEventListener('resize', function () {
+      requestStickyNavState();
+      requestCenteredStickyPins();
+    });
+    window.addEventListener('load', requestCenteredStickyPins);
+    window.setTimeout(requestCenteredStickyPins, 600);
 
     /* Dropdown toggle (language switcher) */
     var dropdownBtns = document.querySelectorAll('.nav-links .has-dropdown > button');
@@ -343,15 +393,18 @@
 
     document.querySelectorAll('.proof-band .status-chip-list').forEach(function (list) {
       var items = Array.prototype.slice.call(list.querySelectorAll('.status-chip-button'));
-      var panel = document.getElementById('proof-status-copy');
+      var section = list.closest('.proof-band') || document;
+      var panel = section.querySelector('.proof-status-copy') || document.getElementById('proof-status-copy');
       if (!items.length) return;
 
-      function render() {
-        var section = list.closest('.proof-band') || list;
-        var activeIndex = activeIndexFor(animationProgressFor(section), items.length);
+      list.setAttribute('role', 'tablist');
+
+      function activateProofTab(activeItem, shouldFocus) {
         items.forEach(function (item, index) {
-          var active = index === activeIndex;
+          var active = item === activeItem;
           item.setAttribute('aria-selected', active ? 'true' : 'false');
+          item.setAttribute('role', 'tab');
+          item.setAttribute('tabindex', active ? '0' : '-1');
           var chip = item.closest('.status-chip');
           if (chip) chip.classList.toggle('is-active', active);
           if (active && panel) {
@@ -359,10 +412,35 @@
             if (item.id) panel.setAttribute('aria-labelledby', item.id);
           }
         });
+        if (shouldFocus && activeItem.focus) activeItem.focus();
       }
 
-      scrollDrivenBlocks.push(render);
-      render();
+      items.forEach(function (item, index) {
+        item.addEventListener('click', function () {
+          activateProofTab(item, false);
+        });
+
+        item.addEventListener('keydown', function (event) {
+          var nextIndex = index;
+          if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+            nextIndex = (index + 1) % items.length;
+          } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+            nextIndex = (index - 1 + items.length) % items.length;
+          } else if (event.key === 'Home') {
+            nextIndex = 0;
+          } else if (event.key === 'End') {
+            nextIndex = items.length - 1;
+          } else {
+            return;
+          }
+          event.preventDefault();
+          activateProofTab(items[nextIndex], true);
+        });
+      });
+
+      activateProofTab(items.find(function (item) {
+        return item.getAttribute('aria-selected') === 'true';
+      }) || items[0], false);
     });
 
     document.querySelectorAll('.app-flow-section .flow-grid').forEach(function (grid) {
@@ -466,8 +544,6 @@
       var cards = Array.prototype.slice.call(slider.querySelectorAll('.scenario-card'));
       var resizeTimer = null;
       var overflow = 0;
-      var stepDistance = 0;
-      var stepCount = 0;
 
       if (!section || cards.length < 4) return;
 
@@ -491,25 +567,13 @@
           return;
         }
         var progress = animationProgressFor(section);
-        var offset = overflow * progress;
-        if (stepCount > 0) {
-          offset = Math.min(overflow, Math.round(progress * stepCount) * stepDistance);
-        }
+        var offset = Math.min(overflow, Math.max(0, overflow * progress));
         slider.style.transform = 'translate3d(' + (-offset) + 'px, 0, 0)';
         updateHiddenCards();
       }
 
       function measure() {
         overflow = Math.max(0, slider.scrollWidth - section.clientWidth);
-        var firstCard = cards[0];
-        var secondCard = cards[1];
-        if (firstCard && secondCard) {
-          stepDistance = Math.max(1, secondCard.offsetLeft - firstCard.offsetLeft);
-          stepCount = Math.max(0, Math.round(overflow / stepDistance));
-        } else {
-          stepDistance = 0;
-          stepCount = 0;
-        }
         render();
       }
 
@@ -531,8 +595,61 @@
       var overflow = 0;
       var currentExpandedCard = null;
       var settleTimer = null;
+      var centerTimer = null;
 
       if (!section || !rail || cards.length < 2) return;
+
+      function isMobileExplore() {
+        return window.matchMedia && window.matchMedia('(max-width: 760px)').matches;
+      }
+
+      function scrollSectionToOffset(targetOffset) {
+        updateOverflow();
+        if (!overflow) {
+          render();
+          return;
+        }
+
+        var pin = section.querySelector('.scroll-pin');
+        var viewportHeight = window.innerHeight || document.documentElement.clientHeight || 1;
+        var top = pin ? parseFloat(window.getComputedStyle(pin).top) || 0 : 0;
+        var start = Math.max(0, section.offsetTop - top);
+        var pinHeight = pin ? pin.getBoundingClientRect().height : viewportHeight;
+        var distance = Math.max(1, section.offsetHeight - pinHeight);
+        var progress = clamp(targetOffset / overflow, 0, 1);
+
+        window.scrollTo({
+          top: start + distance * progress,
+          behavior: 'auto'
+        });
+        render();
+      }
+
+      function centeredOffsetForCard(card) {
+        var railStyles = window.getComputedStyle(rail);
+        var railLeftPadding = parseFloat(railStyles.paddingLeft) || 0;
+        var railRightPadding = parseFloat(railStyles.paddingRight) || 0;
+        var visibleWidth = Math.max(1, rail.clientWidth - railLeftPadding - railRightPadding);
+        var cardCenter = card.offsetLeft + card.offsetWidth / 2;
+        return clamp(cardCenter - visibleWidth / 2, 0, overflow);
+      }
+
+      function centerCard(card) {
+        if (!card || !isMobileExplore()) return;
+        updateOverflow();
+        scrollSectionToOffset(centeredOffsetForCard(card));
+      }
+
+      function scheduleCenterCard(card) {
+        if (!card || !isMobileExplore()) return;
+        window.clearTimeout(centerTimer);
+        window.requestAnimationFrame(function () {
+          centerCard(card);
+        });
+        centerTimer = window.setTimeout(function () {
+          centerCard(card);
+        }, 360);
+      }
 
       function applyExpanded(targetCard) {
         if (currentExpandedCard === targetCard) return;
@@ -549,14 +666,37 @@
 
       function setExpanded(targetCard) {
         var nextCard = targetCard && currentExpandedCard !== targetCard ? targetCard : null;
+        if (nextCard && isMobileExplore()) centerCard(nextCard);
         applyExpanded(nextCard);
+        if (nextCard && isMobileExplore()) scheduleCenterCard(nextCard);
         window.requestAnimationFrame(measure);
       }
 
       cards.forEach(function (card) {
         card.setAttribute('aria-expanded', card.getAttribute('aria-expanded') === 'true' ? 'true' : 'false');
-        card.addEventListener('click', function () {
+        card.addEventListener('click', function (event) {
+          var modifiedClick = event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button > 0;
+          if (modifiedClick) return;
+          if (card.getAttribute('aria-expanded') === 'true' && event.target.closest('.related-card-plus')) {
+            event.preventDefault();
+            setExpanded(null);
+            return;
+          }
+          if (currentExpandedCard !== card) {
+            event.preventDefault();
+          }
           setExpanded(card);
+        });
+        card.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape' && card.getAttribute('aria-expanded') === 'true') {
+            event.preventDefault();
+            setExpanded(null);
+            return;
+          }
+          if ((event.key === 'Enter' || event.key === ' ') && currentExpandedCard !== card) {
+            event.preventDefault();
+            setExpanded(card);
+          }
         });
       });
 
@@ -584,6 +724,12 @@
         var railLeftPadding = parseFloat(railStyles.paddingLeft) || 0;
         var railRightPadding = parseFloat(railStyles.paddingRight) || 0;
         overflow = Math.max(0, slider.scrollWidth + railLeftPadding + railRightPadding - rail.clientWidth);
+        var isScrollable = overflow > 2;
+        var viewportHeight = window.innerHeight || document.documentElement.clientHeight || 1;
+        var minScroll = isMobileExplore() ? viewportHeight * 1.2 : 240;
+        var scrollDistance = isScrollable ? Math.round(Math.max(minScroll, overflow * 1.15)) : 0;
+        section.classList.toggle('is-scrollable', isScrollable);
+        section.style.setProperty('--pin-scroll', scrollDistance + 'px');
       }
 
       function measure() {
