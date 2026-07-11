@@ -1693,6 +1693,37 @@ body:not(.page-component-parity) .site-nav.is-scrolled .nav-links .nav-cta {
   }
 }
 
+@media (min-width: 761px) {
+  .page-voice-speech-translator:not(.page-component-parity) .pakt-hero h1 {
+    font-size: clamp(54px, 4.5vw, 82px);
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) .hero-lede {
+    font-size: clamp(16px, 1.25vw, 20px);
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) .pakt-hero .store-button.store-button {
+    width: clamp(168px, 10vw, 210px);
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1180px) {
+  .page-voice-speech-translator:not(.page-component-parity) .hero-copy {
+    width: min(640px, calc(100vw - 48px));
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) .pakt-hero h1 {
+    width: 100%;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) .hero-lede {
+    width: min(600px, 100%);
+    font-size: 17px;
+    line-height: 1.24;
+  }
+
+}
+
 @media (max-width: 390px) {
   .nav-inner,
   .pakt-hero-inner {
@@ -7253,5 +7284,202 @@ body:not(.page-component-parity) .final-cta .store-button > * {
     gap: 28px 10px;
     padding-right: 14px;
     padding-left: 14px;
+  }
+}
+
+/* Voice-translator page: resilient sizing after the four-card content pass. */
+.page-voice-speech-translator:not(.page-component-parity) #features.features-section {
+  margin-top: 36px;
+}
+
+.page-voice-speech-translator:not(.page-component-parity) #offline-proof > .section-title {
+  width: min(100%, 360px);
+  min-width: 0;
+}
+
+.page-voice-speech-translator:not(.page-component-parity) #offline-proof > .section-lede {
+  width: min(100%, 430px);
+  min-width: 0;
+}
+
+.page-voice-speech-translator:not(.page-component-parity) #offline-proof > .metric-grid {
+  width: min(100%, 720px);
+  min-width: 0;
+}
+
+@media (min-width: 641px) and (max-width: 760px) {
+  .page-voice-speech-translator:not(.page-component-parity) #offline-proof > .section-title {
+    width: min(100%, 560px);
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #offline-proof > .section-lede {
+    width: min(100%, 520px);
+  }
+}
+
+@media (min-width: 761px) {
+  .page-voice-speech-translator:not(.page-component-parity) #features.features-section > .features-pin {
+    height: auto;
+    min-height: 0;
+  }
+}
+
+@media (min-width: 981px) {
+  .page-voice-speech-translator:not(.page-component-parity) #features.features-section .section-title {
+    max-width: 100%;
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: 761px) {
+  body.page-voice-speech-translator:not(.page-component-parity) .final-cta {
+    height: auto;
+  }
+
+  body.page-voice-speech-translator:not(.page-component-parity) .final-cta-inner {
+    height: auto;
+    min-height: inherit;
+  }
+
+  body.page-voice-speech-translator:not(.page-component-parity) .final-cta p {
+    max-width: 540px;
+    margin-top: clamp(20px, 1.4vw, 26px);
+  }
+
+  body.page-voice-speech-translator:not(.page-component-parity) .final-cta-copy {
+    padding-top: clamp(48px, 3vw, 58px);
+    padding-bottom: clamp(48px, 3vw, 58px);
+  }
+
+  body.page-voice-speech-translator:not(.page-component-parity) .final-cta .store-buttons {
+    margin-top: clamp(20px, 1.4vw, 26px);
+  }
+
+  body.page-voice-speech-translator:not(.page-component-parity) .final-cta-visuals {
+    height: auto;
+    min-height: 100%;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  body.page-voice-speech-translator:not(.page-component-parity) .final-cta-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body.page-voice-speech-translator:not(.page-component-parity) .final-cta-visuals {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) {
+  .page-voice-speech-translator:not(.page-component-parity) #offline-proof > .metric-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .page-voice-speech-translator:not(.page-component-parity) #conversation {
+    padding-top: 58px;
+    padding-bottom: 64px;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #conversation .copy-grid {
+    gap: 28px;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #conversation .section-title {
+    max-width: 720px;
+    margin-bottom: 18px;
+    font-size: clamp(38px, 5.15vw, 44px);
+    line-height: 1.02;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #conversation .section-lede {
+    max-width: 620px;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 1.32;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #conversation .body-copy,
+  .page-voice-speech-translator:not(.page-component-parity) #conversation .body-copy p {
+    font-size: 16px;
+    line-height: 1.44;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #conversation .situation-deck {
+    display: grid;
+    width: min(100%, 620px);
+    min-height: 0;
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #conversation .situation-card,
+  .page-voice-speech-translator:not(.page-component-parity) #conversation .situation-card:nth-child(3) {
+    position: static;
+    width: 100%;
+    min-height: 0;
+    padding: 24px;
+    transform: none;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #conversation .situation-card h3 {
+    font-size: 28px;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #offline-proof.proof-section {
+    padding: 64px clamp(42px, 6vw, 52px) 70px;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #offline-proof > .section-title {
+    width: min(100%, 560px);
+    max-width: 560px;
+    font-size: 42px;
+    line-height: 1.02;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #offline-proof > .section-lede {
+    width: min(100%, 520px);
+    max-width: 520px;
+    font-size: 17px;
+    line-height: 1.32;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #offline-proof > .metric-grid {
+    width: 100%;
+    max-width: 100%;
+    gap: 14px;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #offline-proof .metric {
+    min-height: 174px;
+    padding: 22px;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #offline-proof .metric strong {
+    font-size: 50px;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #offline-proof .metric span {
+    font-size: 15px;
+    line-height: 1.28;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 800px) {
+  .page-voice-speech-translator:not(.page-component-parity) #offline-proof .metric strong {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 760px) {
+  .page-voice-speech-translator:not(.page-component-parity) #conversation .situation-deck {
+    gap: 14px;
+    margin-top: 28px;
+  }
+
+  .page-voice-speech-translator:not(.page-component-parity) #conversation .situation-card:nth-child(3) {
+    width: 100%;
   }
 }
