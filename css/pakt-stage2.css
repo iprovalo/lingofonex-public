@@ -7361,7 +7361,64 @@ body:not(.page-component-parity) .final-cta .store-button > * {
   }
 }
 
+/* Stage 2 support pages: keep the mobile reading flow compact. */
+.page-conversation-translator:not(.page-component-parity) #offline-proof > .status-chip-list {
+  width: min(100%, 560px);
+  max-width: 560px;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin-top: 34px;
+}
+
+.page-conversation-translator:not(.page-component-parity) #offline-proof .status-chip {
+  display: flex;
+  min-width: 0;
+  min-height: 64px;
+  gap: 18px;
+  padding: 14px 0;
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+.page-conversation-translator:not(.page-component-parity) #offline-proof .status-chip + .status-chip {
+  border-top: 1px solid var(--pakt-line-dark);
+}
+
+@media (max-width: 760px) {
+  .page-conversation-translator:not(.page-component-parity) .scroll-section {
+    min-height: auto;
+  }
+
+  .page-conversation-translator:not(.page-component-parity) .scroll-section > .scroll-pin {
+    position: relative;
+    top: auto;
+  }
+
+  .page-conversation-translator:not(.page-component-parity) #explore-more.scroll-section.is-scrollable {
+    min-height: auto;
+  }
+
+  .page-conversation-translator:not(.page-component-parity) #explore-more.scroll-section.is-scrollable > .scroll-pin {
+    position: relative;
+    top: auto;
+    min-height: auto;
+  }
+}
+
 @media (min-width: 761px) and (max-width: 1100px) {
+  body.page-conversation-translator:not(.page-component-parity) .final-cta-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body.page-conversation-translator:not(.page-component-parity) .final-cta-copy {
+    padding-right: clamp(56px, 8vw, 76px);
+    padding-left: clamp(56px, 8vw, 76px);
+  }
+
+  body.page-conversation-translator:not(.page-component-parity) .final-cta-visuals {
+    display: none;
+  }
+
   body.page-voice-speech-translator:not(.page-component-parity) .final-cta-inner {
     grid-template-columns: minmax(0, 1fr);
   }
