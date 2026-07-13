@@ -17,6 +17,7 @@ Privacy posture: Pakt translates locally on your phone for prepared offline lang
 - [Voice & Speech Translator](https://www.lingofonex.com/pakt/voice-speech-translator/) - Speak, translate, and hear voice output offline with Pakt. Built for travel conversations when internet access is unreliable.
 - [Conversation Translator](https://www.lingofonex.com/pakt/conversation-translator/) - Speak or type, show or play the translation, and keep moving even when signal disappears.
 - [Airplane Mode Translator](https://www.lingofonex.com/pakt/translation-airplane-mode/) - Translate from takeoff to arrivals while WiFi and mobile data stay off.
+- [Private Translation App](https://www.lingofonex.com/pakt/private-translation-app/) - Translate downloaded languages locally on your phone when personal travel details matter.
 - [Best Offline Translator App](https://www.lingofonex.com/pakt/best-offline-translator-app/) - Compare offline translator apps by offline use, voice output, privacy, travel readiness, language support, and account requirements.
 
 ## Site Pages

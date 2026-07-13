@@ -635,13 +635,13 @@
       }
 
       function centerCard(card) {
-        if (!card || !isMobileExplore()) return;
+        if (!card) return;
         updateOverflow();
         scrollSectionToOffset(centeredOffsetForCard(card));
       }
 
       function scheduleCenterCard(card) {
-        if (!card || !isMobileExplore()) return;
+        if (!card) return;
         window.clearTimeout(centerTimer);
         window.requestAnimationFrame(function () {
           centerCard(card);
@@ -666,9 +666,9 @@
 
       function setExpanded(targetCard) {
         var nextCard = targetCard && currentExpandedCard !== targetCard ? targetCard : null;
-        if (nextCard && isMobileExplore()) centerCard(nextCard);
+        if (nextCard) centerCard(nextCard);
         applyExpanded(nextCard);
-        if (nextCard && isMobileExplore()) scheduleCenterCard(nextCard);
+        if (nextCard) scheduleCenterCard(nextCard);
         window.requestAnimationFrame(measure);
       }
 
