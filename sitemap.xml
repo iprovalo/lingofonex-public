@@ -4539,4 +4539,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.lingofonex.com/pakt/best-offline-translator-app/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lingofonex.com/pakt/best-offline-translator-app/"/>
   </url>
+  <url>
+    <loc>https://www.lingofonex.com/pakt/conversation-translator/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lingofonex.com/pakt/conversation-translator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lingofonex.com/pakt/conversation-translator/"/>
+  </url>
+  <url>
+    <loc>https://www.lingofonex.com/pakt/translation-airplane-mode/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.lingofonex.com/pakt/translation-airplane-mode/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.lingofonex.com/pakt/translation-airplane-mode/"/>
+  </url>
 </urlset>

@@ -7405,7 +7405,108 @@ body:not(.page-component-parity) .final-cta .store-button > * {
   }
 }
 
+@media (max-width: 760px) {
+  .page-translation-airplane-mode:not(.page-component-parity) .hero-lede {
+    width: min(100%, 520px);
+    font-size: clamp(16.5px, 4.4vw, 18px);
+    line-height: 1.25;
+  }
+
+  .page-translation-airplane-mode:not(.page-component-parity) .scroll-section {
+    min-height: auto;
+  }
+
+  .page-translation-airplane-mode:not(.page-component-parity) .scroll-section > .scroll-pin {
+    position: relative;
+    top: auto;
+  }
+
+  .page-translation-airplane-mode:not(.page-component-parity) #explore-more.scroll-section.is-scrollable {
+    min-height: auto;
+  }
+
+  .page-translation-airplane-mode:not(.page-component-parity) #explore-more.scroll-section.is-scrollable > .scroll-pin {
+    position: relative;
+    top: auto;
+    min-height: auto;
+  }
+
+  .page-translation-airplane-mode:not(.page-component-parity) #situation.scroll-section {
+    width: 100%;
+    padding: 40px 20px;
+    overflow: hidden;
+  }
+
+  .page-translation-airplane-mode:not(.page-component-parity) #situation .situation-pin,
+  .page-translation-airplane-mode:not(.page-component-parity) #situation .situation-slider {
+    width: 100%;
+  }
+
+  .page-translation-airplane-mode:not(.page-component-parity) #situation .situation-pin {
+    top: auto;
+  }
+
+  .page-translation-airplane-mode:not(.page-component-parity) #situation .situation-panel-main,
+  .page-translation-airplane-mode:not(.page-component-parity) #situation .situation-slider.is-shifted .situation-panel-main {
+    position: relative;
+    transform: none;
+  }
+
+  .page-translation-airplane-mode:not(.page-component-parity) #situation .situation-panel-peek {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .page-translation-airplane-mode:not(.page-component-parity) #scenarios.scroll-section {
+    width: min(calc(100% - 40px), var(--pakt-content));
+    min-height: auto;
+    overflow: visible;
+  }
+
+  .page-translation-airplane-mode:not(.page-component-parity) #scenarios .scenarios-pin {
+    position: relative;
+    top: auto;
+    overflow: visible;
+  }
+
+  .page-translation-airplane-mode:not(.page-component-parity) #scenarios .scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    max-width: none;
+    gap: 14px;
+    margin-top: 36px;
+    transform: none !important;
+    will-change: auto;
+  }
+
+  .page-translation-airplane-mode:not(.page-component-parity) #scenarios .scenario-card {
+    flex: initial;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+  }
+
+  .page-translation-airplane-mode:not(.page-component-parity) #scenarios .scenario-card:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (min-width: 761px) and (max-width: 1100px) {
+  body.page-translation-airplane-mode:not(.page-component-parity) .final-cta-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body.page-translation-airplane-mode:not(.page-component-parity) .final-cta-copy {
+    padding-right: clamp(56px, 8vw, 76px);
+    padding-left: clamp(56px, 8vw, 76px);
+  }
+
+  body.page-translation-airplane-mode:not(.page-component-parity) .final-cta-visuals {
+    display: none;
+  }
+
   body.page-conversation-translator:not(.page-component-parity) .final-cta-inner {
     grid-template-columns: minmax(0, 1fr);
   }
