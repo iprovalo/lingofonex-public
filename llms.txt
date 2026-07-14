@@ -19,6 +19,11 @@ Privacy posture: Pakt translates locally on your phone for prepared offline lang
 - [Airplane Mode Translator](https://www.lingofonex.com/pakt/translation-airplane-mode/) - Translate from takeoff to arrivals while WiFi and mobile data stay off.
 - [Private Translation App](https://www.lingofonex.com/pakt/private-translation-app/) - Translate downloaded languages locally on your phone when personal travel details matter.
 - [Best Offline Translator App](https://www.lingofonex.com/pakt/best-offline-translator-app/) - Compare offline translator apps by offline use, voice output, privacy, travel readiness, language support, and account requirements.
+- [Translator for Taxis, Hotels, and Restaurants](https://www.lingofonex.com/pakt/translator-for-taxis-hotels-restaurants/) - Real offline travel conversations for taxis, hotels, restaurants, pharmacies, airports, and train stations.
+- [Offline Translator for Japan](https://www.lingofonex.com/pakt/offline-translator-for-japan/) - Prepare Japanese before a trip and use Pakt across trains, restaurants, hotels, taxis, pharmacies, and shops.
+- [Offline Translator for Spain](https://www.lingofonex.com/pakt/offline-translator-for-spain/) - Download Spanish before travel and use Pakt for meals, stays, markets, taxis, and transport across Spain.
+- [Offline Translator for France](https://www.lingofonex.com/pakt/offline-translator-for-france/) - Keep French ready offline for cafés, train stations, hotels, pharmacies, taxis, and shops.
+- [Offline Translator for Italy](https://www.lingofonex.com/pakt/offline-translator-for-italy/) - Prepare Italian for restaurants, trains, hotels, taxis, shops, and markets across Italy.
 
 ## Site Pages
 
@@ -32,7 +37,7 @@ Privacy posture: Pakt translates locally on your phone for prepared offline lang
 
 ## Localization
 
-The complete eight-page Pakt cluster is available in English, Spanish, German, French, Brazilian Portuguese, and Italian. Localized hubs:
+The eight-page core Pakt cluster is available in English, Spanish, German, French, Brazilian Portuguese, and Italian. The five new scenario and destination proof pages are currently English-only. Localized hubs:
 
 - [Pakt en español](https://www.lingofonex.com/pakt/es/)
 - [Pakt auf Deutsch](https://www.lingofonex.com/pakt/de/)

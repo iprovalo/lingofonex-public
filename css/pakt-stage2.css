@@ -7989,8 +7989,61 @@ body.page-pakt-hub #explore-more .related-card[aria-expanded="true"] .related-ca
   font-size: 18px;
 }
 
+.destination-links-section {
+  padding-top: 96px;
+  padding-bottom: 112px;
+}
+
+.destination-link-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 54px;
+}
+
+.destination-link {
+  display: flex;
+  min-height: 190px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 26px;
+  border: 1px solid rgba(20, 20, 22, 0.3);
+  border-radius: 8px;
+  color: var(--pakt-black);
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.destination-link:nth-child(1) { background: #fce898; }
+.destination-link:nth-child(2) { background: #8bea89; }
+.destination-link:nth-child(3) { background: #94d8f2; }
+.destination-link:nth-child(4) { background: #fca09c; }
+
+.destination-link:hover,
+.destination-link:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(20, 20, 22, 0.12);
+}
+
+.destination-link strong {
+  font-family: var(--pakt-display);
+  font-size: clamp(30px, 3vw, 46px);
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+.destination-link span {
+  max-width: 18ch;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
 @media (max-width: 1100px) {
   body.page-pakt-hub #explore-more .related-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .destination-link-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -8068,5 +8121,48 @@ body.page-pakt-hub #explore-more .related-card[aria-expanded="true"] .related-ca
   body.page-pakt-hub #explore-more .related-card[aria-expanded="true"] {
     width: 100%;
     min-height: 230px;
+  }
+
+  .destination-links-section {
+    padding-top: 68px;
+    padding-bottom: 82px;
+  }
+
+  .destination-link-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 36px;
+  }
+
+  .destination-link {
+    min-height: 170px;
+    padding: 18px;
+  }
+
+  .destination-link strong {
+    font-size: 30px;
+  }
+
+  .destination-link span {
+    font-size: 14px;
+  }
+
+  body:not(.page-component-parity) #scenarios .scenario-card {
+    height: auto;
+    min-height: 220px;
+    padding: 68px 16px 18px;
+  }
+
+  body:not(.page-component-parity) #scenarios .scenario-card h3 {
+    font-size: 16px;
+    line-height: 1.15;
+  }
+
+  body:not(.page-component-parity) #scenarios .scenario-card p {
+    display: block;
+    overflow: visible;
+    font-size: 14.5px;
+    line-height: 1.24;
+    -webkit-line-clamp: initial;
   }
 }
