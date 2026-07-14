@@ -32,7 +32,15 @@ Privacy posture: Pakt translates locally on your phone for prepared offline lang
 
 ## Localization
 
-Legacy site sections are available in 23 languages. The Pakt Stage 2 SEO pages are English pages only until localized versions are created.
+The complete eight-page Pakt cluster is available in English, Spanish, German, French, Brazilian Portuguese, and Italian. Localized hubs:
+
+- [Pakt en español](https://www.lingofonex.com/pakt/es/)
+- [Pakt auf Deutsch](https://www.lingofonex.com/pakt/de/)
+- [Pakt en français](https://www.lingofonex.com/pakt/fr/)
+- [Pakt em português](https://www.lingofonex.com/pakt/pt/)
+- [Pakt in italiano](https://www.lingofonex.com/pakt/it/)
+
+Legacy Lingofonex site sections remain available in 23 languages.
 
 ## Claim Notes
 
