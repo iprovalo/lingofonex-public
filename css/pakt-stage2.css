@@ -8166,3 +8166,70 @@ body.page-pakt-hub #explore-more .related-card[aria-expanded="true"] .related-ca
     -webkit-line-clamp: initial;
   }
 }
+
+/*
+ * Shared public proof-section sizing.
+ *
+ * WebKit can shrink-wrap positioned children in this block when they only have
+ * max-width declarations. Keep explicit widths here so every Pakt page uses
+ * the same stable title, copy, and metric layout instead of relying on the
+ * older voice-page-only correction.
+ */
+body:not(.page-component-parity) #offline-proof.proof-section > .section-title {
+  width: min(100%, 620px);
+  min-width: 0;
+  max-width: 620px;
+}
+
+body:not(.page-component-parity) #offline-proof.proof-section > .section-lede {
+  width: min(100%, 590px);
+  min-width: 0;
+  max-width: 590px;
+}
+
+body:not(.page-component-parity) #offline-proof.proof-section > .metric-grid {
+  width: min(100%, 720px);
+  min-width: 0;
+  max-width: 720px;
+}
+
+body:not(.page-component-parity) #offline-proof.proof-section > .metric-grid > .metric {
+  width: auto;
+  min-width: 0;
+}
+
+@media (min-width: 641px) {
+  body:not(.page-component-parity) #offline-proof.proof-section > .metric-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 641px) and (max-width: 760px) {
+  body:not(.page-component-parity) #offline-proof.proof-section > .section-title {
+    width: min(100%, 560px);
+    max-width: 560px;
+  }
+
+  body:not(.page-component-parity) #offline-proof.proof-section > .section-lede {
+    width: min(100%, 520px);
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 640px) {
+  body:not(.page-component-parity) #offline-proof.proof-section > .section-title {
+    width: min(100%, 330px);
+    max-width: 330px;
+  }
+
+  body:not(.page-component-parity) #offline-proof.proof-section > .section-lede {
+    width: min(100%, 315px);
+    max-width: 315px;
+  }
+
+  body:not(.page-component-parity) #offline-proof.proof-section > .metric-grid {
+    width: min(100%, 330px);
+    max-width: 330px;
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
