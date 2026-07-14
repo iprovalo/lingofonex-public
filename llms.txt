@@ -15,7 +15,15 @@ Privacy posture: Pakt translates locally on your phone for prepared offline lang
 - [Offline Translator App](https://www.lingofonex.com/pakt/offline-translator-app/) - Pakt is an offline translator app for travel. Translate in 100 languages and hear voice output in 50 when WiFi, roaming, or signal fails.
 - [Offline Translator for Travel](https://www.lingofonex.com/pakt/offline-translator-for-travel/) - Download Pakt before your trip and translate offline while traveling. Use it in taxis, hotels, restaurants, airports, and more.
 - [Voice & Speech Translator](https://www.lingofonex.com/pakt/voice-speech-translator/) - Speak, translate, and hear voice output offline with Pakt. Built for travel conversations when internet access is unreliable.
+- [Conversation Translator](https://www.lingofonex.com/pakt/conversation-translator/) - Speak or type, show or play the translation, and keep moving even when signal disappears.
+- [Airplane Mode Translator](https://www.lingofonex.com/pakt/translation-airplane-mode/) - Translate from takeoff to arrivals while WiFi and mobile data stay off.
+- [Private Translation App](https://www.lingofonex.com/pakt/private-translation-app/) - Translate downloaded languages locally on your phone when personal travel details matter.
 - [Best Offline Translator App](https://www.lingofonex.com/pakt/best-offline-translator-app/) - Compare offline translator apps by offline use, voice output, privacy, travel readiness, language support, and account requirements.
+- [Translator for Taxis, Hotels, and Restaurants](https://www.lingofonex.com/pakt/translator-for-taxis-hotels-restaurants/) - Real offline travel conversations for taxis, hotels, restaurants, pharmacies, airports, and train stations.
+- [Offline Translator for Japan](https://www.lingofonex.com/pakt/offline-translator-for-japan/) - Prepare Japanese before a trip and use Pakt across trains, restaurants, hotels, taxis, pharmacies, and shops.
+- [Offline Translator for Spain](https://www.lingofonex.com/pakt/offline-translator-for-spain/) - Download Spanish before travel and use Pakt for meals, stays, markets, taxis, and transport across Spain.
+- [Offline Translator for France](https://www.lingofonex.com/pakt/offline-translator-for-france/) - Keep French ready offline for cafés, train stations, hotels, pharmacies, taxis, and shops.
+- [Offline Translator for Italy](https://www.lingofonex.com/pakt/offline-translator-for-italy/) - Prepare Italian for restaurants, trains, hotels, taxis, shops, and markets across Italy.
 
 ## Site Pages
 
@@ -29,7 +37,15 @@ Privacy posture: Pakt translates locally on your phone for prepared offline lang
 
 ## Localization
 
-Legacy site sections are available in 23 languages. The Pakt Stage 2 SEO pages are English pages only until localized versions are created.
+The eight-page core Pakt cluster is available in English, Spanish, German, French, Brazilian Portuguese, and Italian. The five new scenario and destination proof pages are currently English-only. Localized hubs:
+
+- [Pakt en español](https://www.lingofonex.com/pakt/es/)
+- [Pakt auf Deutsch](https://www.lingofonex.com/pakt/de/)
+- [Pakt en français](https://www.lingofonex.com/pakt/fr/)
+- [Pakt em português](https://www.lingofonex.com/pakt/pt/)
+- [Pakt in italiano](https://www.lingofonex.com/pakt/it/)
+
+Legacy Lingofonex site sections remain available in 23 languages.
 
 ## Claim Notes
 

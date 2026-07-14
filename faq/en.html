@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ — Pakt Offline Translator</title>
-  <meta name="description" content="Frequently asked questions about Pakt by Lingofonex: offline translation, voice support, language coverage, and privacy.">
+  <title>Pakt Help &amp; FAQ — Offline Translator Support</title>
+  <meta name="description" content="Get answers about Pakt by Lingofonex: offline translation, voice output, language support, privacy, travel setup, downloads, and technical help.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" media="print" onload="this.media='all'">
@@ -430,6 +430,63 @@ main {
   line-height: 1.8;
 }
 
+.faq-intro {
+  max-width: 700px;
+  margin: -12px auto 44px;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.faq-section + .faq-section {
+  margin-top: 56px;
+}
+
+.faq-section-title {
+  max-width: 780px;
+  margin: 0 auto 10px;
+  color: var(--accent-green);
+  font-size: 1.45rem;
+  text-align: left;
+}
+
+.faq-section-note {
+  max-width: 780px;
+  margin: 0 auto 24px;
+  color: var(--text-secondary);
+}
+
+.faq-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 780px;
+  margin: 48px auto 0;
+}
+
+.faq-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 22px;
+  border: 1px solid var(--accent-green);
+  border-radius: var(--radius);
+  font-weight: 700;
+}
+
+.faq-action-primary {
+  background: var(--accent-green);
+  color: var(--bg-primary);
+}
+
+.faq-action-primary:hover {
+  color: var(--bg-primary);
+  background: #fff;
+  border-color: #fff;
+}
+
 /* ===== Demo page ===== */
 .video-container {
   position: relative;
@@ -664,15 +721,15 @@ main {
   <link rel="alternate" hreflang="x-default" href="https://www.lingofonex.com/faq/en.html">
   <link rel="canonical" href="https://www.lingofonex.com/faq/en.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="FAQ — Pakt Offline Translator">
-  <meta property="og:description" content="Frequently asked questions about Pakt by Lingofonex: offline translation, voice support, language coverage, and privacy.">
+  <meta property="og:title" content="Pakt Help &amp; FAQ — Offline Translator Support">
+  <meta property="og:description" content="Get answers about Pakt by Lingofonex: offline translation, voice output, language support, privacy, travel setup, downloads, and technical help.">
   <meta property="og:image" content="https://www.lingofonex.com/images/og-card.png">
   <meta property="og:url" content="https://www.lingofonex.com/faq/en.html">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Lingofonex">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="FAQ — Pakt Offline Translator">
-  <meta name="twitter:description" content="Frequently asked questions about Pakt by Lingofonex: offline translation, voice support, language coverage, and privacy.">
+  <meta name="twitter:title" content="Pakt Help &amp; FAQ — Offline Translator Support">
+  <meta name="twitter:description" content="Get answers about Pakt by Lingofonex: offline translation, voice output, language support, privacy, travel setup, downloads, and technical help.">
   <meta name="twitter:image" content="https://www.lingofonex.com/images/og-card.png">
   <script type="application/ld+json">
 {
@@ -707,8 +764,127 @@ main {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "FAQ",
+          "name": "Pakt Help & FAQ",
           "item": "https://www.lingofonex.com/faq/en.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.lingofonex.com/faq/en.html#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Pakt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pakt is Lingofonex's offline translator for travel. Speak or type short phrases, translate downloaded languages on your phone, and play supported translations aloud."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Pakt work without internet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Download the languages you need while you are online. Once they are ready, Pakt can translate those languages on your phone without WiFi or mobile data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Pakt translate speech and play translations aloud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, for supported languages. Pakt can accept spoken input and play translated results aloud. Voice availability varies by language, so check the language you plan to use before travelling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many languages does Pakt support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pakt supports translation in 100 languages and voice output in 50 languages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Pakt private?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pakt's core offline translation runs locally on your phone. Downloaded-language translation does not require a cloud translation service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an account to use Pakt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Pakt does not require an account for its core translation experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use Pakt in airplane mode?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Download the languages you need before the trip. Pakt can then translate those prepared languages locally while airplane mode is switched on."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Pakt help with a back-and-forth conversation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. One person can speak or type, then show or play the translation before the other person replies. Pakt is designed for short, practical exchanges rather than simultaneous interpretation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should I prepare Pakt before a trip?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Install Pakt while you have a reliable connection, download the languages you expect to use, and test a short phrase before you leave."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I start a translation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose the input and output languages, tap the input language button, and speak immediately. You can also type. Short, direct sentences usually produce the clearest result. You can also watch the short Pakt demo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why should I use WiFi for the initial setup?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Offline language models can be large. WiFi usually makes the first download faster and avoids using a substantial amount of mobile data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does Pakt download large files?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pakt stores language models on your phone so translation can work offline. The download display can occasionally lag behind the completed transfer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do if Pakt freezes or will not start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Close other apps, check that your phone has enough free storage, and reopen Pakt. If the problem continues, remove Pakt, install the latest version, and download the required language models again."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I contact support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the Lingofonex contact form and include your device model, software version, and a short description of what happened."
+          }
         }
       ]
     }
@@ -727,7 +903,6 @@ main {
 <li><a href="../home/en.html">Home</a></li>
 <li><a href="/pakt/">Pakt</a></li>
 <li><a href="../download/en.html">Download</a></li>
-<li><a href="../demo/en.html">Demo</a></li>
 <li><a href="../faq/en.html" class="active">FAQ</a></li>
 <li><a href="../privacy-policy/en.html">Privacy</a></li>
 <li><a href="../eula/en.html">EULA</a></li>
@@ -763,57 +938,124 @@ main {
 <!-- END SEO STAGE 1 NAV -->
 
 <main>
-  <h1 class="section-title">Frequently Asked Questions</h1>
+  <h1 class="section-title">Pakt help and frequently asked questions</h1>
+  <p class="faq-intro">Pakt is the offline travel translator from Lingofonex. Start with the essentials, then find setup and technical help further down.</p>
 
-  <div class="faq-list">
-    <div class="faq-item">
-      <button class="faq-question">Why is the app freezing or hanging? <span class="icon">+</span></button>
-      <div class="faq-answer"><div class="faq-answer-inner">
-        If you are experiencing freezing or hanging, please follow these steps: Completely remove the app. Install the latest version from the app store. Ensure that your device has enough storage space. Close other applications and try reopening Lingofonex. We are also continuously working to improve performance in upcoming updates.
-      </div></div>
-    </div>
+  <section class="faq-section" aria-labelledby="pakt-questions">
+    <h2 class="faq-section-title" id="pakt-questions">About Pakt</h2>
+    <p class="faq-section-note">What to expect before you download, travel, or go offline.</p>
 
-    <div class="faq-item">
-      <button class="faq-question">How do I use the app correctly? <span class="icon">+</span></button>
-      <div class="faq-answer"><div class="faq-answer-inner">
-        For a quick guide on how to use the app, visit our <a href="../demo/en.html">User Demo</a> page. It provides simple instructions to help you get started. Quick tips: when ready to speak, press the input language button and speak immediately; use shorter sentences for the best results.
-      </div></div>
-    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">What is Pakt? <span class="icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          Pakt is Lingofonex's offline translator for travel. Speak or type short phrases, translate downloaded languages on your phone, and play supported translations aloud. <a href="/pakt/">Explore Pakt</a>.
+        </div></div>
+      </div>
 
-    <div class="faq-item">
-      <button class="faq-question">Why are large files being downloaded even after I delete the app? <span class="icon">+</span></button>
-      <div class="faq-answer"><div class="faq-answer-inner">
-        Lingofonex downloads offline models to support translation features, which can take up space. The display of the downloading process may lag behind, so it could appear that the download is still happening even though the files have already been fully transferred. We're working to improve the transparency of this process. We recommend removing the app and reinstalling the latest version if you are having issues with starting the app.
-      </div></div>
-    </div>
+      <div class="faq-item">
+        <button class="faq-question">Does Pakt work without internet? <span class="icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          Yes. Download the languages you need while you are online. Once they are ready, Pakt can translate those languages on your phone without WiFi or mobile data. Learn more about using an <a href="/pakt/offline-translator-app/">offline translator app</a>.
+        </div></div>
+      </div>
 
-    <div class="faq-item">
-      <button class="faq-question">The app downloaded a large cache and now won't start. <span class="icon">+</span></button>
-      <div class="faq-answer"><div class="faq-answer-inner">
-        In case the app doesn't start after downloading the models, please remove the app completely, download the latest version, and try loading the models again.
-      </div></div>
-    </div>
+      <div class="faq-item">
+        <button class="faq-question">Can Pakt translate speech and play translations aloud? <span class="icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          Yes, for supported languages. Pakt can accept spoken input and play translated results aloud. Voice availability varies by language, so check the language you plan to use before travelling. See how <a href="/pakt/voice-speech-translator/">voice translation</a> works in Pakt.
+        </div></div>
+      </div>
 
-    <div class="faq-item">
-      <button class="faq-question">Why should I use WiFi for the initial installation? <span class="icon">+</span></button>
-      <div class="faq-answer"><div class="faq-answer-inner">
-        Downloading the initial translation models requires a large amount of data. To avoid using up mobile data and to ensure faster downloads, we recommend using WiFi during the first installation and setup.
-      </div></div>
-    </div>
+      <div class="faq-item">
+        <button class="faq-question">How many languages does Pakt support? <span class="icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          Pakt supports translation in 100 languages and voice output in 50 languages.
+        </div></div>
+      </div>
 
-    <div class="faq-item">
-      <button class="faq-question">Are there plans for new features? <span class="icon">+</span></button>
-      <div class="faq-answer"><div class="faq-answer-inner">
-        We are continuously improving Lingofonex based on user feedback and plan to add new features over time. Stay tuned for updates!
-      </div></div>
-    </div>
+      <div class="faq-item">
+        <button class="faq-question">Is Pakt private? <span class="icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          Pakt's core offline translation runs locally on your phone. Downloaded-language translation does not require a cloud translation service. Read more about <a href="/pakt/private-translation-app/">private translation with Pakt</a>.
+        </div></div>
+      </div>
 
-    <div class="faq-item">
-      <button class="faq-question">How can I contact support? <span class="icon">+</span></button>
-      <div class="faq-answer"><div class="faq-answer-inner">
-        If you encounter any issues or need further assistance, please use our <a href="../contact/en.html">Contact Form</a>, and our support team will respond as soon as possible.
-      </div></div>
+      <div class="faq-item">
+        <button class="faq-question">Do I need an account to use Pakt? <span class="icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          No. Pakt does not require an account for its core translation experience.
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can I use Pakt in airplane mode? <span class="icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          Yes. Download the languages you need before the trip. Pakt can then translate those prepared languages locally while airplane mode is switched on. Learn more about <a href="/pakt/translation-airplane-mode/">translation in airplane mode</a>.
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can Pakt help with a back-and-forth conversation? <span class="icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          Yes. One person can speak or type, then show or play the translation before the other person replies. Pakt is designed for short, practical exchanges rather than simultaneous interpretation. See Pakt as a <a href="/pakt/conversation-translator/">conversation translator</a>.
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How should I prepare Pakt before a trip? <span class="icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          Install Pakt while you have a reliable connection, download the languages you expect to use, and test a short phrase before you leave. You can then check the prepared languages with <a href="/pakt/translation-airplane-mode/">airplane mode</a> switched on.
+        </div></div>
+      </div>
     </div>
+  </section>
+
+  <section class="faq-section" aria-labelledby="setup-support">
+    <h2 class="faq-section-title" id="setup-support">Setup and support</h2>
+    <p class="faq-section-note">Practical answers for downloads, storage, and technical problems.</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">How do I start a translation? <span class="icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          Choose the input and output languages, tap the input language button, and speak immediately. You can also type. Short, direct sentences usually produce the clearest result. You can also <a href="../demo/en.html">watch the short Pakt demo</a>.
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Why should I use WiFi for the initial setup? <span class="icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          Offline language models can be large. WiFi usually makes the first download faster and avoids using a substantial amount of mobile data.
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Why does Pakt download large files? <span class="icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          Pakt stores language models on your phone so translation can work offline. The download display can occasionally lag behind the completed transfer. If Pakt has trouble starting after a model download, reinstall the latest version and download the required languages again.
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What should I do if Pakt freezes or will not start? <span class="icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          Close other apps, check that your phone has enough free storage, and reopen Pakt. If the problem continues, remove Pakt, install the latest version, and download the required language models again.
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How can I contact support? <span class="icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          Use the Lingofonex <a href="../contact/en.html">contact form</a>. Include your device model, software version, and a short description of what happened so we can help faster.
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="faq-actions">
+    <a href="/pakt/" class="faq-action">Explore Pakt</a>
+    <a href="../download/en.html" class="faq-action faq-action-primary">Download Pakt</a>
   </div>
 </main>
 
