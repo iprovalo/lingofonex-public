@@ -1186,6 +1186,17 @@ body:not(.page-component-parity) .site-nav.is-scrolled .nav-links .nav-cta {
   gap: 18px;
 }
 
+.footer-languages {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 18px;
+  margin-top: 6px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(250, 247, 236, 0.14);
+}
+
 .footer-group h2 {
   margin: 0 0 12px;
   color: var(--pakt-orange);
@@ -1200,6 +1211,15 @@ body:not(.page-component-parity) .site-nav.is-scrolled .nav-links .nav-cta {
   color: rgba(250, 247, 236, 0.78);
   text-decoration: none;
   font-size: 14px;
+}
+
+.footer-languages h2 {
+  flex-basis: 100%;
+  margin-bottom: 2px;
+}
+
+.footer-languages a {
+  margin: 0;
 }
 
 .footer-group a:hover {
@@ -6600,6 +6620,7 @@ body:not(.page-component-parity) .explore-more .related-card-preview {
 body:not(.page-component-parity) .explore-more .related-card[aria-expanded="true"] .related-card-preview {
   max-width: 295px;
   margin-top: 14px;
+  margin-bottom: 16px;
   overflow: visible;
   color: rgba(250, 247, 236, 0.72);
   font-size: clamp(21px, 1.42vw, 27px);
@@ -6916,6 +6937,7 @@ body:not(.page-component-parity) .explore-more .related-card:focus-visible {
   body:not(.page-component-parity) .explore-more .related-card[aria-expanded="true"] .related-card-preview {
     max-width: 245px;
     margin-top: 9px;
+    margin-bottom: 14px;
     font-size: 20px;
   }
 
@@ -8120,7 +8142,7 @@ body.page-pakt-hub #explore-more .related-card[aria-expanded="true"] .related-ca
   body.page-pakt-hub #explore-more .related-card,
   body.page-pakt-hub #explore-more .related-card[aria-expanded="true"] {
     width: 100%;
-    min-height: 230px;
+    min-height: 272px;
   }
 
   .destination-links-section {
